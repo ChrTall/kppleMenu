@@ -1,3 +1,8 @@
+# Forked
+
+The original maintainer does not seem actively maintaining the project anymore.
+In order to port the plasmoid to KF6 I created this fork.
+
 # Kpple Menu
 
 <p align="center">

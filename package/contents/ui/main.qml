@@ -21,14 +21,17 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls 2.1
 
 import org.kde.plasma.plasmoid 2.0
-import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.plasma.components 2.0 as PlasmaComponents
+import org.kde.plasma.core as PlasmaCore
+import org.kde.plasma.components as PlasmaComponents
+import org.kde.plasma.extras 2.0 as PlasmaExtras
+import org.kde.plasma.plasma5support as Plasma5Support
+import org.kde.kirigami 2.5 as Kirigami
 
-Item {
+PlasmoidItem {
     id: root
     
     // define exec system ( call commands ) : by Uswitch applet! 
-    PlasmaCore.DataSource {
+    Plasma5Support.DataSource {
         id: executable
         engine: "executable"
         connectedSources: []
@@ -53,12 +56,12 @@ Item {
         signal exited(string sourceName, string stdout)
     }
         
-    Plasmoid.preferredRepresentation: Plasmoid.compactRepresentation
-    Plasmoid.compactRepresentation: null
-    Plasmoid.fullRepresentation: Item {
+    preferredRepresentation: Plasmoid.compactRepresentation
+    compactRepresentation: null
+    fullRepresentation: Item {
         id: fullRoot
         
-        readonly property double iwSize: units.gridUnit * 12.6 // item width 
+        readonly property double iwSize: Kirigami.Units.gridUnit * 12.6 // item width
         readonly property double shSize: 1.1 // separator height
         
         // config var
@@ -76,10 +79,10 @@ Item {
         Layout.preferredHeight: aboutThisComputerItem.height * 11 // not the best way to code..
         
         // define highlight
-        PlasmaComponents.Highlight {
-            id: delegateHighlight
-            visible: false
-        }
+        //PlasmaComponents3.Highlight {
+        //    id: delegateHighlight
+        //    visible: false
+        //}
         
         ColumnLayout {
             id: columm
@@ -88,7 +91,7 @@ Item {
             
             ListDelegate {
                 id: aboutThisComputerItem
-                highlight: delegateHighlight
+                //highlight: delegateHighlight
                 text: i18n("About This Computer")
                 onClicked: {
                     executable.exec(aboutThisComputerCMD); // cmd exec
@@ -109,7 +112,7 @@ Item {
             
             ListDelegate {
                 id: systemPreferencesItem
-                highlight: delegateHighlight
+                //highlight: delegateHighlight
                 text: i18n("System Preferences...")
                 onClicked: {
                     executable.exec(systemPreferencesCMD); // cmd exec
@@ -118,7 +121,7 @@ Item {
             
             ListDelegate {
                 id: appStoreItem
-                highlight: delegateHighlight
+                //highlight: delegateHighlight
                 text: i18n("App Store...")
                 onClicked: {
                     executable.exec(appStoreCMD); // cmd exec
@@ -139,7 +142,7 @@ Item {
             
             ListDelegate { 
                 id: forceQuitItem
-                highlight: delegateHighlight
+                //highlight: delegateHighlight
                 text: i18n("Force Quit...")
                 // right shortcut item
                 PlasmaComponents.Label {
@@ -166,7 +169,7 @@ Item {
             
             ListDelegate { 
                 id: sleepItem
-                highlight: delegateHighlight
+                //highlight: delegateHighlight
                 text: i18n("Sleep")
                 onClicked: {
                     executable.exec(sleepCMD); // cmd exec
@@ -175,7 +178,7 @@ Item {
             
             ListDelegate { 
                 id: restartItem
-                highlight: delegateHighlight
+                //highlight: delegateHighlight
                 text: i18n("Restart...")
                 onClicked: {
                     executable.exec(restartCMD); // cmd exec
@@ -184,7 +187,7 @@ Item {
             
             ListDelegate { 
                 id: shutDownItem
-                highlight: delegateHighlight
+                //highlight: delegateHighlight
                 text: i18n("Shut Down...")
                 onClicked: {
                     executable.exec(shutDownCMD); // cmd exec
@@ -205,7 +208,7 @@ Item {
             
             ListDelegate { 
                 id: lockScreenItem
-                highlight: delegateHighlight
+                //highlight: delegateHighlight
                 text: i18n("Lock Screen")
                 // right shortcut item
                 PlasmaComponents.Label {
@@ -220,7 +223,7 @@ Item {
             
             ListDelegate { 
                 id: logOutItem
-                highlight: delegateHighlight
+                //highlight: delegateHighlight
                 text: i18n("Log Out")
                 // right shortcut item
                 PlasmaComponents.Label {
