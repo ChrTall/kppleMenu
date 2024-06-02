@@ -26,6 +26,7 @@ import org.kde.plasma.components as PlasmaComponents
 import org.kde.plasma.extras 2.0 as PlasmaExtras
 import org.kde.plasma.plasma5support as Plasma5Support
 import org.kde.kirigami 2.5 as Kirigami
+import org.kde.plasma.extras 2.0 as PlasmaExtras
 
 PlasmoidItem {
     id: root
@@ -56,8 +57,9 @@ PlasmoidItem {
         signal exited(string sourceName, string stdout)
     }
         
-    preferredRepresentation: Plasmoid.compactRepresentation
-    compactRepresentation: null
+    // preferredRepresentation: Plasmoid.compactRepresentation
+    // compactRepresentation: null
+
     fullRepresentation: Item {
         id: fullRoot
         
@@ -77,27 +79,28 @@ PlasmoidItem {
         
         Layout.preferredWidth: iwSize
         Layout.preferredHeight: aboutThisComputerItem.height * 11 // not the best way to code..
-        
-        // define highlight
-        //PlasmaComponents3.Highlight {
-        //    id: delegateHighlight
-        //    visible: false
-        //}
-        
+        //define highlight
+        PlasmaExtras.Highlight {
+            id: delegateHighlight
+            visible: false
+        }
+
+
         ColumnLayout {
             id: columm
             anchors.fill: parent
-            spacing: 0 // no spacing
+            spacing: 2 // no spacing
             
             ListDelegate {
                 id: aboutThisComputerItem
-                //highlight: delegateHighlight
+                highlight: delegateHighlight
                 text: i18n("About This Computer")
                 onClicked: {
+                    console.log("clicked")
                     executable.exec(aboutThisComputerCMD); // cmd exec
                 }
             }
-            
+
             MenuSeparator {
                 id: s1
                 padding: 0
@@ -109,19 +112,20 @@ PlasmoidItem {
                     color: "#1E000000"
                 }
             }
-            
+
             ListDelegate {
                 id: systemPreferencesItem
-                //highlight: delegateHighlight
+                highlight: delegateHighlight
+                width: parent
                 text: i18n("System Preferences...")
                 onClicked: {
                     executable.exec(systemPreferencesCMD); // cmd exec
                 }
             }
-            
+
             ListDelegate {
                 id: appStoreItem
-                //highlight: delegateHighlight
+                highlight: delegateHighlight
                 text: i18n("App Store...")
                 onClicked: {
                     executable.exec(appStoreCMD); // cmd exec
@@ -139,10 +143,10 @@ PlasmoidItem {
                     color: "#1E000000"
                 }
             }
-            
-            ListDelegate { 
+
+            ListDelegate {
                 id: forceQuitItem
-                //highlight: delegateHighlight
+                highlight: delegateHighlight
                 text: i18n("Force Quit...")
                 // right shortcut item
                 PlasmaComponents.Label {
@@ -166,34 +170,34 @@ PlasmoidItem {
                     color: "#1E000000"
                 }
             }
-            
-            ListDelegate { 
+
+            ListDelegate {
                 id: sleepItem
-                //highlight: delegateHighlight
+                highlight: delegateHighlight
                 text: i18n("Sleep")
                 onClicked: {
                     executable.exec(sleepCMD); // cmd exec
                 }
             }
-            
-            ListDelegate { 
+
+            ListDelegate {
                 id: restartItem
-                //highlight: delegateHighlight
+                highlight: delegateHighlight
                 text: i18n("Restart...")
                 onClicked: {
                     executable.exec(restartCMD); // cmd exec
                 }
             }
-            
-            ListDelegate { 
+
+            ListDelegate {
                 id: shutDownItem
-                //highlight: delegateHighlight
+                highlight: delegateHighlight
                 text: i18n("Shut Down...")
                 onClicked: {
                     executable.exec(shutDownCMD); // cmd exec
                 }
             }
-            
+
             MenuSeparator {
                 id: s4
                 padding: 0
@@ -205,10 +209,10 @@ PlasmoidItem {
                     color: "#1E000000"
                 }
             }
-            
-            ListDelegate { 
+
+            ListDelegate {
                 id: lockScreenItem
-                //highlight: delegateHighlight
+                highlight: delegateHighlight
                 text: i18n("Lock Screen")
                 // right shortcut item
                 PlasmaComponents.Label {
@@ -220,10 +224,10 @@ PlasmoidItem {
                     executable.exec(lockScreenCMD); // cmd exec
                 }
             }
-            
-            ListDelegate { 
+
+            ListDelegate {
                 id: logOutItem
-                //highlight: delegateHighlight
+                highlight: delegateHighlight
                 text: i18n("Log Out")
                 // right shortcut item
                 PlasmaComponents.Label {
