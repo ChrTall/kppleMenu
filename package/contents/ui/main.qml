@@ -78,7 +78,7 @@ PlasmoidItem {
         readonly property string logOutCMD: plasmoid.configuration.logOutSettings
         
         Layout.preferredWidth: iwSize
-        Layout.preferredHeight: aboutThisComputerItem.height * 11 // not the best way to code..
+        Layout.preferredHeight: aboutThisComputerItem.height * 14 // not the best way to code..
         //define highlight
         PlasmaExtras.Highlight {
             id: delegateHighlight

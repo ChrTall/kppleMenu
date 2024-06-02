@@ -16,25 +16,26 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  2.010-1301, USA.
  */
 
-import QtQuick 2.2
-import QtQuick.Controls 2.1
-import QtQuick.Layouts 1.1
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.4 as Kirigami
+import org.kde.kirigami as Kirigami
 
-import org.kde.plasma.core 2.0 as PlasmaCore
-import org.kde.kquickcontrolsaddons 2.0 as KQuickAddons
-import org.kde.draganddrop 2.0 as DragDrop
-import QtQuick.Dialogs 1.2
+import org.kde.plasma.core as PlasmaCore
+import org.kde.iconthemes as KIconThemes
+import org.kde.draganddrop as DragDrop
+import QtQuick.Dialogs
+import org.kde.kcmutils as KCM
+import org.kde.ksvg as KSvg
+import org.kde.plasma.components as PlasmaComponents
 
-import org.kde.plasma.components 2.0 as PlasmaComponents
 
-
-Item {
+KCM.SimpleKCM {
     id: page
     
-    width: childrenRect.width
-    height: childrenRect.height
+    //width: childrenRect.width
+    //height: childrenRect.height
     
     property alias cfg_showAdvancedMode: showAdvancedMode.checked
     property alias cfg_aboutThisComputerSettings: aboutThisComputerSettings.text
@@ -100,7 +101,7 @@ Item {
                     }
                 }
 
-                KQuickAddons.IconDialog {
+                KIconThemes.IconDialog {
                     id: iconDialog
 
                     function setCustomButtonImage(image) {
@@ -122,7 +123,7 @@ Item {
                     iconMenu.open(0, height)
                 }
 
-                PlasmaCore.FrameSvgItem {
+                KSvg.FrameSvgItem {
                     id: previewFrame
                     anchors.centerIn: parent
                     imagePath: plasmoid.location === PlasmaCore.Types.Vertical || plasmoid.location === PlasmaCore.Types.Horizontal
@@ -130,32 +131,46 @@ Item {
                     width: units.iconSizes.large + fixedMargins.left + fixedMargins.right
                     height: units.iconSizes.large + fixedMargins.top + fixedMargins.bottom
 
-                    PlasmaCore.IconItem {
-                        anchors.centerIn: parent
-                        width: units.iconSizes.large
-                        height: width
-                        source: cfg_useCustomButtonImage ? cfg_customButtonImage : cfg_icon
-                    }
+                    // KSvg.SvgItem {
+                    //     anchors.centerIn: parent
+                    //     width: units.iconSizes.large
+                    //     height: width
+                    //     source: cfg_useCustomButtonImage ? cfg_customButtonImage : cfg_icon
+                    // }
                 }
             }
 
             // QQC Menu can only be opened at cursor position, not a random one
-            PlasmaComponents.ContextMenu {
+            Kirigami.MenuDialog {
                 id: iconMenu
-                visualParent: iconButton
-
-                PlasmaComponents.MenuItem {
-                    text: i18nc("@item:inmenu Open icon chooser dialog", "Choose...")
-                    icon: "document-open-folder"
-                    onClicked: iconDialog.open()
-                }
-                PlasmaComponents.MenuItem {
-                    text: i18nc("@item:inmenu Reset icon to default", "Clear Icon")
-                    icon: "edit-clear"
-                    onClicked: {
-                        cfg_useCustomButtonImage = false;
+                //visualParent: iconButton
+                title: "Test Dialog with Kirigami"
+                actions: [
+                    Kirigami.Action {
+                        text: i18nc("@item:inmenu Open icon chooser dialog", "Choose...")
+                        icon.name: "document-open-folder"
+                        //onClicked: iconDialog.open()
+                    },
+                    Kirigami.Action {
+                        text: i18nc("@item:inmenu Reset icon to default", "Clear Icon")
+                        icon.name: "edit-clear"
+                        // onClicked: {
+                        //     cfg_useCustomButtonImage = false;
+                        // }
                     }
-                }
+                ]
+                // PlasmaComponents.MenuItem {
+                //     text: i18nc("@item:inmenu Open icon chooser dialog", "Choose...")
+                //     icon: "document-open-folder"
+                //     onClicked: iconDialog.open()
+                // }
+                // PlasmaComponents.MenuItem {
+                //     text: i18nc("@item:inmenu Reset icon to default", "Clear Icon")
+                //     icon: "edit-clear"
+                //     onClicked: {
+                //         cfg_useCustomButtonImage = false;
+                //     }
+                // }
             }
         }
 
