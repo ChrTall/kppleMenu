@@ -16,13 +16,13 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  2.010-1301, USA.
  */
 
-import QtQuick 2.2
-import QtQuick.Layouts 1.1
+import QtQuick
+import QtQuick.Layouts
 
-import org.kde.plasma.plasmoid 2.0
+import org.kde.plasma.plasmoid
 import org.kde.plasma.core as PlasmaCore
-import org.kde.plasma.components 3.0 as PlasmaComponents
-import org.kde.kirigami 2.5 as Kirigami
+import org.kde.plasma.components as PlasmaComponents
+import org.kde.kirigami as Kirigami
 
 Item {
     id: item
@@ -39,10 +39,11 @@ Item {
         id: area
         anchors.fill: parent
         hoverEnabled: true
-        onClicked: item.clicked()
+        onClicked: {
+            item.clicked()
+        }
         // detect the mouse on the item
         onContainsMouseChanged: {
-            
             if (!highlight) {
                 return
             }
@@ -54,6 +55,8 @@ Item {
             }
             // if the mouse is in the area, the condition will return a bool "true" to >> highlight.visible
             highlight.visible = area.containsMouse
+            highlight.active = area.containsMouse
+            highlight.hovered = area.containsMouse
         }
     }
 
@@ -71,7 +74,8 @@ Item {
             height: 24
             PlasmaComponents.Label {
                 id: label
-                anchors.fill: parent
+                //anchors.fill: parent
+                anchors.verticalCenter: parent.verticalCenter
             }
         }
     }

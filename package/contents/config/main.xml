@@ -26,7 +26,7 @@
       <default>kinfocenter</default>
     </entry>
     <entry name="systemPreferencesSettings" type="String">
-      <default>systemsettings5</default>
+      <default>systemsettings</default>
     </entry>
     <entry name="appStoreSettings" type="String">
       <default>plasma-discover</default>
@@ -44,10 +44,10 @@
       <default>/sbin/shutdown now</default>
     </entry>
     <entry name="lockScreenSettings" type="String">
-      <default>qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock</default>
+      <default>qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock</default>
     </entry>
     <entry name="logOutSettings" type="String">
-      <default>qdbus org.kde.ksmserver /KSMServer logout 0 0 0</default>
+      <default>qdbus6 org.kde.Shutdown /Shutdown logout</default>
     </entry>
   </group>
   
