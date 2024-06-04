@@ -30,6 +30,8 @@ import org.kde.plasma.extras 2.0 as PlasmaExtras
 
 PlasmoidItem {
     id: root
+    toolTipSubText: ""
+    hideOnWindowDeactivate: true
     
     // define exec system ( call commands ) : by Uswitch applet! 
     Plasma5Support.DataSource {
@@ -49,12 +51,17 @@ PlasmoidItem {
         }
 
         function exec(cmd, onNewDataCallback) {
+            root.expanded = false
             if (onNewDataCallback !== undefined){
                 callbacks[cmd] = onNewDataCallback
             }
             connectSource(cmd)
         }
         signal exited(string sourceName, string stdout)
+    }
+
+    Process{
+        id: process
     }
         
     // preferredRepresentation: Plasmoid.compactRepresentation
@@ -96,8 +103,8 @@ PlasmoidItem {
                 highlight: delegateHighlight
                 text: i18n("About This Computer")
                 onClicked: {
-                    console.log("clicked")
-                    executable.exec(aboutThisComputerCMD); // cmd exec
+                    process.start(aboutThisComputerCMD)
+                    //executable.exec(aboutThisComputerCMD); // cmd exec
                 }
             }
 
@@ -132,32 +139,32 @@ PlasmoidItem {
                 }
             }
             
-            MenuSeparator {
-                id: s2
-                padding: 0
-                topPadding: 5
-                bottomPadding: 5
-                contentItem: Rectangle {
-                    implicitWidth: iwSize
-                    implicitHeight: shSize
-                    color: "#1E000000"
-                }
-            }
-
-            ListDelegate {
-                id: forceQuitItem
-                highlight: delegateHighlight
-                text: i18n("Force Quit...")
-                // right shortcut item
-                PlasmaComponents.Label {
-                    text: "⌥⌘⎋ "
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
-                onClicked: {
-                    executable.exec(forceQuitCMD); // cmd exec
-                }
-            }
+            // MenuSeparator {
+            //     id: s2
+            //     padding: 0
+            //     topPadding: 5
+            //     bottomPadding: 5
+            //     contentItem: Rectangle {
+            //         implicitWidth: iwSize
+            //         implicitHeight: shSize
+            //         color: "#1E000000"
+            //     }
+            // }
+            //
+            // ListDelegate {
+            //     id: forceQuitItem
+            //     highlight: delegateHighlight
+            //     text: i18n("Force Quit...")
+            //     // right shortcut item
+            //     PlasmaComponents.Label {
+            //         text: "⌥⌘⎋ "
+            //         anchors.right: parent.right
+            //         anchors.verticalCenter: parent.verticalCenter
+            //     }
+            //     onClicked: {
+            //         executable.exec(forceQuitCMD); // cmd exec
+            //     }
+            // }
             
             MenuSeparator {
                 id: s3
@@ -243,7 +250,6 @@ PlasmoidItem {
     }
 
     Plasmoid.icon: plasmoid.configuration.useCustomButtonImage ? plasmoid.configuration.customButtonImage : plasmoid.configuration.icon
-
 
 } // end item
 

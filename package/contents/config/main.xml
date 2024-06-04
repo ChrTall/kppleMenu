@@ -47,7 +47,7 @@
       <default>qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock</default>
     </entry>
     <entry name="logOutSettings" type="String">
-      <default>qdbus6 org.kde.ksmserver /KSMServer logout 0 0 0</default>
+      <default>qdbus6 org.kde.Shutdown /Shutdown logout</default>
     </entry>
   </group>
   
