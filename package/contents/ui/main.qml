@@ -30,8 +30,9 @@ import org.kde.plasma.extras 2.0 as PlasmaExtras
 
 PlasmoidItem {
     id: root
-    toolTipSubText: ""
+    toolTipSubText: "Shortcuts for shutdown,reboot,logout, settings etc."
     hideOnWindowDeactivate: true
+    Plasmoid.icon: plasmoid.configuration.icon
     
     // define exec system ( call commands ) : by Uswitch applet! 
     Plasma5Support.DataSource {
@@ -60,13 +61,6 @@ PlasmoidItem {
         signal exited(string sourceName, string stdout)
     }
 
-    Process{
-        id: process
-    }
-        
-    // preferredRepresentation: Plasmoid.compactRepresentation
-    // compactRepresentation: null
-
     fullRepresentation: Item {
         id: fullRoot
         
@@ -85,7 +79,7 @@ PlasmoidItem {
         readonly property string logOutCMD: plasmoid.configuration.logOutSettings
         
         Layout.preferredWidth: iwSize
-        Layout.preferredHeight: aboutThisComputerItem.height * 14 // not the best way to code..
+        Layout.preferredHeight: aboutThisComputerItem.height * 12 // not the best way to code..
         //define highlight
         PlasmaExtras.Highlight {
             id: delegateHighlight
@@ -103,8 +97,7 @@ PlasmoidItem {
                 highlight: delegateHighlight
                 text: i18n("About This Computer")
                 onClicked: {
-                    process.start(aboutThisComputerCMD)
-                    //executable.exec(aboutThisComputerCMD); // cmd exec
+                    executable.exec(aboutThisComputerCMD); // cmd exec
                 }
             }
 
@@ -138,33 +131,6 @@ PlasmoidItem {
                     executable.exec(appStoreCMD); // cmd exec
                 }
             }
-            
-            // MenuSeparator {
-            //     id: s2
-            //     padding: 0
-            //     topPadding: 5
-            //     bottomPadding: 5
-            //     contentItem: Rectangle {
-            //         implicitWidth: iwSize
-            //         implicitHeight: shSize
-            //         color: "#1E000000"
-            //     }
-            // }
-            //
-            // ListDelegate {
-            //     id: forceQuitItem
-            //     highlight: delegateHighlight
-            //     text: i18n("Force Quit...")
-            //     // right shortcut item
-            //     PlasmaComponents.Label {
-            //         text: "⌥⌘⎋ "
-            //         anchors.right: parent.right
-            //         anchors.verticalCenter: parent.verticalCenter
-            //     }
-            //     onClicked: {
-            //         executable.exec(forceQuitCMD); // cmd exec
-            //     }
-            // }
             
             MenuSeparator {
                 id: s3
@@ -248,8 +214,6 @@ PlasmoidItem {
             }
         }
     }
-
-    Plasmoid.icon: plasmoid.configuration.useCustomButtonImage ? plasmoid.configuration.customButtonImage : plasmoid.configuration.icon
 
 } // end item
 

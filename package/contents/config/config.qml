@@ -17,12 +17,12 @@
  */
 
 import QtQuick 2.0
-import org.kde.plasma.configuration 2.0
+import org.kde.plasma.configuration 2.0 as PlasmaConfig
 
-ConfigModel {    
-    
-    ConfigCategory {
-        name: i18n("Advanced")
+PlasmaConfig.ConfigModel {
+
+    PlasmaConfig.ConfigCategory {
+        name: i18n("General")
         icon: "configure"
         source: "config/configGeneral.qml"
     }
