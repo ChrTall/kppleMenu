@@ -1,19 +1,8 @@
 /*
- *  Copyright 2020 Kpple <info.kpple@gmail.com>
+ *  SPDX-FileCopyrightText: 2020 Kpple <info.kpple@gmail.com>
+ *  SPDX-FileCopyrightText: 2024 Christian Tallner <chrtall@gmx.de>
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  2.010-1301, USA.
+ *  SPDX-License-Identifier: GPL-2.0-or-later
  */
 
 import QtQuick 2.2
@@ -61,6 +50,19 @@ PlasmoidItem {
         signal exited(string sourceName, string stdout)
     }
 
+    //define highlight
+    PlasmaExtras.Highlight {
+        id: delegateHighlight
+        visible: false
+    }
+
+    onExpandedChanged : {
+        if (delegateHighlight.parent){
+            delegateHighlight.parent.focus = false
+            delegateHighlight.parent = null
+        }
+    }
+
     fullRepresentation: Item {
         id: fullRoot
         
@@ -80,11 +82,6 @@ PlasmoidItem {
         
         Layout.preferredWidth: iwSize
         Layout.preferredHeight: aboutThisComputerItem.height * 12 // not the best way to code..
-        //define highlight
-        PlasmaExtras.Highlight {
-            id: delegateHighlight
-            visible: false
-        }
 
 
         ColumnLayout {
@@ -99,6 +96,7 @@ PlasmoidItem {
                 onClicked: {
                     executable.exec(aboutThisComputerCMD); // cmd exec
                 }
+                activeFocusOnTab: true
             }
 
             MenuSeparator {
@@ -121,6 +119,7 @@ PlasmoidItem {
                 onClicked: {
                     executable.exec(systemPreferencesCMD); // cmd exec
                 }
+                activeFocusOnTab: true
             }
 
             ListDelegate {
@@ -130,6 +129,7 @@ PlasmoidItem {
                 onClicked: {
                     executable.exec(appStoreCMD); // cmd exec
                 }
+                activeFocusOnTab: true
             }
             
             MenuSeparator {
@@ -151,6 +151,7 @@ PlasmoidItem {
                 onClicked: {
                     executable.exec(sleepCMD); // cmd exec
                 }
+                activeFocusOnTab: true
             }
 
             ListDelegate {
@@ -160,6 +161,7 @@ PlasmoidItem {
                 onClicked: {
                     executable.exec(restartCMD); // cmd exec
                 }
+                activeFocusOnTab: true
             }
 
             ListDelegate {
@@ -169,6 +171,7 @@ PlasmoidItem {
                 onClicked: {
                     executable.exec(shutDownCMD); // cmd exec
                 }
+                activeFocusOnTab: true
             }
 
             MenuSeparator {
@@ -196,6 +199,7 @@ PlasmoidItem {
                 onClicked: {
                     executable.exec(lockScreenCMD); // cmd exec
                 }
+                activeFocusOnTab: true
             }
 
             ListDelegate {
@@ -211,6 +215,7 @@ PlasmoidItem {
                 onClicked: {
                     executable.exec(logOutCMD); // cmd exec
                 }
+                activeFocusOnTab: true
             }
         }
     }

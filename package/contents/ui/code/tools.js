@@ -1,7 +1,8 @@
-.pragma library
-.import org.kde.plasma.core as PlasmaCore
-
-
+/*
+ *  SPDX-FileCopyrightText: 2024 Christian Tallner <chrtall@gmx.de>
+ *
+ *  SPDX-License-Identifier: GPL-2.0-or-later
+ */
 const defaultIconName = "start-here-kde-symbolic";
 
 function iconOrDefault(formFactor, preferredIconName) {
