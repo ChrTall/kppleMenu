@@ -5,8 +5,8 @@
  *  SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-import QtQuick 2.0
-import org.kde.plasma.configuration 2.0 as PlasmaConfig
+import QtQuick
+import org.kde.plasma.configuration as PlasmaConfig
 
 PlasmaConfig.ConfigModel {
 

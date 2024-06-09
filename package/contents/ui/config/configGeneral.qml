@@ -3,7 +3,7 @@
  *  SPDX-FileCopyrightText: 2024 Christian Tallner <chrtall@gmx.de>
  *
  *  SPDX-License-Identifier: GPL-2.0-or-later
- */
+*/
 
 import QtQuick
 import QtQuick.Layouts
@@ -37,7 +37,15 @@ KCM.SimpleKCM {
 
 
     Kirigami.FormLayout {
-
+        /*
+            *  Begin: code from plasma-desktop/applets/kickoff/contents/ui/ConfigGeneral.qml
+            *  SPDX-FileCopyrightText: 2013 David Edmundson <davidedmundson@kde.org>
+            *  SPDX-FileCopyrightText: 2021 Mikel Johnson <mikel5764@gmail.com>
+            *  SPDX-FileCopyrightText: 2022 Nate Graham <nate@kde.org>
+            *  SPDX-FileCopyrightText: 2022 ivan tkachenko <me@ratijas.tk>
+            *
+            *  SPDX-License-Identifier: GPL-2.0-or-later
+         */
         QQC2.Button {
             id: iconButton
 
@@ -57,7 +65,7 @@ KCM.SimpleKCM {
 
             KIconThemes.IconDialog {
                 id: iconDialog
-                onIconNameChanged: {
+                onIconNameChanged: (iconName) => {
                     root.cfg_icon = iconName || Tools.defaultIconName;
                 }
             }
@@ -106,14 +114,9 @@ KCM.SimpleKCM {
                 }
             }
         }
-
-            // Text {
-            //     text: i18n("Adapt the links with your own command lines")
-            // }
-            // Text {
-            //     color: "red"
-            //     text: i18n("( Warning : This is the expert mode, do not change anything if the application is working properly. )")
-            // }
+        /*
+            End: code from plasma-desktop/applets/kickoff/contents/ui/ConfigGeneral.qml
+        */
         
         QQC2.CheckBox {
             id: showAdvancedMode

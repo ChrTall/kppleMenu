@@ -5,17 +5,15 @@
  *  SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-import QtQuick 2.2
-import QtQuick.Layouts 1.1
-import QtQuick.Controls 2.1
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls
 
-import org.kde.plasma.plasmoid 2.0
-import org.kde.plasma.core as PlasmaCore
+import org.kde.plasma.plasmoid
 import org.kde.plasma.components as PlasmaComponents
-import org.kde.plasma.extras 2.0 as PlasmaExtras
+import org.kde.plasma.extras as PlasmaExtras
 import org.kde.plasma.plasma5support as Plasma5Support
-import org.kde.kirigami 2.5 as Kirigami
-import org.kde.plasma.extras 2.0 as PlasmaExtras
+import org.kde.kirigami as Kirigami
 
 PlasmoidItem {
     id: root
@@ -63,6 +61,9 @@ PlasmoidItem {
         }
     }
 
+    KeyNavigation.up: aboutThisComputerItem
+    KeyNavigation.down: aboutThisComputerItem
+
     fullRepresentation: Item {
         id: fullRoot
         
@@ -97,6 +98,8 @@ PlasmoidItem {
                     executable.exec(aboutThisComputerCMD); // cmd exec
                 }
                 activeFocusOnTab: true
+                KeyNavigation.up: logOutItem
+                KeyNavigation.down: systemPreferencesItem
             }
 
             MenuSeparator {
@@ -120,6 +123,8 @@ PlasmoidItem {
                     executable.exec(systemPreferencesCMD); // cmd exec
                 }
                 activeFocusOnTab: true
+                KeyNavigation.up: aboutThisComputerItem
+                KeyNavigation.down: appStoreItem
             }
 
             ListDelegate {
@@ -130,6 +135,8 @@ PlasmoidItem {
                     executable.exec(appStoreCMD); // cmd exec
                 }
                 activeFocusOnTab: true
+                KeyNavigation.up: systemPreferencesItem
+                KeyNavigation.down: sleepItem
             }
             
             MenuSeparator {
@@ -152,6 +159,8 @@ PlasmoidItem {
                     executable.exec(sleepCMD); // cmd exec
                 }
                 activeFocusOnTab: true
+                KeyNavigation.up: appStoreItem
+                KeyNavigation.down: restartItem
             }
 
             ListDelegate {
@@ -162,6 +171,8 @@ PlasmoidItem {
                     executable.exec(restartCMD); // cmd exec
                 }
                 activeFocusOnTab: true
+                KeyNavigation.up: sleepItem
+                KeyNavigation.down: shutDownItem
             }
 
             ListDelegate {
@@ -172,6 +183,8 @@ PlasmoidItem {
                     executable.exec(shutDownCMD); // cmd exec
                 }
                 activeFocusOnTab: true
+                KeyNavigation.up: restartItem
+                KeyNavigation.down: lockScreenItem
             }
 
             MenuSeparator {
@@ -200,6 +213,8 @@ PlasmoidItem {
                     executable.exec(lockScreenCMD); // cmd exec
                 }
                 activeFocusOnTab: true
+                KeyNavigation.up: shutDownItem
+                KeyNavigation.down: logOutItem
             }
 
             ListDelegate {
@@ -216,6 +231,8 @@ PlasmoidItem {
                     executable.exec(logOutCMD); // cmd exec
                 }
                 activeFocusOnTab: true
+                KeyNavigation.up: lockScreenItem
+                KeyNavigation.down: aboutThisComputerItem
             }
         }
     }
