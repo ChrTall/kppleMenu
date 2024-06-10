@@ -1,3 +1,6 @@
+#  SPDX-FileCopyrightText: 2024 Christian Tallner <chrtall@gmx.de>
+#
+#  SPDX-License-Identifier: GPL-2.0-or-later
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 project(org.chrtall.kppleMenu)
 

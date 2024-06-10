@@ -1,5 +1,7 @@
- 
 #!/bin/sh
+#  SPDX-FileCopyrightText: 2020 Kpple <info.kpple@gmail.com>
+#
+#  SPDX-License-Identifier: GPL-2.0-or-later
 # Version: 15
 
 # https://techbase.kde.org/Development/Tutorials/Localization/i18n_Build_Systems

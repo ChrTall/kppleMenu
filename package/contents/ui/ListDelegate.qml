@@ -1,26 +1,13 @@
 /*
- *  Copyright 2020 Kpple <info.kpple@gmail.com>
+ *  SPDX-FileCopyrightText: 2020 Kpple <info.kpple@gmail.com>
+ *  SPDX-FileCopyrightText: 2024 Christian Tallner <chrtall@gmx.de>
  *
- *  This program is free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 2 of the License, or
- *  (at your option) any later version.
- *
- *  This program is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with this program; if not, write to the Free Software
- *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  2.010-1301, USA.
+ *  SPDX-License-Identifier: GPL-2.0-or-later
  */
 
 import QtQuick
 import QtQuick.Layouts
 
-import org.kde.plasma.plasmoid
-import org.kde.plasma.core as PlasmaCore
 import org.kde.plasma.components as PlasmaComponents
 import org.kde.kirigami as Kirigami
 
@@ -34,6 +21,25 @@ Item {
 
     Layout.fillWidth: true
     height: row.height
+    onFocusChanged: {
+        if(focus){
+            if (!highlight) {
+                return
+            }
+            highlight.parent = item
+            highlight.width = item.width
+            highlight.height = item.height
+            highlight.visible = true
+            highlight.active = true
+            highlight.hovered = true
+        }
+    }
+    Keys.onPressed: (event) => {
+        if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return || event.key === Qt.Key_Space) {
+            event.accepted = true
+            item.clicked()
+        }
+    }
 
     MouseArea {
         id: area
@@ -42,27 +48,18 @@ Item {
         onClicked: {
             item.clicked()
         }
+
         // detect the mouse on the item
         onContainsMouseChanged: {
-            if (!highlight) {
+            if (!highlight || !area.containsMouse) {
                 return
             }
-            
-            if (area.containsMouse) {
-                highlight.parent = item
-                highlight.width = item.width
-                highlight.height = item.height
-            }
-            // if the mouse is in the area, the condition will return a bool "true" to >> highlight.visible
-            highlight.visible = area.containsMouse
-            highlight.active = area.containsMouse
-            highlight.hovered = area.containsMouse
+            item.focus = true
         }
     }
 
     RowLayout {
         id: row
-
         // set space before the text item with a empty icon
         Item {
             id: emptySpace
@@ -74,7 +71,6 @@ Item {
             height: 24
             PlasmaComponents.Label {
                 id: label
-                //anchors.fill: parent
                 anchors.verticalCenter: parent.verticalCenter
             }
         }

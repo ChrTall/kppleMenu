@@ -1,3 +1,6 @@
+#  SPDX-FileCopyrightText: 2024 Christian Tallner <chrtall@gmx.de>
+#
+#  SPDX-License-Identifier: GPL-2.0-or-later
 # Created by https://www.toptal.com/developers/gitignore/api/cmake,clion
 # Edit at https://www.toptal.com/developers/gitignore?templates=cmake,clion
 
@@ -5,6 +8,8 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
+.idea
+debug-build
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
