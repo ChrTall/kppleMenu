@@ -20,6 +20,7 @@ PlasmoidItem {
     toolTipSubText: "Shortcuts for shutdown,reboot,logout, settings etc."
     hideOnWindowDeactivate: true
     Plasmoid.icon: plasmoid.configuration.icon
+    property bool fullRepHasFocus: false
     
     // define exec system ( call commands ) : by Uswitch applet! 
     Plasma5Support.DataSource {
@@ -39,6 +40,7 @@ PlasmoidItem {
         }
 
         function exec(cmd, onNewDataCallback) {
+            // Hide Applet Window after a cmd was selected by the user.
             root.expanded = false
             if (onNewDataCallback !== undefined){
                 callbacks[cmd] = onNewDataCallback
@@ -54,18 +56,22 @@ PlasmoidItem {
         visible: false
     }
 
-    onExpandedChanged : {
-        if (delegateHighlight.parent){
-            delegateHighlight.parent.focus = false
-            delegateHighlight.parent = null
+    onExpandedChanged : (expanded) => {
+        if(expanded){
+            // Always focus fullRep, when applet is expanded to enable keyboard navigation.
+            root.fullRepHasFocus = true
+        }else {
+            // Deactivate Highlight and focus, when applet is minimized/hidden, else navigation state would persist.
+            if (delegateHighlight.parent) {
+                delegateHighlight.parent.focus = false
+                delegateHighlight.parent = null
+            }
+            root.fullRepHasFocus = false
         }
     }
 
-    KeyNavigation.up: aboutThisComputerItem
-    KeyNavigation.down: aboutThisComputerItem
-
     fullRepresentation: Item {
-        id: fullRoot
+        id: fullRep
         
         readonly property double iwSize: Kirigami.Units.gridUnit * 12.6 // item width
         readonly property double shSize: 1.1 // separator height
@@ -82,8 +88,30 @@ PlasmoidItem {
         readonly property string logOutCMD: plasmoid.configuration.logOutSettings
         
         Layout.preferredWidth: iwSize
-        Layout.preferredHeight: aboutThisComputerItem.height * 12 // not the best way to code..
+        Layout.preferredHeight: aboutThisComputerItem.height * 12
 
+        focus: root.fullRepHasFocus
+        Keys.onPressed: (event) => {
+            switch (event.key) {
+                // Enable Keyboard Navigation with Arrow Keys. Start at the bottom of list.
+                case Qt.Key_Up:
+                    logOutItem.forceActiveFocus()
+                    break;
+                // Enable Keyboard Navigation with Arrow Keys. Start at the top of list.
+                case Qt.Key_Down:
+                    aboutThisComputerItem.forceActiveFocus()
+                    break;
+
+            }
+            // Use Lock Screen Shortcut displayed in UI. ⌘ is treated as Alt Key.
+            if (event.key === Qt.Key_Q && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.AltModifier)){
+                lockScreenItem.clicked()
+            }
+            // Use Log Out Shortcut display in UI. ⌘ is treated as Alt Key.
+            if (event.key === Qt.Key_Q && (event.modifiers & Qt.ShiftModifier) && (event.modifiers & Qt.AltModifier)){
+                logOutItem.clicked()
+            }
+        }
 
         ColumnLayout {
             id: columm
