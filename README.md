@@ -23,6 +23,10 @@ If the menu is expanded you can quickly:
 - Lock the Screen, by pressing ctrl + alt + q
 - Log out, by pressing shift + alt + q
 
+## Missing Translations
+
+If you are using a language, other than English or German some entries do not have a translation yet.
+Feel free to create a PR after editing the corresponding `.po` file for your language under `package/translate`.
 
 ## How to install Kpple menu on KDE Plasma ?
 
