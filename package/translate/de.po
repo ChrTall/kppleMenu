@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KppleMenu \n"
 "Report-Msgid-Bugs-To: https://github.com/ChrTall/kppleMenu\n"
-"POT-Creation-Date: 2024-06-12 11:33+0200\n"
+"POT-Creation-Date: 2024-06-12 15:30+0200\n"
 "PO-Revision-Date: 2020-05-19\n"
 "Last-Translator: Borgniet Rudy <borgniet.rudy@hotmail.com>\n"
 "Language: de\n"
@@ -143,6 +143,10 @@ msgstr "Ausloggen :"
 #: ../contents/ui/config/configGeneral.qml
 msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
 msgstr "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
+
+#: ../contents/ui/main.qml
+msgid "Shortcuts for shutdown,reboot,logout, settings etc."
+msgstr "Menü mit Einträgen für Herunterfahren, Neustart, Logout, Einstellungen etc."
 
 #: ../contents/ui/main.qml
 msgid "About This Computer"

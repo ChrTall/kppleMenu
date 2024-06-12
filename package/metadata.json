@@ -52,7 +52,7 @@
 		"Description[zh_TW]": "Kpple菜單是一個下拉菜單，通常可在菜單欄的左側找到。",
 		"EnabledByDefault": true,
 		"Icon": "start-here-kde",
-		"Id": "org.chrtall.kppleMenu",
+		"Id": "com.github.chrtall.kppleMenu",
 		"License": "LGPL-2.0",
 		"Name": "Kpple Menu",
 		"Name[ar]": "قائمة Kpple",
@@ -95,7 +95,7 @@
 		"Name[uk]": "Меню Kpple",
 		"Name[zh_CN]": "Kpple菜单",
 		"Name[zh_TW]": "Kpple菜單",
-		"Version": "2.0",
+		"Version": "6.0",
 		"Website": "https://github.com/ChrTall/kppleMenu"
 	},
 	"X-Plasma-API-Minimum-Version": "6.0"

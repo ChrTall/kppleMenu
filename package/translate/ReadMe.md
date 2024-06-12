@@ -4,24 +4,24 @@
 
 |  Locale  |  Lines  | % Done|
 |----------|---------|-------|
-| Template |      38 |       |
-| ar       |   18/38 |   47% |
-| de       |   38/38 |  100% |
-| es       |   18/38 |   47% |
-| fi       |   18/38 |   47% |
-| fr       |   18/38 |   47% |
-| hu       |   18/38 |   47% |
-| it       |   18/38 |   47% |
-| ja       |   18/38 |   47% |
-| ko       |   18/38 |   47% |
-| nl       |   18/38 |   47% |
-| pl       |   17/38 |   44% |
-| pt       |   18/38 |   47% |
-| ro       |   18/38 |   47% |
-| ru       |   18/38 |   47% |
-| uk       |   18/38 |   47% |
-| zh_CN    |   18/38 |   47% |
-| zh_TW    |   18/38 |   47% |
+| Template |      39 |       |
+| ar       |   18/39 |   46% |
+| de       |   39/39 |  100% |
+| es       |   18/39 |   46% |
+| fi       |   18/39 |   46% |
+| fr       |   18/39 |   46% |
+| hu       |   18/39 |   46% |
+| it       |   18/39 |   46% |
+| ja       |   18/39 |   46% |
+| ko       |   18/39 |   46% |
+| nl       |   18/39 |   46% |
+| pl       |   17/39 |   43% |
+| pt       |   18/39 |   46% |
+| ro       |   18/39 |   46% |
+| ru       |   18/39 |   46% |
+| uk       |   18/39 |   46% |
+| zh_CN    |   18/39 |   46% |
+| zh_TW    |   18/39 |   46% |
 
 
 ## New Translations
@@ -53,7 +53,7 @@ Since KDE Frameworks v5.37, translations can be bundled with the zipped `*.plasm
 The binary `.mo` translation files are placed in `package/contents/locale/` so you may want to add `*.mo` to your `.gitignore`.
 
 ```
-package/contents/locale/fr/LC_MESSAGES/plasma_applet_org.chrtall.kppleMenu.mo
+package/contents/locale/fr/LC_MESSAGES/plasma_applet_com.github.chrtall.kppleMenu.mo
 ```
 
 ## Links
