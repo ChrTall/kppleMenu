@@ -18,11 +18,11 @@ msgstr ""
 
 #: ../metadata.json
 msgid "Kpple Menu"
-msgstr ""
+msgstr "Kpple Menu"
 
 #: ../metadata.json
 msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
-msgstr ""
+msgstr "Kpple Menu ist ein Drop-Down Menü, dass üblicherweise auf der linken Seite des Top Panels platziert wird."
 
 #: ../contents/config/config.qml
 msgid "General"
@@ -30,46 +30,46 @@ msgstr "Allgemein"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Icon:"
-msgstr ""
+msgstr "Icon:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Change Kpple Menu's icon"
-msgstr ""
+msgstr "Kpple Menu's Icon ändern"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
-msgstr ""
+msgstr "Das aktuelle Icon ist %1. Klicke, um das Menü zu öffnen und das aktuelle Icon zu ändern oder auf das Default Icon zurückzusetzen."
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:tooltip"
 msgid "Icon name is \"%1\""
-msgstr ""
+msgstr "Icon Name ist \"%1\""
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Open icon chooser dialog"
 msgid "Choose…"
-msgstr ""
+msgstr "Wähle…"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Choose an icon for Application Launcher"
-msgstr ""
+msgstr "Wähle ein Icon für den Application Launcher"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Reset to default icon"
-msgstr ""
+msgstr "Zurücksetzen auf das Default Icon"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:inmenu"
 msgid "Remove icon"
-msgstr ""
+msgstr "Icon entfernen"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
-msgstr ""
+msgstr "Einstellungen für Fortgeschrittene:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Show advanced mode"
@@ -81,12 +81,12 @@ msgstr "Über diesen Computer :"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "kinfocenter"
-msgstr ""
+msgstr "kinfocenter"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
+msgstr "Reset Befehl"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "System Preferences :"
@@ -94,7 +94,7 @@ msgstr "System-Einstellungen :"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "systemsettings5"
-msgstr ""
+msgstr "systemsettings5"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
@@ -102,7 +102,7 @@ msgstr "App Store :"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "plasma-discover"
-msgstr ""
+msgstr "plasma-discover"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
@@ -110,7 +110,7 @@ msgstr "Aussetzen der Aktivität :"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "systemctl suspend"
-msgstr ""
+msgstr "systemctl suspend"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
@@ -118,7 +118,7 @@ msgstr "Neustart :"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "/sbin/reboot"
-msgstr ""
+msgstr "/sbin/reboot"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
@@ -126,7 +126,7 @@ msgstr "Schalte aus :"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "/sbin/shutdown now"
-msgstr ""
+msgstr "/sbin/shutdown now"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
@@ -134,7 +134,7 @@ msgstr "Bildschirm sperren :"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
+msgstr "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
@@ -142,7 +142,7 @@ msgstr "Ausloggen :"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
-msgstr ""
+msgstr "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
 
 #: ../contents/ui/main.qml
 msgid "About This Computer"

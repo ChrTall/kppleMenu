@@ -2,7 +2,7 @@
 #
 #  SPDX-License-Identifier: GPL-2.0-or-later
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
-project(org.chrtall.kppleMenu6)
+project(org.chrtall.kppleMenu)
 
 set(VERSION 6.0.0)
 set(AUTHOR, "ChrTall")
@@ -39,7 +39,7 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(FeatureSummary)
 
-plasma_install_package(package org.chrtall.kppleMenu6)
+plasma_install_package(package org.chrtall.kppleMenu)
 
 #add_subdirectory(package)
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
