@@ -30,7 +30,7 @@ Feel free to create a PR after editing the corresponding `.po` file for your lan
 
 ## How to install Kpple menu on KDE Plasma ?
 
-The recommended installation method is via the KDE store.
+The recommended installation method is via the [KDE store](https://store.kde.org/p/2164679).
 
 
 #### You can also use another install method ( by git ) :1
