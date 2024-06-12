@@ -94,11 +94,9 @@
         "Name[uk]": "Меню Kpple",
         "Name[zh_CN]": "Kpple菜单",
         "Name[zh_TW]": "Kpple菜單",
-        "KPackageStructure": [
-            "Plasma/Applet"
-        ],
         "Version": "2.0",
         "Website": "https://github.com/ChrTall/kppleMenu"
     },
-    "X-Plasma-API-Minimum-Version": "6.0"
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "KPackageStructure": ["Plasma/Applet"]
 }

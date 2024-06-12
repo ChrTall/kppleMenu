@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KppleMenu \n"
-"Report-Msgid-Bugs-To: https://github.com/kppleos/org.kpple.kppleMenu\n"
-"POT-Creation-Date: 2020-05-19\n"
+"Report-Msgid-Bugs-To: https://github.com/ChrTall/kppleMenu\n"
+"POT-Creation-Date: 2024-06-12 11:33+0200\n"
 "PO-Revision-Date: 2020-05-20\n"
 "Last-Translator: Borgniet Rudy <borgniet.rudy@hotmail.com>\n"
 "Language: zh_CN\n"
@@ -15,21 +15,145 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../metadata.json
+msgid "Kpple Menu"
+msgstr ""
+
+#: ../metadata.json
+msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
+msgstr ""
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "一般的"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Icon:"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:button"
+msgid "Change Kpple Menu's icon"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Advanced Settings:"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Show advanced mode"
+msgstr "显示高级模式"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "About This Computer :"
+msgstr "关于这台电脑 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "kinfocenter"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:button"
+msgid "Reset command"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "System Preferences :"
+msgstr "系统设定 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "systemsettings5"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "App Store :"
+msgstr "应用商店 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "plasma-discover"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sleep :"
+msgstr "睡眠 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "systemctl suspend"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Restart :"
+msgstr "重启 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "/sbin/reboot"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Shut Down :"
+msgstr "关机 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "/sbin/shutdown now"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Lock Screen :"
+msgstr "锁屏 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Log Out :"
+msgstr "注销:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
+msgstr ""
+
 #: ../contents/ui/main.qml
 msgid "About This Computer"
-msgstr "关于这台电脑" 
+msgstr "关于这台电脑"
 
 #: ../contents/ui/main.qml
 msgid "System Preferences..."
-msgstr "系统偏好设定..." 
+msgstr "系统偏好设定..."
 
 #: ../contents/ui/main.qml
 msgid "App Store..."
-msgstr "应用商店..." 
-
-#: ../contents/ui/main.qml
-msgid "Force Quit..."
-msgstr "强制退出..." 
+msgstr "应用商店..."
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
@@ -51,84 +175,11 @@ msgstr "锁屏"
 msgid "Log Out"
 msgstr "注销"
 
-#: ../contents/config/config.qml
-msgid "Advanced"
-msgstr "高级"
+#~ msgid "Adapt the links with your own command lines"
+#~ msgstr "使用您自己的命令行修改链接"
 
-#: ../contents/config/config.qml
-msgid "Help"
-msgstr "帮助"
+#~ msgid "( Warning : This is the expert mode, do not change anything if the application is working properly. )"
+#~ msgstr "( 警告：这是专家模式，如果应用程序正常运行，请不要进行任何更改。 )"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Adapt the links with your own command lines"
-msgstr "使用您自己的命令行修改链接"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "( Warning : This is the expert mode, do not change anything if the application is working properly. )"
-msgstr "( 警告：这是专家模式，如果应用程序正常运行，请不要进行任何更改。 )"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "显示高级模式"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "关于这台电脑 :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "系统设定 :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "应用商店 :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Force Quit :"
-msgstr "强制退出 :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "睡眠 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "重启 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "关机 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "锁屏 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "注销:"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Do you need help ?"
-msgstr "你需要帮助 ？"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "About Kpple"
-msgstr "关于Kpple"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Consult the user's guide"
-msgstr "查阅用户指南"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Repport a bug"
-msgstr "报告错误"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Donate for the project"
-msgstr "为项目捐款"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Couldn't find help ? Contact us at : info.kpple@gmail.com"
-msgstr "没有找到帮助？请通过以下地址联系我们 : info.kpple@gmail.com"
-
- 
+#~ msgid "Force Quit :"
+#~ msgstr "强制退出 :"

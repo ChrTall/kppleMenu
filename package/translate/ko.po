@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KppleMenu \n"
-"Report-Msgid-Bugs-To: https://github.com/kppleos/org.kpple.kppleMenu\n"
-"POT-Creation-Date: 2020-05-19\n"
+"Report-Msgid-Bugs-To: https://github.com/ChrTall/kppleMenu\n"
+"POT-Creation-Date: 2024-06-12 11:33+0200\n"
 "PO-Revision-Date: 2020-05-20\n"
 "Last-Translator: Borgniet Rudy <borgniet.rudy@hotmail.com>\n"
 "Language: ko\n"
@@ -15,21 +15,145 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../metadata.json
+msgid "Kpple Menu"
+msgstr ""
+
+#: ../metadata.json
+msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
+msgstr ""
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "일반적으로"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Icon:"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:button"
+msgid "Change Kpple Menu's icon"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Advanced Settings:"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Show advanced mode"
+msgstr "고급 모드 표시"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "About This Computer :"
+msgstr "이 컴퓨터에 대하여 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "kinfocenter"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:button"
+msgid "Reset command"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "System Preferences :"
+msgstr "시스템 환경 설정 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "systemsettings5"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "App Store :"
+msgstr "앱 스토어 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "plasma-discover"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sleep :"
+msgstr "활동 일시 중지 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "systemctl suspend"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Restart :"
+msgstr "재시작하기 위해 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "/sbin/reboot"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Shut Down :"
+msgstr "끄다 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "/sbin/shutdown now"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Lock Screen :"
+msgstr "잠금 화면 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Log Out :"
+msgstr "로그 아웃 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
+msgstr ""
+
 #: ../contents/ui/main.qml
 msgid "About This Computer"
-msgstr "이 컴퓨터에 대하여" 
+msgstr "이 컴퓨터에 대하여"
 
 #: ../contents/ui/main.qml
 msgid "System Preferences..."
-msgstr "시스템 환경 설정..." 
+msgstr "시스템 환경 설정..."
 
 #: ../contents/ui/main.qml
 msgid "App Store..."
-msgstr "앱 스토어..." 
-
-#: ../contents/ui/main.qml
-msgid "Force Quit..."
-msgstr "강제 종료..." 
+msgstr "앱 스토어..."
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
@@ -51,84 +175,11 @@ msgstr "잠금 화면"
 msgid "Log Out"
 msgstr "로그 아웃"
 
-#: ../contents/config/config.qml
-msgid "Advanced"
-msgstr "많은"
+#~ msgid "Adapt the links with your own command lines"
+#~ msgstr "자신의 명령 줄을 사용하여 링크 조정"
 
-#: ../contents/config/config.qml
-msgid "Help"
-msgstr "도움"
+#~ msgid "( Warning : This is the expert mode, do not change anything if the application is working properly. )"
+#~ msgstr "( 경고 : 이것은 전문가 모드입니다. 응용 프로그램이 제대로 작동하면 아무 것도 변경하지 마십시오. )"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Adapt the links with your own command lines"
-msgstr "자신의 명령 줄을 사용하여 링크 조정"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "( Warning : This is the expert mode, do not change anything if the application is working properly. )"
-msgstr "( 경고 : 이것은 전문가 모드입니다. 응용 프로그램이 제대로 작동하면 아무 것도 변경하지 마십시오. )"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "고급 모드 표시"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "이 컴퓨터에 대하여 :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "시스템 환경 설정 :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "앱 스토어 :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Force Quit :"
-msgstr "강제 종료 :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "활동 일시 중지 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "재시작하기 위해 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "끄다 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "잠금 화면 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "로그 아웃 :"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Do you need help ?"
-msgstr "도움이 필요 하신가요?"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "About Kpple"
-msgstr "Kpple 소개"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Consult the user's guide"
-msgstr "사용 설명서를 참조하십시오"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Repport a bug"
-msgstr "버그 신고"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Donate for the project"
-msgstr "프로젝트 기부"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Couldn't find help ? Contact us at : info.kpple@gmail.com"
-msgstr "도움이 없습니까? 다음 주소로 문의하십시오 : info.kpple@gmail.com"
-
- 
+#~ msgid "Force Quit :"
+#~ msgstr "강제 종료 :"
