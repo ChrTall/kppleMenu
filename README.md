@@ -8,6 +8,22 @@ The original maintainer does not seem actively maintaining the project anymore. 
     <img src="screenshots/light_kppleMenu.png" alt="light preview"> <img src="screenshots/dark_kppleMenu.png" alt="dark preview">
 </p>
 
+## Usage
+
+Menu entries can be configured via the settings, if you tick the advanced settings checkbox.
+Simply click on the entries to check if the configured command is working.
+The commands should work on all Distributions with KDE Plasma 6, but might have to be adjusted manually.
+
+### Keyboard Navigation
+
+A global shortcut to expand the applet can be configured under settings -> Keyboard Shortcuts.
+You can navigate through the menu with either tab and back-tab or arrow keys.
+Selected Entries can be executed by pressing the return, enter or space key.
+If the menu is expanded you can quickly:
+- Lock the Screen, by pressing ctrl + alt + q
+- Log out, by pressing shift + alt + q
+
+
 ## How to install Kpple menu on KDE Plasma ?
 
 The recommended installation method is via the KDE store.
