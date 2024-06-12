@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KppleMenu \n"
-"Report-Msgid-Bugs-To: https://github.com/kppleos/org.kpple.kppleMenu\n"
-"POT-Creation-Date: 2020-05-19\n"
+"Report-Msgid-Bugs-To: https://github.com/ChrTall/kppleMenu\n"
+"POT-Creation-Date: 2024-06-12 15:30+0200\n"
 "PO-Revision-Date: 2020-05-19\n"
 "Last-Translator: Borgniet Rudy <borgniet.rudy@hotmail.com>\n"
 "Language: es\n"
@@ -15,21 +15,149 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../metadata.json
+msgid "Kpple Menu"
+msgstr ""
+
+#: ../metadata.json
+msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
+msgstr ""
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Generalmente"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Icon:"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:button"
+msgid "Change Kpple Menu's icon"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Advanced Settings:"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Show advanced mode"
+msgstr "Mostrar el modo avanzado"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "About This Computer :"
+msgstr "Acerca de esta computadora :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "kinfocenter"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:button"
+msgid "Reset command"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "System Preferences :"
+msgstr "Preferencias del sistema :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "systemsettings5"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "App Store :"
+msgstr "App Store :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "plasma-discover"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sleep :"
+msgstr "Suspender la actividad :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "systemctl suspend"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Restart :"
+msgstr "Reinicie :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "/sbin/reboot"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Shut Down :"
+msgstr "Apagar :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "/sbin/shutdown now"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Lock Screen :"
+msgstr "Bloquear pantalla :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Log Out :"
+msgstr "Desconectarse :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
+msgstr ""
+
+#: ../contents/ui/main.qml
+msgid "Shortcuts for shutdown,reboot,logout, settings etc."
+msgstr ""
+
 #: ../contents/ui/main.qml
 msgid "About This Computer"
-msgstr "Acerca de esta computadora" 
+msgstr "Acerca de esta computadora"
 
 #: ../contents/ui/main.qml
 msgid "System Preferences..."
-msgstr "Preferencias del sistema..." 
+msgstr "Preferencias del sistema..."
 
 #: ../contents/ui/main.qml
 msgid "App Store..."
-msgstr "App Store..." 
-
-#: ../contents/ui/main.qml
-msgid "Force Quit..."
-msgstr "Forzando a salir..." 
+msgstr "App Store..."
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
@@ -51,86 +179,11 @@ msgstr "Bloquear pantalla"
 msgid "Log Out"
 msgstr "Desconectarse"
 
-#: ../contents/config/config.qml
-msgid "Advanced"
-msgstr "Avanzado"
+#~ msgid "Adapt the links with your own command line"
+#~ msgstr "Adapte los enlaces con sus propias líneas de comando"
 
-#: ../contents/config/config.qml
-msgid "Help"
-msgstr "Ayuda"
+#~ msgid "( Warning : This is the expert mode, do not change anything if the application is working properly. )"
+#~ msgstr "( Advertencia : Este es el modo experto, no cambie nada si la aplicación funciona correctamente. )"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Adapt the links with your own command line"
-msgstr "Adapte los enlaces con sus propias líneas de comando"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "( Warning : This is the expert mode, do not change anything if the application is working properly. )"
-msgstr "( Advertencia : Este es el modo experto, no cambie nada si la aplicación funciona correctamente. )"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "Mostrar el modo avanzado"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "Acerca de esta computadora :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "Preferencias del sistema :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Force Quit :"
-msgstr "Forzando a salir :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "Suspender la actividad :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "Reinicie :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "Apagar :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "Bloquear pantalla :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "Desconectarse :"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Do you need help ?"
-msgstr "¿Necesitas ayuda ?"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "About Kpple"
-msgstr "Sobre Kpple"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Consult the user's guide"
-msgstr "Consulte la guía del usuario"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Repport a bug"
-msgstr "Reporta un error"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Donate for the project"
-msgstr "Donaciones para el proyecto"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Couldn't find help ? Contact us at : info.kpple@gmail.com"
-msgstr "¿No pudiste encontrar ayuda ? Contáctenos en : info.kpple@gmail.com"
-
- 
- 
- 
+#~ msgid "Force Quit :"
+#~ msgstr "Forzando a salir :"

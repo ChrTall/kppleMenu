@@ -1,13 +1,14 @@
-# Translation of tiledmenu in LANGUAGE
-# Copyright (C) Kpple 2020
+# Translation of kppleMenu in de
+# SPDX-FileCopyrightText: 2020 Kpple <info.kpple@gmail.com>
+# SPDX-FileCopyrightText: 2024 Christian Tallner <chrtall@gmx.de>
+# SPDX-License-Identifier: GPL-2.0-or-later
 # This file is distributed under the same license as the Kpple Menu package.
-#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: KppleMenu \n"
-"Report-Msgid-Bugs-To: https://github.com/kppleos/org.kpple.kppleMenu\n"
-"POT-Creation-Date: 2020-05-19\n"
+"Report-Msgid-Bugs-To: https://github.com/ChrTall/kppleMenu\n"
+"POT-Creation-Date: 2024-06-12 15:30+0200\n"
 "PO-Revision-Date: 2020-05-19\n"
 "Last-Translator: Borgniet Rudy <borgniet.rudy@hotmail.com>\n"
 "Language: de\n"
@@ -15,21 +16,149 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../metadata.json
+msgid "Kpple Menu"
+msgstr "Kpple Menu"
+
+#: ../metadata.json
+msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
+msgstr "Kpple Menu ist ein Drop-Down Menü, dass üblicherweise auf der linken Seite des Top Panels platziert wird."
+
+#: ../contents/config/config.qml
+msgid "General"
+msgstr "Allgemein"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Icon:"
+msgstr "Icon:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:button"
+msgid "Change Kpple Menu's icon"
+msgstr "Kpple Menu's Icon ändern"
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
+msgstr "Das aktuelle Icon ist %1. Klicke, um das Menü zu öffnen und das aktuelle Icon zu ändern oder auf das Default Icon zurückzusetzen."
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:tooltip"
+msgid "Icon name is \"%1\""
+msgstr "Icon Name ist \"%1\""
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@item:inmenu Open icon chooser dialog"
+msgid "Choose…"
+msgstr "Wähle…"
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@info:whatsthis"
+msgid "Choose an icon for Application Launcher"
+msgstr "Wähle ein Icon für den Application Launcher"
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@item:inmenu Reset icon to default"
+msgid "Reset to default icon"
+msgstr "Zurücksetzen auf das Default Icon"
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:inmenu"
+msgid "Remove icon"
+msgstr "Icon entfernen"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Advanced Settings:"
+msgstr "Einstellungen für Fortgeschrittene:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Show advanced mode"
+msgstr "Erweiterten Modus anzeigen"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "About This Computer :"
+msgstr "Über diesen Computer :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "kinfocenter"
+msgstr "kinfocenter"
+
+#: ../contents/ui/config/configGeneral.qml
+msgctxt "@action:button"
+msgid "Reset command"
+msgstr "Reset Befehl"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "System Preferences :"
+msgstr "System-Einstellungen :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "systemsettings5"
+msgstr "systemsettings5"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "App Store :"
+msgstr "App Store :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "plasma-discover"
+msgstr "plasma-discover"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sleep :"
+msgstr "Aussetzen der Aktivität :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "systemctl suspend"
+msgstr "systemctl suspend"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Restart :"
+msgstr "Neustart :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "/sbin/reboot"
+msgstr "/sbin/reboot"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Shut Down :"
+msgstr "Schalte aus :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "/sbin/shutdown now"
+msgstr "/sbin/shutdown now"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Lock Screen :"
+msgstr "Bildschirm sperren :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
+msgstr "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Log Out :"
+msgstr "Ausloggen :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
+msgstr "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
+
+#: ../contents/ui/main.qml
+msgid "Shortcuts for shutdown,reboot,logout, settings etc."
+msgstr "Menü mit Einträgen für Herunterfahren, Neustart, Logout, Einstellungen etc."
+
 #: ../contents/ui/main.qml
 msgid "About This Computer"
-msgstr "Über diesen Computer" 
+msgstr "Über diesen Computer"
 
 #: ../contents/ui/main.qml
 msgid "System Preferences..."
-msgstr "System-Einstellungen..." 
+msgstr "System-Einstellungen..."
 
 #: ../contents/ui/main.qml
 msgid "App Store..."
-msgstr "App Store..." 
-
-#: ../contents/ui/main.qml
-msgid "Force Quit..."
-msgstr "Beenden erzwingen..." 
+msgstr "App Store..."
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
@@ -51,85 +180,11 @@ msgstr "Bildschirm sperren"
 msgid "Log Out"
 msgstr "Ausloggen"
 
-#: ../contents/config/config.qml
-msgid "Advanced"
-msgstr "Fortgeschrittene"
+#~ msgid "Adapt the links with your own command line"
+#~ msgstr "Passen Sie die Links mit Ihrer eigenen Befehlszeile an"
 
-#: ../contents/config/config.qml
-msgid "Help"
-msgstr "Hilfe"
+#~ msgid "( Warning : This is the expert mode, do not change anything if the application is working properly. )"
+#~ msgstr "( Warnung: Dies ist der Expertenmodus. Ändern Sie nichts, wenn die Anwendung ordnungsgemäß funktioniert. )"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Adapt the links with your own command line"
-msgstr "Passen Sie die Links mit Ihrer eigenen Befehlszeile an"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "( Warning : This is the expert mode, do not change anything if the application is working properly. )"
-msgstr "( Warnung: Dies ist der Expertenmodus. Ändern Sie nichts, wenn die Anwendung ordnungsgemäß funktioniert. )"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "Erweiterten Modus anzeigen"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "Über diesen Computer :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "System-Einstellungen :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Force Quit :"
-msgstr "Beenden erzwingen :" 
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "Aussetzen der Aktivität :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "Neustart :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "Schalte aus :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "Bildschirm sperren :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "Ausloggen :"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Do you need help ?"
-msgstr "Sie benötigen Hilfe ?"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "About Kpple"
-msgstr "Über Kpple"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Consult the user's guide"
-msgstr "Konsultieren Sie das Benutzerhandbuch"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Repport a bug"
-msgstr "Einen Fehler melden"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Donate for the project"
-msgstr "Für das Projekt spenden"
-
-#: ../contents/ui/config/configHelp.qml
-msgid "Couldn't find help ? Contact us at : info.kpple@gmail.com"
-msgstr "Konnten Sie keine Hilfe finden ? Kontaktieren Sie uns unter : info.kpple@gmail.com"
-
- 
- 
+#~ msgid "Force Quit :"
+#~ msgstr "Beenden erzwingen :"
