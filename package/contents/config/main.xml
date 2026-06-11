@@ -35,16 +35,16 @@ SPDX-License-Identifier: GPL-2.0-or-later
       <default>systemctl suspend</default>
     </entry>
     <entry name="restartSettings" type="String">
-      <default>/sbin/reboot</default>
+      <default>qdbus6 org.kde.LogoutPrompt /LogoutPrompt promptReboot</default>
     </entry>
     <entry name="shutDownSettings" type="String">
-      <default>/sbin/shutdown now</default>
+      <default>qdbus6 org.kde.LogoutPrompt /LogoutPrompt promptShutDown</default>
     </entry>
     <entry name="lockScreenSettings" type="String">
       <default>qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock</default>
     </entry>
     <entry name="logOutSettings" type="String">
-      <default>qdbus6 org.kde.Shutdown /Shutdown logout</default>
+      <default>qdbus6 org.kde.LogoutPrompt /LogoutPrompt promptLogout</default>
     </entry>
   </group>
   
