@@ -22,7 +22,7 @@ Item {
 
     Layout.fillWidth: true
     implicitWidth: row.implicitWidth
-    height: row.implicitHeight
+    implicitHeight: row.implicitHeight
     onFocusChanged: {
         if(focus){
             if (!highlight) {
@@ -64,6 +64,7 @@ Item {
         id: row
         anchors.left: parent.left
         anchors.right: parent.right
+        anchors.verticalCenter: parent.verticalCenter
         // set space before the text item with a empty icon
         Item {
             id: emptySpace
@@ -75,11 +76,13 @@ Item {
             id: label
             Layout.fillWidth: true
             Layout.minimumHeight: 24
+            verticalAlignment: Text.AlignVCenter
         }
 
         PlasmaComponents.Label {
             text: item.shortcutText
             visible: text.length > 0
+            verticalAlignment: Text.AlignVCenter
             Layout.leftMargin: Kirigami.Units.smallSpacing
             Layout.rightMargin: Kirigami.Units.smallSpacing
         }
