@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "アイコンを削除"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "キーボードショートカットの表示:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Appleの記号"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "PCの表記"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "詳細設定："
 
@@ -89,12 +101,12 @@ msgid "Reset command"
 msgstr "既定のコマンドに戻す"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "システム設定："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "アプリストア："
+msgstr "App Store："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
@@ -106,7 +118,7 @@ msgstr "再起動："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
-msgstr "シャットダウン："
+msgstr "システム終了："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
@@ -125,32 +137,32 @@ msgid "About This Computer"
 msgstr "このコンピューターについて"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr "システム設定…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "アプリストア…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
 msgstr "スリープ"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
+msgid "Restart…"
 msgstr "再起動…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
-msgstr "シャットダウン…"
+msgid "Shut Down…"
+msgstr "システム終了…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
 msgstr "画面をロック"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "ログアウト"
+msgid "Log Out…"
+msgstr "ログアウト…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "機能にコマンドラインを設定します"

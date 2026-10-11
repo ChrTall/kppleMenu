@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "Ikon eltávolítása"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "Billentyűparancsok jelölése:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Apple-szimbólumok"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "PC-s jelölések"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "Speciális beállítások:"
 
@@ -89,12 +101,12 @@ msgid "Reset command"
 msgstr "Alapértelmezett parancs visszaállítása"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "Rendszerbeállítások:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "Alkalmazásbolt:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
@@ -125,23 +137,23 @@ msgid "About This Computer"
 msgstr "A számítógép névjegye"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr "Rendszerbeállítások…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "Alkalmazásbolt…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
 msgstr "Alvó állapot"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
+msgid "Restart…"
 msgstr "Újraindítás…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr "Leállítás…"
 
 #: ../contents/ui/main.qml
@@ -149,8 +161,8 @@ msgid "Lock Screen"
 msgstr "Képernyő zárolása"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Kijelentkezés"
+msgid "Log Out…"
+msgstr "Kijelentkezés…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Itt lecserélheted a funkciókat a saját parancsaidra"

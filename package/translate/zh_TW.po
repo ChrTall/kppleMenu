@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "移除圖示"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "鍵盤快速鍵顯示："
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Apple 符號"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "PC 標籤"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "進階設定："
 
@@ -89,12 +101,12 @@ msgid "Reset command"
 msgstr "還原預設指令"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "系統設定："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "應用程式商店："
+msgstr "App Store："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
@@ -102,7 +114,7 @@ msgstr "睡眠："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "重新啟動："
+msgstr "重新開機："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
@@ -125,32 +137,32 @@ msgid "About This Computer"
 msgstr "關於這台電腦"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
-msgstr "系統設定…"
+msgid "System Settings…"
+msgstr "系統設定⋯"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "應用程式商店…"
+msgid "App Store…"
+msgstr "App Store⋯"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
 msgstr "睡眠"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "重新啟動…"
+msgid "Restart…"
+msgstr "重新開機⋯"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
-msgstr "關機…"
+msgid "Shut Down…"
+msgstr "關機⋯"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
 msgstr "鎖定螢幕"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "登出"
+msgid "Log Out…"
+msgstr "登出⋯"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "使用您自己的命令行修改鏈接"

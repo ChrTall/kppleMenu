@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "Убрать значок"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "Обозначения сочетаний клавиш:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Символы Apple"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "Обозначения ПК"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "Дополнительные настройки:"
 
@@ -89,16 +101,16 @@ msgid "Reset command"
 msgstr "Восстановить команду по умолчанию"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "Параметры системы:"
+msgid "System Settings :"
+msgstr "Системные настройки:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "Магазин приложений:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "Спящий режим:"
+msgstr "Режим сна:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
@@ -110,11 +122,11 @@ msgstr "Выключить:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "Заблокировать экран:"
+msgstr "Экран блокировки:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "Выйти из системы:"
+msgstr "Завершить сеанс:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
@@ -125,32 +137,32 @@ msgid "About This Computer"
 msgstr "Об этом компьютере"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
-msgstr "Параметры системы…"
+msgid "System Settings…"
+msgstr "Системные настройки…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "Магазин приложений…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "Спящий режим"
+msgstr "Режим сна"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
+msgid "Restart…"
 msgstr "Перезагрузить…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr "Выключить…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "Заблокировать экран"
+msgstr "Экран блокировки"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Выйти из системы"
+msgid "Log Out…"
+msgstr "Завершить сеанс…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Адаптируйте ссылки с помощью собственных командных строк"

@@ -19,9 +19,18 @@ The commands should work on all Distributions with KDE Plasma 6, but might have 
 A global shortcut to expand the applet can be configured under settings -> Keyboard Shortcuts.
 You can navigate through the menu with either tab and back-tab or arrow keys.
 Selected Entries can be executed by pressing the return, enter or space key.
-If the menu is expanded you can quickly:
-- Lock the Screen, by pressing ctrl + alt + q
-- Log out, by pressing shift + alt + q
+While the menu is open and focused, you can:
+
+- Lock the screen with **Ctrl+Alt+Q** or **Ctrl+Meta+Q**.
+- Log out with **Shift+Alt+Q** or **Shift+Meta+Q**.
+
+Meta is usually the Windows/Super key on a PC keyboard or Command on an Apple
+keyboard, depending on the keyboard mapping. These actions are local to the
+open menu; they do not register global shortcuts.
+
+Under **General → Shortcut labels**, choose **Apple symbols** (the default) or
+**PC labels**. This changes the displayed hints; both shortcut variants work
+with either style.
 
 ## Translations
 

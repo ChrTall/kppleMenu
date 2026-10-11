@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "Poista kuvake"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "Pikanäppäinten merkinnät:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Apple-symbolit"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "PC-merkinnät"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "Lisäasetukset:"
 
@@ -89,16 +101,16 @@ msgid "Reset command"
 msgstr "Palauta oletuskomento"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "Järjestelmäasetukset:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "Sovelluskauppa:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "Valmiustila:"
+msgstr "Mene nukkumaan:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
@@ -114,7 +126,7 @@ msgstr "Lukitse näyttö:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "Kirjaudu ulos:"
+msgstr "Kirjaa ulos:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
@@ -125,23 +137,23 @@ msgid "About This Computer"
 msgstr "Tietoja tästä tietokoneesta"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr "Järjestelmäasetukset…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "Sovelluskauppa…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "Valmiustila"
+msgstr "Mene nukkumaan"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
+msgid "Restart…"
 msgstr "Käynnistä uudelleen…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr "Sammuta…"
 
 #: ../contents/ui/main.qml
@@ -149,8 +161,8 @@ msgid "Lock Screen"
 msgstr "Lukitse näyttö"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Kirjaudu ulos"
+msgid "Log Out…"
+msgstr "Kirjaa ulos…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Muuta linkkejä omiin komentoriviisi"

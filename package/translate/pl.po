@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "Usuń ikonę"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "Oznaczenia skrótów klawiszowych:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Symbole Apple"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "Oznaczenia PC"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "Ustawienia zaawansowane:"
 
@@ -89,12 +101,12 @@ msgid "Reset command"
 msgstr "Przywróć domyślne polecenie"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "Ustawienia systemowe:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "Sklep z aplikacjami:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
@@ -110,11 +122,11 @@ msgstr "Wyłącz:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "Zablokuj ekran:"
+msgstr "Ekran blokady:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "Wyloguj się:"
+msgstr "Wyloguj:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
@@ -125,32 +137,32 @@ msgid "About This Computer"
 msgstr "O tym komputerze"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr "Ustawienia systemowe…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "Sklep z aplikacjami…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
 msgstr "Uśpij"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
+msgid "Restart…"
 msgstr "Uruchom ponownie…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr "Wyłącz…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "Zablokuj ekran"
+msgstr "Ekran blokady"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Wyloguj się"
+msgid "Log Out…"
+msgstr "Wyloguj…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Zmień ustawienia poleceń"

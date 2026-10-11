@@ -68,6 +68,18 @@ msgid "Remove icon"
 msgstr "Symbol entfernen"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "Beschriftung der Tastenkürzel:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Apple-Symbole"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "PC-Beschriftungen"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "Erweiterte Einstellungen:"
 
@@ -90,28 +102,28 @@ msgid "Reset command"
 msgstr "Standardbefehl wiederherstellen"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "Systemeinstellungen:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "Softwareverwaltung:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "Energiesparmodus:"
+msgstr "Ruhezustand:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "Neu starten:"
+msgstr "Neustart:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
-msgstr "Herunterfahren:"
+msgstr "Ausschalten:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "Bildschirm sperren:"
+msgstr "Sperrbildschirm:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
@@ -126,32 +138,32 @@ msgid "About This Computer"
 msgstr "Über diesen Computer"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
-msgstr "Systemeinstellungen…"
+msgid "System Settings…"
+msgstr "Systemeinstellungen …"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "Softwareverwaltung…"
+msgid "App Store…"
+msgstr "App Store …"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "Energiesparmodus"
+msgstr "Ruhezustand"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "Neu starten…"
+msgid "Restart…"
+msgstr "Neustart …"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
-msgstr "Herunterfahren…"
+msgid "Shut Down…"
+msgstr "Ausschalten …"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "Bildschirm sperren"
+msgstr "Sperrbildschirm"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Abmelden"
+msgid "Log Out…"
+msgstr "Abmelden …"
 
 #~ msgid "Adapt the links with your own command line"
 #~ msgstr "Passen Sie die Links mit Ihrer eigenen Befehlszeile an"

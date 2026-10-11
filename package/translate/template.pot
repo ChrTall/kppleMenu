@@ -69,6 +69,18 @@ msgid "Remove icon"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr ""
 
@@ -93,7 +105,7 @@ msgid "Reset command"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
@@ -129,11 +141,11 @@ msgid "About This Computer"
 msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
+msgid "App Store…"
 msgstr ""
 
 #: ../contents/ui/main.qml
@@ -141,11 +153,11 @@ msgid "Sleep"
 msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
+msgid "Restart…"
 msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr ""
 
 #: ../contents/ui/main.qml
@@ -153,5 +165,5 @@ msgid "Lock Screen"
 msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
+msgid "Log Out…"
 msgstr ""

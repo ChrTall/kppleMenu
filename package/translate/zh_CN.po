@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "移除图标"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "键盘快捷键显示："
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Apple 符号"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "PC 标签"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "高级设置："
 
@@ -76,7 +88,7 @@ msgstr "显示高级模式"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "About This Computer :"
-msgstr "关于此电脑："
+msgstr "关于本机："
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
@@ -89,12 +101,12 @@ msgid "Reset command"
 msgstr "恢复默认命令"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "系统设置："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "应用商店："
+msgstr "App Store："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
@@ -102,7 +114,7 @@ msgstr "睡眠："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "重新启动："
+msgstr "重启："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
@@ -110,11 +122,11 @@ msgstr "关机："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "锁定屏幕："
+msgstr "锁屏："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "注销："
+msgstr "退出登录："
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
@@ -122,35 +134,35 @@ msgstr "用于关机、重启、注销、打开设置等操作的快捷菜单。
 
 #: ../contents/ui/main.qml
 msgid "About This Computer"
-msgstr "关于此电脑"
+msgstr "关于本机"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr "系统设置…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "应用商店…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
 msgstr "睡眠"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "重新启动…"
+msgid "Restart…"
+msgstr "重启…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr "关机…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "锁定屏幕"
+msgstr "锁屏"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "注销"
+msgid "Log Out…"
+msgstr "退出登录…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "使用您自己的命令行修改链接"

@@ -26,6 +26,7 @@ KCM.SimpleKCM {
     property string cfg_icon: Plasmoid.configuration.icon
     
     property alias cfg_showAdvancedMode: showAdvancedMode.checked
+    property alias cfg_shortcutLabelStyle: shortcutLabelStyle.currentIndex
     property alias cfg_aboutThisComputerSettings: aboutThisComputerSettings.text
     property alias cfg_systemPreferencesSettings: systemPreferencesSettings.text
     property alias cfg_appStoreSettings: appStoreSettings.text
@@ -118,6 +119,12 @@ KCM.SimpleKCM {
             End: code from plasma-desktop/applets/kickoff/contents/ui/ConfigGeneral.qml
         */
         
+        QQC2.ComboBox {
+            id: shortcutLabelStyle
+            Kirigami.FormData.label: i18n("Shortcut labels:")
+            model: [i18n("Apple symbols"), i18n("PC labels")]
+        }
+
         QQC2.CheckBox {
             id: showAdvancedMode
             Kirigami.FormData.label: i18n("Advanced Settings:")
@@ -149,7 +156,7 @@ KCM.SimpleKCM {
 
         Kirigami.ActionTextField {
             id: systemPreferencesSettings
-            Kirigami.FormData.label: i18n("System Preferences :")
+            Kirigami.FormData.label: i18n("System Settings :")
             enabled: showAdvancedMode.checked
             rightActions: [
                 QQC2.Action {

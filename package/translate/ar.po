@@ -68,6 +68,18 @@ msgid "Remove icon"
 msgstr "إزالة الأيقونة"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "تسميات اختصارات لوحة المفاتيح:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "رموز Apple"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "تسميات الكمبيوتر الشخصي"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "الإعدادات المتقدمة:"
 
@@ -90,16 +102,16 @@ msgid "Reset command"
 msgstr "استعادة الأمر الافتراضي"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "إعدادات النظام:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "متجر التطبيقات:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "السكون:"
+msgstr "إسبات:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
@@ -111,7 +123,7 @@ msgstr "إيقاف التشغيل:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "قفل الشاشة:"
+msgstr "تأمين الشاشة:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
@@ -126,32 +138,32 @@ msgid "About This Computer"
 msgstr "حول هذا الحاسوب"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr "إعدادات النظام…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "متجر التطبيقات…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "السكون"
+msgstr "إسبات"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
+msgid "Restart…"
 msgstr "إعادة التشغيل…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr "إيقاف التشغيل…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "قفل الشاشة"
+msgstr "تأمين الشاشة"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "تسجيل الخروج"
+msgid "Log Out…"
+msgstr "تسجيل الخروج…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "تكييف الروابط مع أسطر الأوامر الخاصة بك"

@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "Elimină pictograma"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "Etichetele scurtăturilor de tastatură:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Simboluri Apple"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "Etichete PC"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "Setări avansate:"
 
@@ -89,32 +101,32 @@ msgid "Reset command"
 msgstr "Restabilește comanda implicită"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "Setări de sistem:"
+msgid "System Settings :"
+msgstr "Configurări sistem:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "Magazin de aplicații:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "Suspendă:"
+msgstr "Adormiți computerul:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "Repornește:"
+msgstr "Reporniți computerul:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
-msgstr "Oprește:"
+msgstr "Opriți computerul:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "Blochează ecranul:"
+msgstr "Blocare ecran:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "Deconectează-te:"
+msgstr "Logout:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
@@ -125,32 +137,32 @@ msgid "About This Computer"
 msgstr "Despre acest calculator"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
-msgstr "Setări de sistem…"
+msgid "System Settings…"
+msgstr "Configurări sistem…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "Magazin de aplicații…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "Suspendă"
+msgstr "Adormiți computerul"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "Repornește…"
+msgid "Restart…"
+msgstr "Reporniți computerul…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
-msgstr "Oprește…"
+msgid "Shut Down…"
+msgstr "Opriți computerul…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "Blochează ecranul"
+msgstr "Blocare ecran"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Deconectează-te"
+msgid "Log Out…"
+msgstr "Logout…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Adaptați legăturile cu propriile comenzi"

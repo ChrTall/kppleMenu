@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "Eliminar icono"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "Etiquetas de los atajos de teclado:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Símbolos de Apple"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "Etiquetas de PC"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "Opciones avanzadas:"
 
@@ -89,16 +101,16 @@ msgid "Reset command"
 msgstr "Restaurar el comando predeterminado"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "Preferencias del sistema:"
+msgid "System Settings :"
+msgstr "Ajustes del Sistema:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "Tienda de aplicaciones:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "Suspender:"
+msgstr "Reposo:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
@@ -110,11 +122,11 @@ msgstr "Apagar:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "Bloquear la pantalla:"
+msgstr "Bloquear pantalla:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "Cerrar la sesión:"
+msgstr "Cerrar sesión:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
@@ -125,32 +137,32 @@ msgid "About This Computer"
 msgstr "Acerca de este equipo"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
-msgstr "Preferencias del sistema…"
+msgid "System Settings…"
+msgstr "Ajustes del Sistema…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "Tienda de aplicaciones…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "Suspender"
+msgstr "Reposo"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
+msgid "Restart…"
 msgstr "Reiniciar…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr "Apagar…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "Bloquear la pantalla"
+msgstr "Bloquear pantalla"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Cerrar la sesión"
+msgid "Log Out…"
+msgstr "Cerrar sesión…"
 
 #~ msgid "Adapt the links with your own command line"
 #~ msgstr "Adapte los enlaces con sus propias líneas de comando"

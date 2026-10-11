@@ -1,27 +1,31 @@
 # Translate
 
+Menu action labels follow Apple's current localized naming. See
+[Apple menu label references](AppleMenuLabels.md) for the per-language wording
+and the official sources used to check it.
+
 ## Status
 
 |  Locale  | Strings | % Done|
 |----------|---------|-------|
-| Template |      32 |       |
-| ar       |   32/32 |  100% |
-| de       |   32/32 |  100% |
-| es       |   32/32 |  100% |
-| fi       |   32/32 |  100% |
-| fr       |   32/32 |  100% |
-| hu       |   32/32 |  100% |
-| it       |   32/32 |  100% |
-| ja       |   32/32 |  100% |
-| ko       |   32/32 |  100% |
-| nl       |   32/32 |  100% |
-| pl       |   32/32 |  100% |
-| pt       |   32/32 |  100% |
-| ro       |   32/32 |  100% |
-| ru       |   32/32 |  100% |
-| uk       |   32/32 |  100% |
-| zh_CN    |   32/32 |  100% |
-| zh_TW    |   32/32 |  100% |
+| Template |      35 |       |
+| ar       |   35/35 |  100% |
+| de       |   35/35 |  100% |
+| es       |   35/35 |  100% |
+| fi       |   35/35 |  100% |
+| fr       |   35/35 |  100% |
+| hu       |   35/35 |  100% |
+| it       |   35/35 |  100% |
+| ja       |   35/35 |  100% |
+| ko       |   35/35 |  100% |
+| nl       |   35/35 |  100% |
+| pl       |   35/35 |  100% |
+| pt       |   35/35 |  100% |
+| ro       |   35/35 |  100% |
+| ru       |   35/35 |  100% |
+| uk       |   35/35 |  100% |
+| zh_CN    |   35/35 |  100% |
+| zh_TW    |   35/35 |  100% |
 
 
 ## New Translations

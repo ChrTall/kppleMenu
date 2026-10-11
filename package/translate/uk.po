@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "Прибрати піктограму"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "Позначення клавіатурних скорочень:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Символи Apple"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "Позначення ПК"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "Додаткові параметри:"
 
@@ -89,20 +101,20 @@ msgid "Reset command"
 msgstr "Відновити типову команду"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "Системні параметри:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "Магазин програм:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "Режим сну:"
+msgstr "Сон:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "Перезавантажити:"
+msgstr "Перезапустити:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
@@ -110,7 +122,7 @@ msgstr "Вимкнути:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "Заблокувати екран:"
+msgstr "Замкнути екран:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
@@ -125,32 +137,32 @@ msgid "About This Computer"
 msgstr "Про цей комп’ютер"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr "Системні параметри…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "Магазин програм…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "Режим сну"
+msgstr "Сон"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "Перезавантажити…"
+msgid "Restart…"
+msgstr "Перезапустити…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr "Вимкнути…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "Заблокувати екран"
+msgstr "Замкнути екран"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Вийти із системи"
+msgid "Log Out…"
+msgstr "Вийти із системи…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Адаптуйте посилання за допомогою власних командних рядків"

@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "Pictogram verwijderen"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "Weergave van sneltoetsen:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Apple-symbolen"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "PC-labels"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "Geavanceerde instellingen:"
 
@@ -89,32 +101,32 @@ msgid "Reset command"
 msgstr "Standaardcommando herstellen"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "Systeeminstellingen:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "Softwarewinkel:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "Slaapstand:"
+msgstr "Sluimer:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "Herstarten:"
+msgstr "Herstart:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
-msgstr "Afsluiten:"
+msgstr "Zet uit:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "Scherm vergrendelen:"
+msgstr "Vergrendel scherm:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "Afmelden:"
+msgstr "Log uit:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
@@ -125,32 +137,32 @@ msgid "About This Computer"
 msgstr "Over deze computer"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr "Systeeminstellingen…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "Softwarewinkel…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "Slaapstand"
+msgstr "Sluimer"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "Herstarten…"
+msgid "Restart…"
+msgstr "Herstart…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
-msgstr "Afsluiten…"
+msgid "Shut Down…"
+msgstr "Zet uit…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "Scherm vergrendelen"
+msgstr "Vergrendel scherm"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Afmelden"
+msgid "Log Out…"
+msgstr "Log uit…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Pas links aan met uw eigen opdrachtregels"

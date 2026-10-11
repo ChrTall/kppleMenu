@@ -67,6 +67,18 @@ msgid "Remove icon"
 msgstr "아이콘 제거"
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr "키보드 단축키 표시:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr "Apple 기호"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr "PC 표기"
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr "고급 설정:"
 
@@ -89,20 +101,20 @@ msgid "Reset command"
 msgstr "기본 명령으로 복원"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
+msgid "System Settings :"
 msgstr "시스템 설정:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "앱 스토어:"
+msgstr "App Store:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "절전 모드:"
+msgstr "잠자기:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "다시 시작:"
+msgstr "재시동:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
@@ -110,7 +122,7 @@ msgstr "시스템 종료:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "화면 잠금:"
+msgstr "잠금 화면:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
@@ -125,32 +137,32 @@ msgid "About This Computer"
 msgstr "이 컴퓨터 정보"
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr "시스템 설정…"
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "앱 스토어…"
+msgid "App Store…"
+msgstr "App Store…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "절전 모드"
+msgstr "잠자기"
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "다시 시작…"
+msgid "Restart…"
+msgstr "재시동…"
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr "시스템 종료…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "화면 잠금"
+msgstr "잠금 화면"
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "로그아웃"
+msgid "Log Out…"
+msgstr "로그아웃…"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "자신의 명령 줄을 사용하여 링크 조정"
