@@ -150,8 +150,8 @@ PlasmoidItem {
             ListDelegate {
                 id: systemPreferencesItem
                 highlight: delegateHighlight
-                width: parent
                 text: i18n("System Settings…")
+
                 onClicked: {
                     executable.exec(systemPreferencesCMD); // cmd exec
                 }
