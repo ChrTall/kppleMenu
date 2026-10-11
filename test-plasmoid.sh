@@ -36,20 +36,14 @@ if [[ -n "$preview_language" && "$preview_language" != en && "$preview_language"
     fi
 fi
 
-for dependency in msgfmt python3 plasmoidviewer locale; do
+for dependency in plasmoidviewer locale; do
     if ! command -v "$dependency" >/dev/null 2>&1; then
         echo "Required command not found: $dependency" >&2
         exit 1
     fi
 done
 
-plugin_id="$(python3 -c 'import json, sys; print(json.load(open(sys.argv[1]))["KPlugin"]["Id"])' "$package_dir/metadata.json")"
-for catalog in "$package_dir"/translate/*.po; do
-    catalog_name="${catalog##*/}"
-    locale_dir="$package_dir/contents/locale/${catalog_name%.po}/LC_MESSAGES"
-    mkdir -p "$locale_dir"
-    msgfmt --check-format -o "$locale_dir/plasma_applet_$plugin_id.mo" "$catalog"
-done
+"$script_dir/create-translations.sh"
 
 if [[ -n "$preview_language" ]]; then
     # Gettext suppresses translations in C locales, including C.UTF-8.

@@ -39,6 +39,15 @@ Or if you know how to make a pull request
 
 ## Scripts
 
+From the repository root, run `./create-translations.sh` to compile all `.po`
+catalogs into `package/contents/locale/`. It requires Bash, Python 3, and
+gettext's `msgfmt`, checks translation formats, and works from any current
+directory when invoked by its path. Run it before installing from Git and
+after editing translation sources.
+
+`./test-plasmoid.sh [language]` calls the same script before launching the
+preview. See the [installation and preview instructions](../../README.md).
+
 Zren's `kpac` script can easily run the `gettext` commands for you, parsing the `metadata.json` and filling out any placeholders for you. `kpac` can be [downloaded here](https://github.com/Zren/plasma-applet-lib/blob/master/kpac) and should be placed at `~/Code/plasmoid-widgetname/kpac` to edit translations at `~/Code/plasmoid-widgetname/package/translate/`.
 
 
@@ -54,7 +63,10 @@ Since KDE Frameworks v5.37, translations can be bundled with the zipped `*.plasm
 * When the source code is updated, we use `msgmerge` to update the `fr.po` based on the updated `template.pot`.
 * When testing or releasing the widget, we convert the `.po` files to their binary `.mo` form with `msgfmt`.
 
-The binary `.mo` translation files are placed in `package/contents/locale/` so you may want to add `*.mo` to your `.gitignore`.
+The binary `.mo` translation files are placed in `package/contents/locale/`.
+Both this generated directory and `*.mo` are excluded by the repository's
+`.gitignore`. Commit the `.po` sources and template, then rebuild the catalogs
+when previewing, installing, or packaging the widget.
 
 ```
 package/contents/locale/fr/LC_MESSAGES/plasma_applet_com.github.chrtall.kppleMenu.mo
