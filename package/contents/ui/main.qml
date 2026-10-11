@@ -87,7 +87,7 @@ PlasmoidItem {
         readonly property string lockScreenCMD: plasmoid.configuration.lockScreenSettings
         readonly property string logOutCMD: plasmoid.configuration.logOutSettings
         
-        Layout.preferredWidth: iwSize
+        Layout.preferredWidth: Math.max(iwSize, columm.implicitWidth)
         Layout.preferredHeight: aboutThisComputerItem.height * 12
 
         focus: root.fullRepHasFocus
@@ -103,13 +103,18 @@ PlasmoidItem {
                     break;
 
             }
-            // Use Lock Screen Shortcut displayed in UI. ⌘ is treated as Alt Key.
-            if (event.key === Qt.Key_Q && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.AltModifier)){
-                lockScreenItem.clicked()
-            }
-            // Use Log Out Shortcut display in UI. ⌘ is treated as Alt Key.
-            if (event.key === Qt.Key_Q && (event.modifiers & Qt.ShiftModifier) && (event.modifiers & Qt.AltModifier)){
-                logOutItem.clicked()
+            // Accept either Alt (PC keyboards) or Meta (Apple Command),
+            // independently of the shortcut label style.
+            if (event.key === Qt.Key_Q && !event.isAutoRepeat) {
+                const commandModifier = event.modifiers & (Qt.AltModifier | Qt.MetaModifier)
+                const otherModifiers = event.modifiers & ~(Qt.AltModifier | Qt.MetaModifier)
+                if (commandModifier && otherModifiers === Qt.ControlModifier) {
+                    event.accepted = true
+                    lockScreenItem.clicked()
+                } else if (commandModifier && otherModifiers === Qt.ShiftModifier) {
+                    event.accepted = true
+                    logOutItem.clicked()
+                }
             }
         }
 
@@ -145,7 +150,8 @@ PlasmoidItem {
             ListDelegate {
                 id: systemPreferencesItem
                 highlight: delegateHighlight
-                text: i18n("System Preferences...")
+                text: i18n("System Settings…")
+
                 onClicked: {
                     executable.exec(systemPreferencesCMD); // cmd exec
                 }
@@ -157,7 +163,7 @@ PlasmoidItem {
             ListDelegate {
                 id: appStoreItem
                 highlight: delegateHighlight
-                text: i18n("App Store...")
+                text: i18n("App Store…")
                 onClicked: {
                     executable.exec(appStoreCMD); // cmd exec
                 }
@@ -193,7 +199,7 @@ PlasmoidItem {
             ListDelegate {
                 id: restartItem
                 highlight: delegateHighlight
-                text: i18n("Restart...")
+                text: i18n("Restart…")
                 onClicked: {
                     executable.exec(restartCMD); // cmd exec
                 }
@@ -205,7 +211,7 @@ PlasmoidItem {
             ListDelegate {
                 id: shutDownItem
                 highlight: delegateHighlight
-                text: i18n("Shut Down...")
+                text: i18n("Shut Down…")
                 onClicked: {
                     executable.exec(shutDownCMD); // cmd exec
                 }
@@ -230,12 +236,7 @@ PlasmoidItem {
                 id: lockScreenItem
                 highlight: delegateHighlight
                 text: i18n("Lock Screen")
-                // right shortcut item
-                PlasmaComponents.Label {
-                    text: "⌃⌘Q "
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+                shortcutText: plasmoid.configuration.shortcutLabelStyle === 1 ? "Ctrl+Alt+Q" : "⌃⌘Q"
                 onClicked: {
                     executable.exec(lockScreenCMD); // cmd exec
                 }
@@ -247,13 +248,8 @@ PlasmoidItem {
             ListDelegate {
                 id: logOutItem
                 highlight: delegateHighlight
-                text: i18n("Log Out")
-                // right shortcut item
-                PlasmaComponents.Label {
-                    text: "⇧⌘Q "
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+                text: i18n("Log Out…")
+                shortcutText: plasmoid.configuration.shortcutLabelStyle === 1 ? "Shift+Alt+Q" : "⇧⌘Q"
                 onClicked: {
                     executable.exec(logOutCMD); // cmd exec
                 }

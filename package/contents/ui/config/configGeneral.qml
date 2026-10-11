@@ -26,6 +26,7 @@ KCM.SimpleKCM {
     property string cfg_icon: Plasmoid.configuration.icon
     
     property alias cfg_showAdvancedMode: showAdvancedMode.checked
+    property alias cfg_shortcutLabelStyle: shortcutLabelStyle.currentIndex
     property alias cfg_aboutThisComputerSettings: aboutThisComputerSettings.text
     property alias cfg_systemPreferencesSettings: systemPreferencesSettings.text
     property alias cfg_appStoreSettings: appStoreSettings.text
@@ -118,6 +119,12 @@ KCM.SimpleKCM {
             End: code from plasma-desktop/applets/kickoff/contents/ui/ConfigGeneral.qml
         */
         
+        QQC2.ComboBox {
+            id: shortcutLabelStyle
+            Kirigami.FormData.label: i18n("Shortcut labels:")
+            model: [i18n("Apple symbols"), i18n("PC labels")]
+        }
+
         QQC2.CheckBox {
             id: showAdvancedMode
             Kirigami.FormData.label: i18n("Advanced Settings:")
@@ -129,129 +136,162 @@ KCM.SimpleKCM {
         Kirigami.ActionTextField {
             id: aboutThisComputerSettings
             Kirigami.FormData.label: i18n("About This Computer :")
-            placeholderText: i18n("kinfocenter")
             enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: aboutThisComputerSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    aboutThisComputerSettings.clear()
-                    root.cfg_aboutThisComputerSettings = ""
+            // Kirigami lays out rightActions from right to left: reset, then clear.
+            rightActions: [
+                QQC2.Action {
+                    icon.name: "edit-undo"
+                    enabled: aboutThisComputerSettings.text !== Plasmoid.configuration.aboutThisComputerSettingsDefault
+                    text: i18nc("@action:button", "Reset command")
+                    onTriggered: root.cfg_aboutThisComputerSettings = Plasmoid.configuration.aboutThisComputerSettingsDefault
+                },
+                QQC2.Action {
+                    icon.name: "edit-clear"
+                    enabled: aboutThisComputerSettings.text !== ""
+                    text: i18nc("@action:button", "Clear command")
+                    onTriggered: aboutThisComputerSettings.clear()
                 }
-            }
+            ]
         }
 
         Kirigami.ActionTextField {
             id: systemPreferencesSettings
-            Kirigami.FormData.label: i18n("System Preferences :")
-            placeholderText: i18n("systemsettings5")
+            Kirigami.FormData.label: i18n("System Settings :")
             enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: systemPreferencesSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    systemPreferencesSettings.clear()
-                    root.cfg_systemPreferencesSettings = ""
+            rightActions: [
+                QQC2.Action {
+                    icon.name: "edit-undo"
+                    enabled: systemPreferencesSettings.text !== Plasmoid.configuration.systemPreferencesSettingsDefault
+                    text: i18nc("@action:button", "Reset command")
+                    onTriggered: root.cfg_systemPreferencesSettings = Plasmoid.configuration.systemPreferencesSettingsDefault
+                },
+                QQC2.Action {
+                    icon.name: "edit-clear"
+                    enabled: systemPreferencesSettings.text !== ""
+                    text: i18nc("@action:button", "Clear command")
+                    onTriggered: systemPreferencesSettings.clear()
                 }
-            }
+            ]
         }
 
         Kirigami.ActionTextField {
             id: appStoreSettings
             Kirigami.FormData.label: i18n ("App Store :")
-            placeholderText: i18n("plasma-discover")
             enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: appStoreSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    appStoreSettings.clear()
-                    root.cfg_appStoreSettings = ""
+            rightActions: [
+                QQC2.Action {
+                    icon.name: "edit-undo"
+                    enabled: appStoreSettings.text !== Plasmoid.configuration.appStoreSettingsDefault
+                    text: i18nc("@action:button", "Reset command")
+                    onTriggered: root.cfg_appStoreSettings = Plasmoid.configuration.appStoreSettingsDefault
+                },
+                QQC2.Action {
+                    icon.name: "edit-clear"
+                    enabled: appStoreSettings.text !== ""
+                    text: i18nc("@action:button", "Clear command")
+                    onTriggered: appStoreSettings.clear()
                 }
-            }
+            ]
         }
 
         Kirigami.ActionTextField {
             id: sleepSettings
             Kirigami.FormData.label: i18n ("Sleep :")
-            placeholderText: i18n("systemctl suspend")
             enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: sleepSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    sleepSettings.clear()
-                    root.cfg_sleepSettings = ""
+            rightActions: [
+                QQC2.Action {
+                    icon.name: "edit-undo"
+                    enabled: sleepSettings.text !== Plasmoid.configuration.sleepSettingsDefault
+                    text: i18nc("@action:button", "Reset command")
+                    onTriggered: root.cfg_sleepSettings = Plasmoid.configuration.sleepSettingsDefault
+                },
+                QQC2.Action {
+                    icon.name: "edit-clear"
+                    enabled: sleepSettings.text !== ""
+                    text: i18nc("@action:button", "Clear command")
+                    onTriggered: sleepSettings.clear()
                 }
-            }
+            ]
         }
 
         Kirigami.ActionTextField {
             id: restartSettings
             Kirigami.FormData.label: i18n ("Restart :")
-            placeholderText: i18n("/sbin/reboot")
             enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: restartSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    restartSettings.clear()
-                    root.cfg_restartSettings = ""
+            rightActions: [
+                QQC2.Action {
+                    icon.name: "edit-undo"
+                    enabled: restartSettings.text !== Plasmoid.configuration.restartSettingsDefault
+                    text: i18nc("@action:button", "Reset command")
+                    onTriggered: root.cfg_restartSettings = Plasmoid.configuration.restartSettingsDefault
+                },
+                QQC2.Action {
+                    icon.name: "edit-clear"
+                    enabled: restartSettings.text !== ""
+                    text: i18nc("@action:button", "Clear command")
+                    onTriggered: restartSettings.clear()
                 }
-            }
+            ]
         }
 
         Kirigami.ActionTextField {
             id: shutDownSettings
             Kirigami.FormData.label: i18n ("Shut Down :")
-            placeholderText: i18n("/sbin/shutdown now")
             enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: shutDownSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    shutDownSettings.clear()
-                    root.cfg_shutDownSettings = ""
+            rightActions: [
+                QQC2.Action {
+                    icon.name: "edit-undo"
+                    enabled: shutDownSettings.text !== Plasmoid.configuration.shutDownSettingsDefault
+                    text: i18nc("@action:button", "Reset command")
+                    onTriggered: root.cfg_shutDownSettings = Plasmoid.configuration.shutDownSettingsDefault
+                },
+                QQC2.Action {
+                    icon.name: "edit-clear"
+                    enabled: shutDownSettings.text !== ""
+                    text: i18nc("@action:button", "Clear command")
+                    onTriggered: shutDownSettings.clear()
                 }
-            }
+            ]
         }
 
         Kirigami.ActionTextField {
             id: lockScreenSettings
             Kirigami.FormData.label: i18n ("Lock Screen :")
-            placeholderText: i18n("qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock")
             enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: lockScreenSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    lockScreenSettings.clear()
-                    root.cfg_lockScreenSettings = ""
+            rightActions: [
+                QQC2.Action {
+                    icon.name: "edit-undo"
+                    enabled: lockScreenSettings.text !== Plasmoid.configuration.lockScreenSettingsDefault
+                    text: i18nc("@action:button", "Reset command")
+                    onTriggered: root.cfg_lockScreenSettings = Plasmoid.configuration.lockScreenSettingsDefault
+                },
+                QQC2.Action {
+                    icon.name: "edit-clear"
+                    enabled: lockScreenSettings.text !== ""
+                    text: i18nc("@action:button", "Clear command")
+                    onTriggered: lockScreenSettings.clear()
                 }
-            }
+            ]
         }
 
         Kirigami.ActionTextField {
             id: logOutSettings
             Kirigami.FormData.label: i18n ("Log Out :")
-            placeholderText: i18n("qdbus org.kde.ksmserver /KSMServer logout 0 0 0")
             enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: logOutSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    logOutSettings.clear()
-                    root.cfg_logOutSettings = ""
+            rightActions: [
+                QQC2.Action {
+                    icon.name: "edit-undo"
+                    enabled: logOutSettings.text !== Plasmoid.configuration.logOutSettingsDefault
+                    text: i18nc("@action:button", "Reset command")
+                    onTriggered: root.cfg_logOutSettings = Plasmoid.configuration.logOutSettingsDefault
+                },
+                QQC2.Action {
+                    icon.name: "edit-clear"
+                    enabled: logOutSettings.text !== ""
+                    text: i18nc("@action:button", "Clear command")
+                    onTriggered: logOutSettings.clear()
                 }
-            }
+            ]
         }
     }
 }

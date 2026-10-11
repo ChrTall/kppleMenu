@@ -18,9 +18,11 @@ Item {
 
     property Item highlight
     property alias text: label.text
+    property string shortcutText: ""
 
     Layout.fillWidth: true
-    height: row.height
+    implicitWidth: row.implicitWidth
+    implicitHeight: row.implicitHeight
     onFocusChanged: {
         if(focus){
             if (!highlight) {
@@ -60,6 +62,9 @@ Item {
 
     RowLayout {
         id: row
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.verticalCenter: parent.verticalCenter
         // set space before the text item with a empty icon
         Item {
             id: emptySpace
@@ -67,12 +72,19 @@ Item {
             Layout.maximumWidth: 1 * Kirigami.Units.gridUnit
         }
 
-        Item {
-            height: 24
-            PlasmaComponents.Label {
-                id: label
-                anchors.verticalCenter: parent.verticalCenter
-            }
+        PlasmaComponents.Label {
+            id: label
+            Layout.fillWidth: true
+            Layout.minimumHeight: 24
+            verticalAlignment: Text.AlignVCenter
+        }
+
+        PlasmaComponents.Label {
+            text: item.shortcutText
+            visible: text.length > 0
+            verticalAlignment: Text.AlignVCenter
+            Layout.leftMargin: Kirigami.Units.smallSpacing
+            Layout.rightMargin: Kirigami.Units.smallSpacing
         }
     }
 }
