@@ -13,6 +13,8 @@ The original maintainer does not seem actively maintaining the project anymore. 
 Menu entries can be configured via the settings, if you tick the advanced settings checkbox.
 Simply click on the entries to check if the configured command is working.
 The commands should work on all Distributions with KDE Plasma 6, but might have to be adjusted manually.
+For example, some distributions like Fedora Kinoite provide Qt6 `qdbus` as `qdbus-qt6` instead of `qdbus6`.
+If menu actions do not work out of the box, open advanced settings and change `qdbus6` to `qdbus-qt6` in the affected commands.
 
 ### Keyboard Navigation
 
@@ -115,4 +117,3 @@ back to another installed UTF-8 locale if needed. At least one locale other than
 ## License
 
 GNU GPL v2.0
-
