@@ -93,7 +93,7 @@ msgid "System Preferences :"
 msgstr "تفضيلات النظام :"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings5"
+msgid "systemsettings"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
@@ -133,7 +133,7 @@ msgid "Lock Screen :"
 msgstr "اقفل الشاشة :"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
+msgid "qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
@@ -141,7 +141,7 @@ msgid "Log Out :"
 msgstr "تسجيل خروج :"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
+msgid "qdbus6 org.kde.Shutdown /Shutdown logout"
 msgstr ""
 
 #: ../contents/ui/main.qml

@@ -145,7 +145,7 @@ KCM.SimpleKCM {
         Kirigami.ActionTextField {
             id: systemPreferencesSettings
             Kirigami.FormData.label: i18n("System Preferences :")
-            placeholderText: i18n("systemsettings5")
+            placeholderText: i18n("systemsettings")
             enabled: showAdvancedMode.checked
             rightActions: QQC2.Action {
                 icon.name: "edit-clear"
@@ -225,7 +225,7 @@ KCM.SimpleKCM {
         Kirigami.ActionTextField {
             id: lockScreenSettings
             Kirigami.FormData.label: i18n ("Lock Screen :")
-            placeholderText: i18n("qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock")
+            placeholderText: i18n("qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock")
             enabled: showAdvancedMode.checked
             rightActions: QQC2.Action {
                 icon.name: "edit-clear"
@@ -241,7 +241,7 @@ KCM.SimpleKCM {
         Kirigami.ActionTextField {
             id: logOutSettings
             Kirigami.FormData.label: i18n ("Log Out :")
-            placeholderText: i18n("qdbus org.kde.ksmserver /KSMServer logout 0 0 0")
+            placeholderText: i18n("qdbus6 org.kde.Shutdown /Shutdown logout")
             enabled: showAdvancedMode.checked
             rightActions: QQC2.Action {
                 icon.name: "edit-clear"

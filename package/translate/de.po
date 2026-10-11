@@ -93,8 +93,8 @@ msgid "System Preferences :"
 msgstr "System-Einstellungen :"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings5"
-msgstr "systemsettings5"
+msgid "systemsettings"
+msgstr "systemsettings"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
@@ -133,16 +133,16 @@ msgid "Lock Screen :"
 msgstr "Bildschirm sperren :"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
+msgid "qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock"
+msgstr "qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
 msgstr "Ausloggen :"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
-msgstr "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
+msgid "qdbus6 org.kde.Shutdown /Shutdown logout"
+msgstr "qdbus6 org.kde.Shutdown /Shutdown logout"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
