@@ -69,6 +69,18 @@ msgid "Remove icon"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
+msgid "Shortcut labels:"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Apple symbols"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "PC labels"
+msgstr ""
+
+#: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
 msgstr ""
 
@@ -80,21 +92,20 @@ msgstr ""
 msgid "About This Computer :"
 msgstr ""
 
+#. Clears the command field, leaving an empty command.
 #: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
+msgctxt "@action:button"
+msgid "Clear command"
 msgstr ""
 
+#. Restores the default command; it does not clear the field.
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Reset command"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings5"
+msgid "System Settings :"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
@@ -102,15 +113,7 @@ msgid "App Store :"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
@@ -118,15 +121,7 @@ msgid "Restart :"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
@@ -134,15 +129,7 @@ msgid "Lock Screen :"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
 msgstr ""
 
 #: ../contents/ui/main.qml
@@ -154,11 +141,11 @@ msgid "About This Computer"
 msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "System Preferences..."
+msgid "System Settings…"
 msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "App Store..."
+msgid "App Store…"
 msgstr ""
 
 #: ../contents/ui/main.qml
@@ -166,11 +153,11 @@ msgid "Sleep"
 msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "Restart..."
+msgid "Restart…"
 msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "Shut Down..."
+msgid "Shut Down…"
 msgstr ""
 
 #: ../contents/ui/main.qml
@@ -178,5 +165,5 @@ msgid "Lock Screen"
 msgstr ""
 
 #: ../contents/ui/main.qml
-msgid "Log Out"
+msgid "Log Out…"
 msgstr ""

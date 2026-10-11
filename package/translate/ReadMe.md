@@ -1,27 +1,31 @@
 # Translate
 
+Menu action labels follow Apple's current localized naming. See
+[Apple menu label references](AppleMenuLabels.md) for the per-language wording
+and the official sources used to check it.
+
 ## Status
 
-|  Locale  |  Lines  | % Done|
+|  Locale  | Strings | % Done|
 |----------|---------|-------|
-| Template |      39 |       |
-| ar       |   18/39 |   46% |
-| de       |   39/39 |  100% |
-| es       |   18/39 |   46% |
-| fi       |   18/39 |   46% |
-| fr       |   18/39 |   46% |
-| hu       |   18/39 |   46% |
-| it       |   18/39 |   46% |
-| ja       |   18/39 |   46% |
-| ko       |   18/39 |   46% |
-| nl       |   18/39 |   46% |
-| pl       |   17/39 |   43% |
-| pt       |   18/39 |   46% |
-| ro       |   18/39 |   46% |
-| ru       |   18/39 |   46% |
-| uk       |   18/39 |   46% |
-| zh_CN    |   18/39 |   46% |
-| zh_TW    |   18/39 |   46% |
+| Template |      35 |       |
+| ar       |   35/35 |  100% |
+| de       |   35/35 |  100% |
+| es       |   35/35 |  100% |
+| fi       |   35/35 |  100% |
+| fr       |   35/35 |  100% |
+| hu       |   35/35 |  100% |
+| it       |   35/35 |  100% |
+| ja       |   35/35 |  100% |
+| ko       |   35/35 |  100% |
+| nl       |   35/35 |  100% |
+| pl       |   35/35 |  100% |
+| pt       |   35/35 |  100% |
+| ro       |   35/35 |  100% |
+| ru       |   35/35 |  100% |
+| uk       |   35/35 |  100% |
+| zh_CN    |   35/35 |  100% |
+| zh_TW    |   35/35 |  100% |
 
 
 ## New Translations
@@ -34,6 +38,15 @@ Or if you know how to make a pull request
 * Your region's locale code can be found at: https://stackoverflow.com/questions/3191664/list-of-all-locales-and-their-short-codes/28357857#28357857
 
 ## Scripts
+
+From the repository root, run `./create-translations.sh` to compile all `.po`
+catalogs into `package/contents/locale/`. It requires Bash, Python 3, and
+gettext's `msgfmt`, checks translation formats, and works from any current
+directory when invoked by its path. Run it before installing from Git and
+after editing translation sources.
+
+`./test-plasmoid.sh [language]` calls the same script before launching the
+preview. See the [installation and preview instructions](../../README.md).
 
 Zren's `kpac` script can easily run the `gettext` commands for you, parsing the `metadata.json` and filling out any placeholders for you. `kpac` can be [downloaded here](https://github.com/Zren/plasma-applet-lib/blob/master/kpac) and should be placed at `~/Code/plasmoid-widgetname/kpac` to edit translations at `~/Code/plasmoid-widgetname/package/translate/`.
 
@@ -50,7 +63,10 @@ Since KDE Frameworks v5.37, translations can be bundled with the zipped `*.plasm
 * When the source code is updated, we use `msgmerge` to update the `fr.po` based on the updated `template.pot`.
 * When testing or releasing the widget, we convert the `.po` files to their binary `.mo` form with `msgfmt`.
 
-The binary `.mo` translation files are placed in `package/contents/locale/` so you may want to add `*.mo` to your `.gitignore`.
+The binary `.mo` translation files are placed in `package/contents/locale/`.
+Both this generated directory and `*.mo` are excluded by the repository's
+`.gitignore`. Commit the `.po` sources and template, then rebuild the catalogs
+when previewing, installing, or packaging the widget.
 
 ```
 package/contents/locale/fr/LC_MESSAGES/plasma_applet_com.github.chrtall.kppleMenu.mo
