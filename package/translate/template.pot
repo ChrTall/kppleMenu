@@ -80,10 +80,13 @@ msgstr ""
 msgid "About This Computer :"
 msgstr ""
 
+#. Clears the command field, leaving an empty command.
 #: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
+msgctxt "@action:button"
+msgid "Clear command"
 msgstr ""
 
+#. Restores the default command; it does not clear the field.
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Reset command"
@@ -94,15 +97,7 @@ msgid "System Preferences :"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
@@ -110,15 +105,7 @@ msgid "Sleep :"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
@@ -126,23 +113,11 @@ msgid "Shut Down :"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
 msgstr ""
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus6 org.kde.Shutdown /Shutdown logout"
 msgstr ""
 
 #: ../contents/ui/main.qml

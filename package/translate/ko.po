@@ -17,58 +17,58 @@ msgstr ""
 
 #: ../metadata.json
 msgid "Kpple Menu"
-msgstr ""
+msgstr "Kpple Menu"
 
 #: ../metadata.json
 msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
-msgstr ""
+msgstr "Kpple Menu는 일반적으로 메뉴 표시줄 왼쪽에 배치하는 드롭다운 메뉴입니다."
 
 #: ../contents/config/config.qml
 msgid "General"
-msgstr "일반적으로"
+msgstr "일반"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Icon:"
-msgstr ""
+msgstr "아이콘:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Change Kpple Menu's icon"
-msgstr ""
+msgstr "Kpple Menu 아이콘 변경"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
-msgstr ""
+msgstr "현재 아이콘은 %1입니다. 다른 아이콘을 선택하거나 기본 아이콘으로 복원하려면 클릭하세요."
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:tooltip"
 msgid "Icon name is \"%1\""
-msgstr ""
+msgstr "아이콘 이름: \"%1\""
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Open icon chooser dialog"
 msgid "Choose…"
-msgstr ""
+msgstr "선택…"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Choose an icon for Application Launcher"
-msgstr ""
+msgstr "프로그램 실행기의 아이콘 선택"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Reset to default icon"
-msgstr ""
+msgstr "기본 아이콘으로 복원"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:inmenu"
 msgid "Remove icon"
-msgstr ""
+msgstr "아이콘 제거"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
-msgstr ""
+msgstr "고급 설정:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Show advanced mode"
@@ -76,108 +76,81 @@ msgstr "고급 모드 표시"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "About This Computer :"
-msgstr "이 컴퓨터에 대하여 :"
+msgstr "이 컴퓨터 정보:"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
-msgstr ""
+msgctxt "@action:button"
+msgid "Clear command"
+msgstr "명령 지우기"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
+msgstr "기본 명령으로 복원"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "System Preferences :"
-msgstr "시스템 환경 설정 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings"
-msgstr ""
+msgstr "시스템 설정:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "앱 스토어 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
-msgstr ""
+msgstr "앱 스토어:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "활동 일시 중지 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
-msgstr ""
+msgstr "절전 모드:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "재시작하기 위해 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
-msgstr ""
+msgstr "다시 시작:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
-msgstr "끄다 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
-msgstr ""
+msgstr "시스템 종료:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "잠금 화면 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
+msgstr "화면 잠금:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "로그 아웃 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus6 org.kde.Shutdown /Shutdown logout"
-msgstr ""
+msgstr "로그아웃:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
-msgstr ""
+msgstr "시스템 종료, 다시 시작, 로그아웃, 설정 등에 바로 접근할 수 있는 메뉴입니다."
 
 #: ../contents/ui/main.qml
 msgid "About This Computer"
-msgstr "이 컴퓨터에 대하여"
+msgstr "이 컴퓨터 정보"
 
 #: ../contents/ui/main.qml
 msgid "System Preferences..."
-msgstr "시스템 환경 설정..."
+msgstr "시스템 설정…"
 
 #: ../contents/ui/main.qml
 msgid "App Store..."
-msgstr "앱 스토어..."
+msgstr "앱 스토어…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "활동 일시 중지"
+msgstr "절전 모드"
 
 #: ../contents/ui/main.qml
 msgid "Restart..."
-msgstr "재시작하기 위해..."
+msgstr "다시 시작…"
 
 #: ../contents/ui/main.qml
 msgid "Shut Down..."
-msgstr "끄다..."
+msgstr "시스템 종료…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "잠금 화면"
+msgstr "화면 잠금"
 
 #: ../contents/ui/main.qml
 msgid "Log Out"
-msgstr "로그 아웃"
+msgstr "로그아웃"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "자신의 명령 줄을 사용하여 링크 조정"

@@ -23,10 +23,12 @@ If the menu is expanded you can quickly:
 - Lock the Screen, by pressing ctrl + alt + q
 - Log out, by pressing shift + alt + q
 
-## Missing Translations
+## Translations
 
-If you are using a language, other than English or German some entries do not have a translation yet.
-Feel free to create a PR after editing the corresponding `.po` file for your language under `package/translate`.
+Translations for all current interface strings are provided in 17 languages.
+To improve a translation or add a language, edit the corresponding `.po` file
+under `package/translate` and open a pull request. See the translation guide in
+`package/translate/ReadMe.md` for details.
 
 ## How to install Kpple menu on KDE Plasma ?
 
@@ -42,6 +44,28 @@ There is no guarantee that i18n works, when using this method.
 git clone https://github.com/chrtall/kppleMenu.git
 kpackagetool6 --type "Plasma/Applet" -i  kppleMenu/package
 ```
+
+## Local preview
+
+Run `./test-plasmoid.sh` to preview the widget in your current desktop language.
+Pass a language code to preview a translation:
+
+```bash
+./test-plasmoid.sh de     # German
+./test-plasmoid.sh fr     # French
+./test-plasmoid.sh zh_TW  # Traditional Chinese
+./test-plasmoid.sh en     # English
+```
+
+The script rebuilds the translation catalogs before launching `plasmoidviewer`.
+It adds the package's local translations to the viewer's search path, so the
+widget itself can use them without being installed.
+It requires `msgfmt` (gettext), Python 3, and `plasmoidviewer` (Plasma SDK).
+Run `./test-plasmoid.sh --help` to list the available language codes.
+Untranslated strings fall back to English when a language is selected explicitly.
+The script prefers an installed UTF-8 locale for the selected language, and falls
+back to another installed UTF-8 locale if needed. At least one locale other than
+`C.UTF-8` must be installed for translation previews.
 
 ## License
 

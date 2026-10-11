@@ -17,147 +17,120 @@ msgstr ""
 
 #: ../metadata.json
 msgid "Kpple Menu"
-msgstr ""
+msgstr "Kpple Menu"
 
 #: ../metadata.json
 msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
-msgstr ""
+msgstr "A Kpple Menu egy lenyíló menü, amely általában a menüsor bal oldalán található."
 
 #: ../contents/config/config.qml
 msgid "General"
-msgstr "Általában"
+msgstr "Általános"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Icon:"
-msgstr ""
+msgstr "Ikon:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Change Kpple Menu's icon"
-msgstr ""
+msgstr "A Kpple Menu ikonjának módosítása"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
-msgstr ""
+msgstr "A jelenlegi ikon: %1. Kattintson másik ikon választásához vagy az alapértelmezett ikon visszaállításához."
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:tooltip"
 msgid "Icon name is \"%1\""
-msgstr ""
+msgstr "Ikon neve: „%1”"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Open icon chooser dialog"
 msgid "Choose…"
-msgstr ""
+msgstr "Kiválasztás…"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Choose an icon for Application Launcher"
-msgstr ""
+msgstr "Ikon választása az alkalmazásindítóhoz"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Reset to default icon"
-msgstr ""
+msgstr "Alapértelmezett ikon visszaállítása"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:inmenu"
 msgid "Remove icon"
-msgstr ""
+msgstr "Ikon eltávolítása"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
-msgstr ""
+msgstr "Speciális beállítások:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Show advanced mode"
-msgstr "Haladó mód mutatása"
+msgstr "Speciális mód megjelenítése"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "About This Computer :"
-msgstr "A rendszer névjegye :"
+msgstr "A számítógép névjegye:"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
-msgstr ""
+msgctxt "@action:button"
+msgid "Clear command"
+msgstr "Parancs törlése"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
+msgstr "Alapértelmezett parancs visszaállítása"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "System Preferences :"
-msgstr "Rendszerbeállítások :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings"
-msgstr ""
+msgstr "Rendszerbeállítások:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "App Store :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
-msgstr ""
+msgstr "Alkalmazásbolt:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "Alvó állapot :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
-msgstr ""
+msgstr "Alvó állapot:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "Újraindítás :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
-msgstr ""
+msgstr "Újraindítás:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
-msgstr "Leállítás :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
-msgstr ""
+msgstr "Leállítás:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "Képernyő zárolása :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
+msgstr "Képernyő zárolása:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "Kijelentkezés :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus6 org.kde.Shutdown /Shutdown logout"
-msgstr ""
+msgstr "Kijelentkezés:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
-msgstr ""
+msgstr "Gyorselérés a leállításhoz, újraindításhoz, kijelentkezéshez, beállításokhoz és más műveletekhez."
 
 #: ../contents/ui/main.qml
 msgid "About This Computer"
-msgstr "A rendszer névjegye"
+msgstr "A számítógép névjegye"
 
 #: ../contents/ui/main.qml
 msgid "System Preferences..."
-msgstr "Rendszerbeállítások..."
+msgstr "Rendszerbeállítások…"
 
 #: ../contents/ui/main.qml
 msgid "App Store..."
-msgstr "App Store..."
+msgstr "Alkalmazásbolt…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
@@ -165,11 +138,11 @@ msgstr "Alvó állapot"
 
 #: ../contents/ui/main.qml
 msgid "Restart..."
-msgstr "Újraindítás"
+msgstr "Újraindítás…"
 
 #: ../contents/ui/main.qml
 msgid "Shut Down..."
-msgstr "Leállítás..."
+msgstr "Leállítás…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"

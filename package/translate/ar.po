@@ -18,58 +18,58 @@ msgstr ""
 
 #: ../metadata.json
 msgid "Kpple Menu"
-msgstr ""
+msgstr "Kpple Menu"
 
 #: ../metadata.json
 msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
-msgstr ""
+msgstr "Kpple Menu قائمة منسدلة توضع عادةً في الجانب الأيسر من شريط القوائم."
 
 #: ../contents/config/config.qml
 msgid "General"
-msgstr "المتقدمة"
+msgstr "عام"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Icon:"
-msgstr ""
+msgstr "الأيقونة:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Change Kpple Menu's icon"
-msgstr ""
+msgstr "تغيير أيقونة Kpple Menu"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
-msgstr ""
+msgstr "الأيقونة الحالية هي %1. انقر لاختيار أيقونة أخرى أو لاستعادة الأيقونة الافتراضية."
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:tooltip"
 msgid "Icon name is \"%1\""
-msgstr ""
+msgstr "اسم الأيقونة: «%1»"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Open icon chooser dialog"
 msgid "Choose…"
-msgstr ""
+msgstr "اختر…"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Choose an icon for Application Launcher"
-msgstr ""
+msgstr "اختر أيقونة لمشغّل التطبيقات"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Reset to default icon"
-msgstr ""
+msgstr "استعادة الأيقونة الافتراضية"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:inmenu"
 msgid "Remove icon"
-msgstr ""
+msgstr "إزالة الأيقونة"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
-msgstr ""
+msgstr "الإعدادات المتقدمة:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Show advanced mode"
@@ -77,108 +77,81 @@ msgstr "إظهار الوضع المتقدم"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "About This Computer :"
-msgstr "حول هذا الكمبيوتر :"
+msgstr "حول هذا الحاسوب:"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
-msgstr ""
+msgctxt "@action:button"
+msgid "Clear command"
+msgstr "مسح الأمر"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
+msgstr "استعادة الأمر الافتراضي"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "System Preferences :"
-msgstr "تفضيلات النظام :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings"
-msgstr ""
+msgstr "إعدادات النظام:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "متجر التطبيقات :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
-msgstr ""
+msgstr "متجر التطبيقات:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "إيقاف النشاط مؤقتًا :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
-msgstr ""
+msgstr "السكون:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "لإعادة التشغيل :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
-msgstr ""
+msgstr "إعادة التشغيل:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
-msgstr "اطفيء :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
-msgstr ""
+msgstr "إيقاف التشغيل:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "اقفل الشاشة :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
+msgstr "قفل الشاشة:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "تسجيل خروج :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus6 org.kde.Shutdown /Shutdown logout"
-msgstr ""
+msgstr "تسجيل الخروج:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
-msgstr ""
+msgstr "اختصارات لإيقاف التشغيل وإعادة التشغيل وتسجيل الخروج وفتح الإعدادات وغيرها."
 
 #: ../contents/ui/main.qml
 msgid "About This Computer"
-msgstr "حول هذا الكمبيوتر"
+msgstr "حول هذا الحاسوب"
 
 #: ../contents/ui/main.qml
 msgid "System Preferences..."
-msgstr "تفضيلات النظام ..."
+msgstr "إعدادات النظام…"
 
 #: ../contents/ui/main.qml
 msgid "App Store..."
-msgstr "متجر التطبيقات..."
+msgstr "متجر التطبيقات…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
-msgstr "إيقاف النشاط مؤقتًا"
+msgstr "السكون"
 
 #: ../contents/ui/main.qml
 msgid "Restart..."
-msgstr "لإعادة التشغيل..."
+msgstr "إعادة التشغيل…"
 
 #: ../contents/ui/main.qml
 msgid "Shut Down..."
-msgstr "اطفيء..."
+msgstr "إيقاف التشغيل…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "اقفل الشاشة"
+msgstr "قفل الشاشة"
 
 #: ../contents/ui/main.qml
 msgid "Log Out"
-msgstr "تسجيل خروج"
+msgstr "تسجيل الخروج"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "تكييف الروابط مع أسطر الأوامر الخاصة بك"

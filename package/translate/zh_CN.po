@@ -17,58 +17,58 @@ msgstr ""
 
 #: ../metadata.json
 msgid "Kpple Menu"
-msgstr ""
+msgstr "Kpple Menu"
 
 #: ../metadata.json
 msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
-msgstr ""
+msgstr "Kpple Menu 是一个下拉菜单，通常放置在菜单栏左侧。"
 
 #: ../contents/config/config.qml
 msgid "General"
-msgstr "一般的"
+msgstr "常规"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Icon:"
-msgstr ""
+msgstr "图标："
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Change Kpple Menu's icon"
-msgstr ""
+msgstr "更改 Kpple Menu 的图标"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
-msgstr ""
+msgstr "当前图标为 %1。点击可选择其他图标或恢复默认图标。"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:tooltip"
 msgid "Icon name is \"%1\""
-msgstr ""
+msgstr "图标名称：“%1”"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Open icon chooser dialog"
 msgid "Choose…"
-msgstr ""
+msgstr "选择…"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Choose an icon for Application Launcher"
-msgstr ""
+msgstr "为应用程序启动器选择图标"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Reset to default icon"
-msgstr ""
+msgstr "恢复默认图标"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:inmenu"
 msgid "Remove icon"
-msgstr ""
+msgstr "移除图标"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Advanced Settings:"
-msgstr ""
+msgstr "高级设置："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Show advanced mode"
@@ -76,88 +76,61 @@ msgstr "显示高级模式"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "About This Computer :"
-msgstr "关于这台电脑 :"
+msgstr "关于此电脑："
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
-msgstr ""
+msgctxt "@action:button"
+msgid "Clear command"
+msgstr "清空命令"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
+msgstr "恢复默认命令"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "System Preferences :"
-msgstr "系统设定 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings"
-msgstr ""
+msgstr "系统设置："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "App Store :"
-msgstr "应用商店 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
-msgstr ""
+msgstr "应用商店："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Sleep :"
-msgstr "睡眠 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
-msgstr ""
+msgstr "睡眠："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Restart :"
-msgstr "重启 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
-msgstr ""
+msgstr "重新启动："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Shut Down :"
-msgstr "关机 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
-msgstr ""
+msgstr "关机："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Lock Screen :"
-msgstr "锁屏 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
+msgstr "锁定屏幕："
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Log Out :"
-msgstr "注销:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus6 org.kde.Shutdown /Shutdown logout"
-msgstr ""
+msgstr "注销："
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
-msgstr ""
+msgstr "用于关机、重启、注销、打开设置等操作的快捷菜单。"
 
 #: ../contents/ui/main.qml
 msgid "About This Computer"
-msgstr "关于这台电脑"
+msgstr "关于此电脑"
 
 #: ../contents/ui/main.qml
 msgid "System Preferences..."
-msgstr "系统偏好设定..."
+msgstr "系统设置…"
 
 #: ../contents/ui/main.qml
 msgid "App Store..."
-msgstr "应用商店..."
+msgstr "应用商店…"
 
 #: ../contents/ui/main.qml
 msgid "Sleep"
@@ -165,15 +138,15 @@ msgstr "睡眠"
 
 #: ../contents/ui/main.qml
 msgid "Restart..."
-msgstr "重新启动..."
+msgstr "重新启动…"
 
 #: ../contents/ui/main.qml
 msgid "Shut Down..."
-msgstr "关机..."
+msgstr "关机…"
 
 #: ../contents/ui/main.qml
 msgid "Lock Screen"
-msgstr "锁屏"
+msgstr "锁定屏幕"
 
 #: ../contents/ui/main.qml
 msgid "Log Out"
