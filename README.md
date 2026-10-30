@@ -29,7 +29,14 @@ built-in command overrides and keeps custom entries hidden so their commands
 are not lost. Re-enable those entries with their checkboxes if needed.
 
 All menu commands are configured on the **Menu** page. **General** contains the
-panel icon and shortcut label settings.
+panel icon, shortcut labels, menu width, and menu item height settings.
+**Use automatic width** and **Use automatic item height** are enabled by default.
+Uncheck either option to set that dimension independently in pixels, starting at
+a width of **240** and an item height of **28**. Each checkbox disables only its
+corresponding dimension field. Turning either option back on preserves your
+manual value for later use.
+Item heights never shrink below the text height, and separators keep their normal spacing.
+Long menus scroll when they exceed the popup's height limit.
 Existing command settings are preserved when upgrading. The menu arrangement
 is stored internally; there is no raw JSON editor. Invalid saved layout data
 falls back to the default arrangement. Submenus are not supported in this version.

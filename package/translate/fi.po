@@ -252,3 +252,23 @@ msgstr "Järjestä vetämällä"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Pakota lopettaa :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Valikon leveys:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Valikkokohtien korkeus:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Määritä leveys automaattisesti"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Määritä valikkokohtien korkeus automaattisesti"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "Koot ovat pikseleinä."

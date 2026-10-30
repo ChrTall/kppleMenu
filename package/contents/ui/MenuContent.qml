@@ -12,11 +12,15 @@ FocusScope {
     property string layoutJson: ""
     property var configuration: ({})
     property int shortcutLabelStyle: 0
+    property bool automaticWidth: true
+    property bool automaticHeight: true
+    property int menuWidth: 240
+    property int buttonHeight: 28
     readonly property var entries: MenuLayout.visibleEntries(MenuLayout.parse(layoutJson).entries)
     property int currentIndex: -1
     signal commandRequested(string command)
 
-    implicitWidth: Math.min(Kirigami.Units.gridUnit * 40,
+    implicitWidth: !automaticWidth ? Math.max(1, menuWidth) : Math.min(Kirigami.Units.gridUnit * 40,
         Math.max(Kirigami.Units.gridUnit * 12.6, entries.length ? column.implicitWidth
             : emptyLabel.implicitWidth + Kirigami.Units.gridUnit))
     implicitHeight: Math.min(Kirigami.Units.gridUnit * 30,
@@ -146,7 +150,8 @@ FocusScope {
                         readonly property bool separator: modelData.type === "separator"
                         Layout.fillWidth: true
                         implicitWidth: separator ? 0 : commandButton.implicitWidth
-                        implicitHeight: separator ? 11 : commandButton.implicitHeight
+                        implicitHeight: separator ? 11 : root.automaticHeight ? commandButton.implicitHeight
+                            : Math.max(commandButton.implicitHeight, root.buttonHeight)
 
                         Rectangle {
                             visible: row.separator

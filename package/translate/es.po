@@ -252,3 +252,23 @@ msgstr "Arrastrar para reordenar"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Forzando a salir :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Anchura del menú:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Altura de los elementos del menú:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Usar anchura automática"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Usar altura automática para los elementos"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "Los tamaños se indican en píxeles."

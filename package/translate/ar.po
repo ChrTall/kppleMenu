@@ -253,3 +253,23 @@ msgstr "اسحب لإعادة الترتيب"
 
 #~ msgid "Force Quit :"
 #~ msgstr "القوة لترك :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "عرض القائمة:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "ارتفاع عنصر القائمة:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "استخدام العرض التلقائي"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "استخدام الارتفاع التلقائي لعناصر القائمة"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "الأحجام بالبكسل."

@@ -29,8 +29,8 @@ Item {
                 return
             }
             highlight.parent = item
-            highlight.width = item.width
-            highlight.height = item.height
+            highlight.width = Qt.binding(() => item.width)
+            highlight.height = Qt.binding(() => item.height)
             highlight.visible = true
             highlight.active = true
             highlight.hovered = true

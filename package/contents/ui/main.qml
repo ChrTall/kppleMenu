@@ -57,6 +57,10 @@ PlasmoidItem {
         layoutJson: Plasmoid.configuration.menuLayout
         configuration: Plasmoid.configuration
         shortcutLabelStyle: Plasmoid.configuration.shortcutLabelStyle
+        automaticWidth: Plasmoid.configuration.automaticWidth
+        automaticHeight: Plasmoid.configuration.automaticHeight
+        menuWidth: Plasmoid.configuration.menuWidth
+        buttonHeight: Plasmoid.configuration.buttonHeight
         focus: root.fullRepHasFocus
         Layout.preferredWidth: implicitWidth
         Layout.preferredHeight: implicitHeight

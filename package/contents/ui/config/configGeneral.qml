@@ -25,6 +25,10 @@ KCM.SimpleKCM {
     property string cfg_icon: Plasmoid.configuration.icon
     
     property alias cfg_shortcutLabelStyle: shortcutLabelStyle.currentIndex
+    property alias cfg_automaticWidth: automaticWidth.checked
+    property alias cfg_automaticHeight: automaticHeight.checked
+    property alias cfg_menuWidth: menuWidth.value
+    property alias cfg_buttonHeight: buttonHeight.value
 
 
     Kirigami.FormLayout {
@@ -113,6 +117,48 @@ KCM.SimpleKCM {
             id: shortcutLabelStyle
             Kirigami.FormData.label: i18n("Shortcut labels:")
             model: [i18n("Apple symbols"), i18n("PC labels")]
+        }
+
+        QQC2.CheckBox {
+            id: automaticWidth
+            objectName: "automaticWidthSetting"
+            text: i18n("Use automatic width")
+            checked: true
+        }
+
+        QQC2.SpinBox {
+            id: menuWidth
+            objectName: "menuWidthSetting"
+            Kirigami.FormData.label: i18n("Menu width:")
+            enabled: !automaticWidth.checked
+            from: 1
+            to: 10000
+            value: 240
+            editable: true
+        }
+
+        QQC2.CheckBox {
+            id: automaticHeight
+            objectName: "automaticHeightSetting"
+            text: i18n("Use automatic item height")
+            checked: true
+        }
+
+        QQC2.SpinBox {
+            id: buttonHeight
+            objectName: "menuItemHeightSetting"
+            Kirigami.FormData.label: i18n("Menu item height:")
+            enabled: !automaticHeight.checked
+            from: 1
+            to: 10000
+            value: 28
+            editable: true
+        }
+
+        QQC2.Label {
+            Layout.fillWidth: true
+            text: i18n("Sizes are in pixels.")
+            wrapMode: Text.WordWrap
         }
 
     }

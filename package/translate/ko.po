@@ -252,3 +252,23 @@ msgstr "드래그하여 순서 변경"
 
 #~ msgid "Force Quit :"
 #~ msgstr "강제 종료 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "메뉴 너비:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "메뉴 항목 높이:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "너비 자동 조정"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "메뉴 항목 높이 자동 조정"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "크기 단위는 픽셀입니다."

@@ -252,3 +252,23 @@ msgstr "拖动以调整顺序"
 
 #~ msgid "Force Quit :"
 #~ msgstr "强制退出 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "菜单宽度："
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "菜单项高度："
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "自动调整宽度"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "自动调整菜单项高度"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "尺寸单位为像素。"

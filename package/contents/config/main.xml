@@ -25,6 +25,24 @@ SPDX-License-Identifier: GPL-2.0-or-later
     <entry name="menuLayout" type="String">
       <default></default>
     </entry>
+    <entry name="automaticWidth" type="Bool">
+      <label>Automatically size the menu width to fit its contents.</label>
+      <default>true</default>
+    </entry>
+    <entry name="automaticHeight" type="Bool">
+      <label>Automatically size menu item heights to fit their contents.</label>
+      <default>true</default>
+    </entry>
+    <entry name="menuWidth" type="Int">
+      <label>Menu width in pixels when automatic width is disabled.</label>
+      <default>240</default>
+      <min>1</min>
+    </entry>
+    <entry name="buttonHeight" type="Int">
+      <label>Menu item height in pixels when automatic item height is disabled.</label>
+      <default>28</default>
+      <min>1</min>
+    </entry>
     <entry name="aboutThisComputerSettings" type="String">
       <default>kinfocenter</default>
     </entry>

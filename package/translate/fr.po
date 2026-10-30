@@ -252,3 +252,23 @@ msgstr "Faire glisser pour réorganiser"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Forcer à quitter :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Largeur du menu :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Hauteur des éléments du menu :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Ajuster automatiquement la largeur"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Ajuster automatiquement la hauteur des éléments"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "Les dimensions sont en pixels."

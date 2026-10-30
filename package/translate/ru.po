@@ -252,3 +252,23 @@ msgstr "Перетащите для изменения порядка"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Форс-бросить :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Ширина меню:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Высота пунктов меню:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Подбирать ширину автоматически"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Подбирать высоту пунктов автоматически"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "Размеры указаны в пикселях."

@@ -253,3 +253,23 @@ msgstr "Zum Umordnen ziehen"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Beenden erzwingen :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Menübreite:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Höhe der Menüeinträge:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Breite automatisch anpassen"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Höhe der Menüeinträge automatisch anpassen"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "Größen in Pixeln."

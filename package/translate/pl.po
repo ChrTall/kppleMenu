@@ -255,3 +255,23 @@ msgstr "Przeciągnij, aby zmienić kolejność"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Wymuś zamknięcie okna:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Szerokość menu:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Wysokość pozycji menu:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Automatycznie dopasuj szerokość"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Automatycznie dopasuj wysokość pozycji"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "Wymiary są podawane w pikselach."

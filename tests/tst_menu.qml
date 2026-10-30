@@ -48,6 +48,10 @@ Item {
             failOnWarning(/.*/);
             menu.layoutJson = "";
             menu.shortcutLabelStyle = 0;
+            menu.automaticWidth = true;
+            menu.automaticHeight = true;
+            menu.menuWidth = 240;
+            menu.buttonHeight = 28;
             editor.layoutJson = "";
             menu.clearSelection();
             menu.forceActiveFocus();
@@ -60,6 +64,51 @@ Item {
             compare(menu.entries[10].id, "log-out");
             compare(menu.commandFor(menu.entries[0]), "about-command");
             compare(menu.labelFor(menu.entries[2]), "System Settings…");
+        }
+
+        function test_custom_dimensions() {
+            const automaticWidth = menu.implicitWidth;
+            const automaticHeight = menu.implicitHeight;
+            const buttons = descendants(menu, item => typeof item.shortcutText === "string");
+            const about = buttons.find(item => item.text === "About This Computer");
+            const automaticItemHeight = about.height;
+            menu.menuWidth = 350;
+            menu.buttonHeight = 42;
+            compare(menu.implicitWidth, automaticWidth);
+            compare(menu.implicitHeight, automaticHeight);
+            menu.automaticWidth = false;
+            tryCompare(menu, "width", 350);
+            tryCompare(about, "height", automaticItemHeight);
+            menu.automaticHeight = false;
+            tryCompare(menu, "width", 350);
+            tryCompare(about, "height", 42);
+            verify(menu.implicitHeight > automaticHeight);
+            menu.forceActiveFocus();
+            keyClick(Qt.Key_Down);
+            compare(about.highlight.parent, about);
+            compare(about.highlight.width, about.width);
+            compare(about.highlight.height, about.height);
+            menu.menuWidth = 380;
+            menu.buttonHeight = 50;
+            tryCompare(about.highlight, "width", 380);
+            tryCompare(about.highlight, "height", 50);
+            const labels = descendants(about, item => item.text === "About This Computer");
+            fuzzyCompare(labels[0].mapToItem(about, 0, labels[0].height / 2).y, about.height / 2, 0.5);
+            menu.buttonHeight = 1;
+            tryCompare(about, "height", automaticItemHeight);
+            menu.buttonHeight = 50;
+            menu.automaticWidth = true;
+            menu.automaticHeight = true;
+            tryCompare(menu, "width", automaticWidth);
+            tryCompare(menu, "height", automaticHeight);
+            compare(menu.menuWidth, 380);
+            compare(menu.buttonHeight, 50);
+            menu.automaticHeight = false;
+            tryCompare(menu, "width", automaticWidth);
+            tryCompare(about, "height", 50);
+            menu.automaticWidth = false;
+            tryCompare(menu, "width", 380);
+            tryCompare(about, "height", 50);
         }
 
         function test_invalid_layout_data() {
@@ -344,6 +393,10 @@ Item {
         }
 
         function test_long_menu_scroll_and_centering() {
+            menu.automaticWidth = false;
+            menu.automaticHeight = false;
+            menu.menuWidth = 320;
+            menu.buttonHeight = 48;
             const entries = [];
             for (let i = 0; i < 40; ++i) {
                 entries.push({type: "custom", id: "custom-" + i, name: "Entry " + i, command: "test-command", visible: true});
