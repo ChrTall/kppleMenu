@@ -78,91 +78,171 @@ msgstr "Simboli Apple"
 msgid "PC labels"
 msgstr "Etichette PC"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr "Impostazioni avanzate:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "Mostra la modalità avanzata"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "Informazioni su questo computer:"
-
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Clear command"
 msgstr "Cancella comando"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
 msgstr "Ripristina il comando predefinito"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Settings :"
-msgstr "Impostazioni di Sistema:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "Standby:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "Riavvia:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "Spegni:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "Blocca schermo:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "Logout:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
 msgstr "Scorciatoie per spegnere, riavviare, terminare la sessione, aprire le impostazioni e altro."
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "Informazioni su questo computer"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "System Settings…"
 msgstr "Impostazioni di Sistema…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "App Store…"
 msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
 msgstr "Standby"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Restart…"
 msgstr "Riavvia…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Shut Down…"
 msgstr "Spegni…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr "Blocca schermo"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Log Out…"
 msgstr "Logout…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "Menu"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "Integrato"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "Personalizzato"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "Separatore"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "Nuova voce"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "Aggiungi voce personalizzata"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "Aggiungi separatore"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "Sposta su"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "Sposta giù"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "Elimina voce"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "Ripristina la disposizione predefinita"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "Mostra %1"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "Nome:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "Comando:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "Nascondi le voci con le caselle di controllo. I nomi integrati seguono la lingua del desktop."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "La disposizione del menu salvata non è valida. Viene mostrata la disposizione predefinita."
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "Nessuna voce di menu visibile."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "Trascina le maniglie per riordinare le voci."
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "Trascina per riordinare"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "Impostazioni avanzate:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "Mostra la modalità avanzata"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "Informazioni su questo computer:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "Impostazioni di Sistema:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "Standby:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "Riavvia:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "Spegni:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "Blocca schermo:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "Logout:"
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "I comandi integrati possono essere modificati nelle impostazioni avanzate della pagina Generale."
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Adatta i collegamenti con le tue righe di comando"

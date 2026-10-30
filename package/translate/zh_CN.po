@@ -78,91 +78,171 @@ msgstr "Apple 符号"
 msgid "PC labels"
 msgstr "PC 标签"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr "高级设置："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "显示高级模式"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "关于本机："
-
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Clear command"
 msgstr "清空命令"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
 msgstr "恢复默认命令"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Settings :"
-msgstr "系统设置："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "睡眠："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "重启："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "关机："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "锁屏："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "退出登录："
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
 msgstr "用于关机、重启、注销、打开设置等操作的快捷菜单。"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "关于本机"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "System Settings…"
 msgstr "系统设置…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "App Store…"
 msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
 msgstr "睡眠"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Restart…"
 msgstr "重启…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Shut Down…"
 msgstr "关机…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr "锁屏"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Log Out…"
 msgstr "退出登录…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "菜单"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "内置"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "自定义"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "分隔线"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "新条目"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "添加自定义条目"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "添加分隔线"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "上移"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "下移"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "删除条目"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "恢复默认布局"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "显示 %1"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "名称："
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "命令："
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "使用复选框隐藏条目。内置名称将使用桌面语言显示。"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "保存的菜单布局无效。当前显示默认布局。"
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "没有可见的菜单条目。"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "拖动手柄以调整条目顺序。"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "拖动以调整顺序"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "高级设置："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "显示高级模式"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "关于本机："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "系统设置："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "睡眠："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "重启："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "关机："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "锁屏："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "退出登录："
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "可以在“常规”的高级设置中更改内置命令。"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "使用您自己的命令行修改链接"

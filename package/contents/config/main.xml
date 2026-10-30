@@ -22,6 +22,9 @@ SPDX-License-Identifier: GPL-2.0-or-later
     <entry name="shortcutLabelStyle" type="Int">
       <default>0</default>
     </entry>
+    <entry name="menuLayout" type="String">
+      <default></default>
+    </entry>
     <entry name="aboutThisComputerSettings" type="String">
       <default>kinfocenter</default>
     </entry>

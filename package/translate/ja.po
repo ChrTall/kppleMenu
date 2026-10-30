@@ -78,91 +78,171 @@ msgstr "Appleの記号"
 msgid "PC labels"
 msgstr "PCの表記"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr "詳細設定："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "詳細モードを表示"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "このコンピューターについて："
-
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Clear command"
 msgstr "コマンドを消去"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
 msgstr "既定のコマンドに戻す"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Settings :"
-msgstr "システム設定："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "スリープ："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "再起動："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "システム終了："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "画面をロック："
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "ログアウト："
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
 msgstr "シャットダウン、再起動、ログアウト、設定などへのショートカット"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "このコンピューターについて"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "System Settings…"
 msgstr "システム設定…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "App Store…"
 msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
 msgstr "スリープ"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Restart…"
 msgstr "再起動…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Shut Down…"
 msgstr "システム終了…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr "画面をロック"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Log Out…"
 msgstr "ログアウト…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "メニュー"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "組み込み"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "カスタム"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "区切り線"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "新しい項目"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "カスタム項目を追加"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "区切り線を追加"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "上に移動"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "下に移動"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "項目を削除"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "標準の配置に戻す"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "%1を表示"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "名前:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "コマンド:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "チェックボックスで項目を非表示にできます。組み込み項目名はデスクトップの言語で表示されます。"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "保存されたメニューの配置が無効です。標準の配置を表示しています。"
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "表示するメニュー項目がありません。"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "ハンドルをドラッグして項目を並べ替えられます。"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "ドラッグして並べ替え"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "詳細設定："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "詳細モードを表示"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "このコンピューターについて："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "システム設定："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "スリープ："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "再起動："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "システム終了："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "画面をロック："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "ログアウト："
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "組み込みコマンドは「全般」の詳細設定で変更できます。"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "機能にコマンドラインを設定します"

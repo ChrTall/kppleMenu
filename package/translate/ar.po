@@ -79,91 +79,171 @@ msgstr "رموز Apple"
 msgid "PC labels"
 msgstr "تسميات الكمبيوتر الشخصي"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr "الإعدادات المتقدمة:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "إظهار الوضع المتقدم"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "حول هذا الحاسوب:"
-
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Clear command"
 msgstr "مسح الأمر"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
 msgstr "استعادة الأمر الافتراضي"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Settings :"
-msgstr "إعدادات النظام:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "إسبات:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "إعادة التشغيل:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "إيقاف التشغيل:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "تأمين الشاشة:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "تسجيل الخروج:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
 msgstr "اختصارات لإيقاف التشغيل وإعادة التشغيل وتسجيل الخروج وفتح الإعدادات وغيرها."
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "حول هذا الحاسوب"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "System Settings…"
 msgstr "إعدادات النظام…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "App Store…"
 msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
 msgstr "إسبات"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Restart…"
 msgstr "إعادة التشغيل…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Shut Down…"
 msgstr "إيقاف التشغيل…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr "تأمين الشاشة"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Log Out…"
 msgstr "تسجيل الخروج…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "القائمة"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "مدمج"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "مخصص"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "فاصل"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "عنصر جديد"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "إضافة عنصر مخصص"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "إضافة فاصل"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "نقل لأعلى"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "نقل لأسفل"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "حذف العنصر"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "استعادة التخطيط الافتراضي"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "إظهار %1"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "الاسم:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "الأمر:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "أخفِ العناصر باستخدام مربعات الاختيار. تتبع الأسماء المدمجة لغة سطح المكتب."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "تخطيط القائمة المحفوظ غير صالح. يُعرض التخطيط الافتراضي."
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "لا توجد عناصر قائمة ظاهرة."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "اسحب المقابض لإعادة ترتيب العناصر."
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "اسحب لإعادة الترتيب"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "الإعدادات المتقدمة:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "إظهار الوضع المتقدم"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "حول هذا الحاسوب:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "إعدادات النظام:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "إسبات:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "إعادة التشغيل:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "إيقاف التشغيل:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "تأمين الشاشة:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "تسجيل الخروج:"
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "يمكن تغيير الأوامر المدمجة من الإعدادات المتقدمة في صفحة عام."
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "تكييف الروابط مع أسطر الأوامر الخاصة بك"

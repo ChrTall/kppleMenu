@@ -80,90 +80,126 @@ msgstr ""
 msgid "PC labels"
 msgstr ""
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr ""
-
 #. Clears the command field, leaving an empty command.
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Clear command"
 msgstr ""
 
 #. Restores the default command; it does not clear the field.
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Settings :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
 msgstr ""
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
 msgstr ""
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr ""
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "System Settings…"
 msgstr ""
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "App Store…"
 msgstr ""
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
 msgstr ""
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Restart…"
 msgstr ""
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Shut Down…"
 msgstr ""
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr ""
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Log Out…"
+msgstr ""
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr ""
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr ""
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr ""
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr ""
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr ""
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
 msgstr ""

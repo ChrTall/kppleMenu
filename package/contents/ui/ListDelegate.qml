@@ -56,7 +56,7 @@ Item {
             if (!highlight || !area.containsMouse) {
                 return
             }
-            item.focus = true
+            item.forceActiveFocus(Qt.MouseFocusReason)
         }
     }
 
@@ -77,6 +77,8 @@ Item {
             Layout.fillWidth: true
             Layout.minimumHeight: 24
             verticalAlignment: Text.AlignVCenter
+            textFormat: Text.PlainText
+            elide: Text.ElideRight
         }
 
         PlasmaComponents.Label {
