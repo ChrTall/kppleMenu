@@ -1,5 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-// Tree presentation inspired by kMenu's TreeItemDelegate.qml.
+// Tree connectors and entry presentation are inspired by 51n7/kMenu's
+// TreeItemDelegate.qml (GPL-2.0-or-later):
+// https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/ui/config/TreeItemDelegate.qml
+// Reimplemented for a flat menu with visibility checkboxes and Kirigami drag handles.
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts

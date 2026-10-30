@@ -119,6 +119,12 @@ KCM.SimpleKCM {
             model: [i18n("Apple symbols"), i18n("PC labels")]
         }
 
+        // Width and item-height settings, including the 240/28 px manual defaults,
+        // are inspired by 51n7/kMenu's ConfigGeneral.qml and config/main.xml
+        // (GPL-2.0-or-later):
+        // https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/ui/config/ConfigGeneral.qml
+        // https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/config/main.xml
+        // kppleMenu adds separate automatic-sizing checkboxes for each dimension.
         QQC2.CheckBox {
             id: automaticWidth
             objectName: "automaticWidthSetting"

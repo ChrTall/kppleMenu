@@ -1,4 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
+// A dedicated visual menu configuration page is inspired by 51n7/kMenu's
+// ConfigMenuJson.qml (GPL-2.0-or-later):
+// https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/ui/config/ConfigMenuJson.qml
+// Configuration bindings here retain kppleMenu's existing built-in command keys.
 import QtQuick
 import org.kde.kcmutils as KCM
 import org.kde.plasma.plasmoid

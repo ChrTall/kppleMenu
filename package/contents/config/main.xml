@@ -25,6 +25,12 @@ SPDX-License-Identifier: GPL-2.0-or-later
     <entry name="menuLayout" type="String">
       <default></default>
     </entry>
+    <!--
+      Width and item-height settings and their 240/28 px manual defaults are
+      inspired by 51n7/kMenu's configuration (GPL-2.0-or-later):
+      https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/config/main.xml
+      kppleMenu adds independent automatic-sizing flags.
+    -->
     <entry name="automaticWidth" type="Bool">
       <label>Automatically size the menu width to fit its contents.</label>
       <default>true</default>

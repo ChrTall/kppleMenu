@@ -1,4 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
+// The JSON-backed customizable menu concept is inspired by 51n7/kMenu's
+// MenuBuilder.qml (GPL-2.0-or-later):
+// https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/ui/config/MenuBuilder.qml
+// The stable-ID schema, validation, and built-in visibility handling are specific
+// to kppleMenu; this is not kMenu's JSON format.
 .pragma library
 
 const builtinIds = ["about", "system-settings", "app-store", "sleep", "restart", "shut-down", "lock-screen", "log-out"];

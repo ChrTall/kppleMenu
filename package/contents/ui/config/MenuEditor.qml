@@ -1,6 +1,11 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+// The tree-and-properties editor layout and editing workflow are inspired by
+// 51n7/kMenu's MenuBuilder.qml (GPL-2.0-or-later):
+// https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/ui/config/MenuBuilder.qml
+// This implementation uses kppleMenu's stable built-in IDs, visibility flags,
+// translated actions, and drag-and-drop model rather than kMenu's submenu schema.
 import ".."
 import "../code/menuLayout.js" as MenuLayout
-// SPDX-License-Identifier: GPL-2.0-or-later
 import QtQuick
 import QtQuick.Controls as QQC2
 import QtQuick.Layouts

@@ -1,4 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
+// Configurable menu width and item height are inspired by 51n7/kMenu's
+// ItemListView.qml and ItemListDelegate.qml (GPL-2.0-or-later):
+// https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/ui/ItemListView.qml
+// https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/ui/ItemListDelegate.qml
+// Applied here to kppleMenu's own menu renderer with independent automatic sizing.
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls as QQC2
