@@ -15,8 +15,8 @@ System Settings, App Store, Restart, Shut Down, and Log Out, following Apple's
 [menu-label convention](https://developer.apple.com/design/human-interface-guidelines/menus).
 About, Sleep, and Lock Screen have no ellipsis. German uses a space before
 its ellipsis; Traditional Chinese uses the centered ellipsis shown in Apple's
-power-action instructions. Settings field labels use the same wording with
-colons instead of menu ellipses.
+power-action instructions. The menu editor uses these same translated names
+to identify built-in actions.
 
 ## Labels used in Kpple Menu
 

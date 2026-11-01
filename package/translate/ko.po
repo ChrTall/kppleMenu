@@ -78,91 +78,171 @@ msgstr "Apple 기호"
 msgid "PC labels"
 msgstr "PC 표기"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr "고급 설정:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "고급 모드 표시"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "이 컴퓨터 정보:"
-
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Clear command"
 msgstr "명령 지우기"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
 msgstr "기본 명령으로 복원"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Settings :"
-msgstr "시스템 설정:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "잠자기:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "재시동:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "시스템 종료:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "잠금 화면:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "로그아웃:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
 msgstr "시스템 종료, 다시 시작, 로그아웃, 설정 등에 바로 접근할 수 있는 메뉴입니다."
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "이 컴퓨터 정보"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "System Settings…"
 msgstr "시스템 설정…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "App Store…"
 msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
 msgstr "잠자기"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Restart…"
 msgstr "재시동…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Shut Down…"
 msgstr "시스템 종료…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr "잠금 화면"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Log Out…"
 msgstr "로그아웃…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "메뉴"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "기본 제공"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "사용자 지정"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "구분선"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "새 항목"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "사용자 지정 항목 추가"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "구분선 추가"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "위로 이동"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "아래로 이동"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "항목 삭제"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "기본 배치 복원"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "%1 표시"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "이름:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "명령:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "확인란으로 항목을 숨길 수 있습니다. 기본 제공 이름은 데스크톱 언어에 따라 표시됩니다."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "저장된 메뉴 배치가 잘못되었습니다. 기본 배치를 표시합니다."
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "표시할 메뉴 항목이 없습니다."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "핸들을 드래그하여 항목 순서를 변경할 수 있습니다."
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "드래그하여 순서 변경"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "고급 설정:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "고급 모드 표시"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "이 컴퓨터 정보:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "시스템 설정:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "잠자기:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "재시동:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "시스템 종료:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "잠금 화면:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "로그아웃:"
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "기본 제공 명령은 일반 페이지의 고급 설정에서 변경할 수 있습니다."
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "자신의 명령 줄을 사용하여 링크 조정"
@@ -172,3 +252,23 @@ msgstr "로그아웃…"
 
 #~ msgid "Force Quit :"
 #~ msgstr "강제 종료 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "메뉴 너비:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "메뉴 항목 높이:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "너비 자동 조정"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "메뉴 항목 높이 자동 조정"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "크기 단위는 픽셀입니다."

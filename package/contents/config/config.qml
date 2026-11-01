@@ -15,6 +15,12 @@ PlasmaConfig.ConfigModel {
         icon: "configure"
         source: "config/configGeneral.qml"
     }
+
+    PlasmaConfig.ConfigCategory {
+        name: i18n("Menu")
+        icon: "application-menu"
+        source: "config/ConfigMenu.qml"
+    }
 }
 
  

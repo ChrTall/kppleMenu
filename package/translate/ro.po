@@ -78,91 +78,171 @@ msgstr "Simboluri Apple"
 msgid "PC labels"
 msgstr "Etichete PC"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr "Setări avansate:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "Afișează modul avansat"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "Despre acest calculator:"
-
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Clear command"
 msgstr "Șterge comanda"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
 msgstr "Restabilește comanda implicită"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Settings :"
-msgstr "Configurări sistem:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "Adormiți computerul:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "Reporniți computerul:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "Opriți computerul:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "Blocare ecran:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "Logout:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
 msgstr "Scurtături pentru închidere, repornire, deconectare, deschiderea setărilor și alte acțiuni."
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "Despre acest calculator"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "System Settings…"
 msgstr "Configurări sistem…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "App Store…"
 msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
 msgstr "Adormiți computerul"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Restart…"
 msgstr "Reporniți computerul…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Shut Down…"
 msgstr "Opriți computerul…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr "Blocare ecran"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Log Out…"
 msgstr "Logout…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "Meniu"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "Integrat"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "Personalizat"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "Separator"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "Intrare nouă"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "Adaugă o intrare personalizată"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "Adaugă un separator"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "Mută în sus"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "Mută în jos"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "Șterge intrarea"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "Restabilește aranjamentul implicit"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "Arată %1"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "Nume:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "Comandă:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "Ascundeți intrările folosind casetele de bifare. Numele integrate urmează limba mediului de birou."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "Aranjamentul salvat al meniului nu este valid. Este afișat aranjamentul implicit."
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "Nicio intrare de meniu vizibilă."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "Trageți de mânere pentru a schimba ordinea intrărilor."
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "Trageți pentru a reordona"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "Setări avansate:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "Afișează modul avansat"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "Despre acest calculator:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "Configurări sistem:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "Adormiți computerul:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "Reporniți computerul:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "Opriți computerul:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "Blocare ecran:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "Logout:"
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "Comenzile integrate pot fi modificate în General, la configurările avansate."
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Adaptați legăturile cu propriile comenzi"
@@ -172,3 +252,23 @@ msgstr "Logout…"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Închide forțat :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Lățimea meniului:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Înălțimea elementelor din meniu:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Ajustează automat lățimea"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Ajustează automat înălțimea elementelor"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "Dimensiunile sunt în pixeli."

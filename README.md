@@ -10,11 +10,41 @@ The original maintainer does not seem actively maintaining the project anymore. 
 
 ## Usage
 
-Menu entries can be configured via the settings, if you tick the advanced settings checkbox.
-Simply click on the entries to check if the configured command is working.
+Open the widget settings and select **Menu** to customize the menu. A tree-style
+list on the left shows the menu order and separator lines. Selecting an entry
+opens its properties on the right; the divider can be dragged to resize the panes.
+On narrow windows, the properties pane moves below the list.
+
+- Show or hide any entry with its checkbox, including built-in actions.
+- Drag the handle beside an entry to reorder it, or use **Move up** and **Move down**.
+- Add custom entries with your own names and commands, or add separators.
+- Edit any action's command in the properties pane; custom names can be edited there too.
+  Built-in commands have separate **Clear** and **Reset** controls. Custom entries and separators
+  can be deleted; built-in actions can always be shown again.
+- The **Built-in** and **Custom** labels distinguish entries in settings only.
+  Built-in names stay translated and their shortcuts follow the actions when moved.
+
+**Restore default layout** restores the original menu arrangement. It preserves
+built-in command overrides and keeps custom entries hidden so their commands
+are not lost. Re-enable those entries with their checkboxes if needed.
+
+All menu commands are configured on the **Menu** page. **General** contains the
+panel icon, shortcut labels, menu width, and menu item height settings.
+**Use automatic width** and **Use automatic item height** are enabled by default.
+Uncheck either option to set that dimension independently in pixels, starting at
+a width of **240** and an item height of **28**. Each checkbox disables only its
+corresponding dimension field. Turning either option back on preserves your
+manual value for later use.
+Item heights never shrink below the text height, and separators keep their normal spacing.
+Long menus scroll when they exceed the popup's height limit.
+Existing command settings are preserved when upgrading. The menu arrangement
+is stored internally; there is no raw JSON editor. Invalid saved layout data
+falls back to the default arrangement. Submenus are not supported in this version.
+
 The commands should work on all Distributions with KDE Plasma 6, but might have to be adjusted manually.
 For example, some distributions like Fedora Kinoite provide Qt6 `qdbus` as `qdbus-qt6` instead of `qdbus6`.
-If menu actions do not work out of the box, open advanced settings and change `qdbus6` to `qdbus-qt6` in the affected commands.
+If menu actions do not work out of the box, select the affected action on the
+**Menu** settings page and change `qdbus6` to `qdbus-qt6` in its command.
 
 ### Keyboard Navigation
 
@@ -29,6 +59,8 @@ While the menu is open and focused, you can:
 Meta is usually the Windows/Super key on a PC keyboard or Command on an Apple
 keyboard, depending on the keyboard mapping. These actions are local to the
 open menu; they do not register global shortcuts.
+Hidden entries cannot be activated through the menu shortcuts. Entries with
+empty commands are disabled, and navigation skips them and separators.
 
 Under **General → Shortcut labels**, choose **Apple symbols** (the default) or
 **PC labels**. This changes the displayed hints; both shortcut variants work
@@ -113,6 +145,18 @@ Untranslated strings fall back to English when a language is selected explicitly
 The script prefers an installed UTF-8 locale for the selected language, and falls
 back to another installed UTF-8 locale if needed. At least one locale other than
 `C.UTF-8` must be installed for translation previews.
+
+## Development checks
+
+The QML tests use mock commands; they do not execute desktop actions. With
+Qt 6 Quick Test and `qtpaths6` installed, run them from the repository root:
+
+```bash
+QT_QPA_PLATFORM=offscreen QT_QUICK_CONTROLS_STYLE=Basic \
+    "$(qtpaths6 --query QT_HOST_BINS)/qmltestrunner" -input tests
+```
+
+Use the Qt 6 runner; an unversioned `qmltestrunner` may belong to Qt 5.
 
 ## License
 

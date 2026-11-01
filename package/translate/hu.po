@@ -78,91 +78,171 @@ msgstr "Apple-szimbólumok"
 msgid "PC labels"
 msgstr "PC-s jelölések"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr "Speciális beállítások:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "Speciális mód megjelenítése"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "A számítógép névjegye:"
-
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Clear command"
 msgstr "Parancs törlése"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
 msgstr "Alapértelmezett parancs visszaállítása"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Settings :"
-msgstr "Rendszerbeállítások:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "Alvó állapot:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "Újraindítás:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "Leállítás:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "Képernyő zárolása:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "Kijelentkezés:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
 msgstr "Gyorselérés a leállításhoz, újraindításhoz, kijelentkezéshez, beállításokhoz és más műveletekhez."
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "A számítógép névjegye"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "System Settings…"
 msgstr "Rendszerbeállítások…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "App Store…"
 msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
 msgstr "Alvó állapot"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Restart…"
 msgstr "Újraindítás…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Shut Down…"
 msgstr "Leállítás…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr "Képernyő zárolása"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Log Out…"
 msgstr "Kijelentkezés…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "Menü"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "Beépített"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "Egyéni"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "Elválasztó"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "Új bejegyzés"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "Egyéni bejegyzés hozzáadása"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "Elválasztó hozzáadása"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "Mozgatás felfelé"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "Mozgatás lefelé"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "Bejegyzés törlése"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "Alapértelmezett elrendezés visszaállítása"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "%1 megjelenítése"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "Név:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "Parancs:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "A bejegyzések a jelölőnégyzetekkel rejthetők el. A beépített nevek az asztali környezet nyelvét követik."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "A mentett menüelrendezés érvénytelen. Az alapértelmezett elrendezés látható."
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "Nincsenek látható menübejegyzések."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "Az elemek sorrendjét a fogantyúk húzásával módosíthatja."
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "Átrendezés húzással"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "Speciális beállítások:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "Speciális mód megjelenítése"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "A számítógép névjegye:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "Rendszerbeállítások:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "Alvó állapot:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "Újraindítás:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "Leállítás:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "Képernyő zárolása:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "Kijelentkezés:"
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "A beépített parancsok az Általános lap speciális beállításaiban módosíthatók."
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Itt lecserélheted a funkciókat a saját parancsaidra"
@@ -172,3 +252,23 @@ msgstr "Kijelentkezés…"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Kilépésre kényszerítés :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Menü szélessége:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Menüpontok magassága:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Szélesség automatikus beállítása"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Menüpontok magasságának automatikus beállítása"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "A méretek képpontban értendők."

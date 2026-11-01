@@ -78,91 +78,171 @@ msgstr "Símbolos Apple"
 msgid "PC labels"
 msgstr "Etiquetas de PC"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr "Definições avançadas:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "Mostrar o modo avançado"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "Acerca deste computador:"
-
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Clear command"
 msgstr "Limpar comando"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
 msgstr "Repor o comando predefinido"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Settings :"
-msgstr "Definições do Sistema:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "Pausar:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "Reiniciar:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "Desligar:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "Bloquear ecrã:"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "Terminar sessão:"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
 msgstr "Atalhos para desligar, reiniciar, terminar a sessão, abrir as definições, etc."
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "Acerca deste computador"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "System Settings…"
 msgstr "Definições do Sistema…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "App Store…"
 msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
 msgstr "Pausar"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Restart…"
 msgstr "Reiniciar…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Shut Down…"
 msgstr "Desligar…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr "Bloquear ecrã"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Log Out…"
 msgstr "Terminar sessão…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "Menu"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "Integrado"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "Personalizado"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "Separador"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "Nova entrada"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "Adicionar entrada personalizada"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "Adicionar separador"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "Mover para cima"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "Mover para baixo"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "Eliminar entrada"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "Restaurar a disposição predefinida"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "Mostrar %1"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "Nome:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "Comando:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "Oculte entradas com as caixas de seleção. Os nomes integrados seguem o idioma do ambiente de trabalho."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "A disposição guardada do menu é inválida. É apresentada a disposição predefinida."
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "Não há entradas de menu visíveis."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "Arraste as pegas para reordenar as entradas."
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "Arrastar para reordenar"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "Definições avançadas:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "Mostrar o modo avançado"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "Acerca deste computador:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "Definições do Sistema:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "Pausar:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "Reiniciar:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "Desligar:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "Bloquear ecrã:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "Terminar sessão:"
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "Os comandos integrados podem ser alterados em Geral, nas definições avançadas."
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Adapte links com suas próprias linhas de comando"
@@ -172,3 +252,23 @@ msgstr "Terminar sessão…"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Forçar Encerramento :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Largura do menu:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Altura dos itens do menu:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Ajustar a largura automaticamente"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Ajustar a altura dos itens automaticamente"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "As dimensões são em píxeis."
