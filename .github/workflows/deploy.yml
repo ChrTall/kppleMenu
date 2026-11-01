@@ -20,6 +20,11 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Install translation dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends gettext
+
       - name: Create translation files
         run: ./create-translations.sh
 
