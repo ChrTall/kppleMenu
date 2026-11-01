@@ -64,6 +64,10 @@ PlasmoidItem {
         focus: root.fullRepHasFocus
         Layout.preferredWidth: implicitWidth
         Layout.preferredHeight: implicitHeight
+        Layout.minimumWidth: implicitWidth
+        Layout.maximumWidth: implicitWidth
+        Layout.minimumHeight: implicitHeight
+        Layout.maximumHeight: implicitHeight
         onCommandRequested: command => executable.exec(command)
     }
 }
