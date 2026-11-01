@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 # Version 4
 
 # Eg: kpackagetool6 --type "Plasma/Applet" --remove package
