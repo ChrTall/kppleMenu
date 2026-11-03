@@ -14,7 +14,6 @@ import org.kde.ksvg as KSvg
 import org.kde.iconthemes as KIconThemes
 import org.kde.kirigami as Kirigami
 import org.kde.kcmutils as KCM
-import org.kde.config as KConfig
 import org.kde.plasma.plasmoid
 
 import "../code/tools.js" as Tools
@@ -25,15 +24,11 @@ KCM.SimpleKCM {
 
     property string cfg_icon: Plasmoid.configuration.icon
     
-    property alias cfg_showAdvancedMode: showAdvancedMode.checked
-    property alias cfg_aboutThisComputerSettings: aboutThisComputerSettings.text
-    property alias cfg_systemPreferencesSettings: systemPreferencesSettings.text
-    property alias cfg_appStoreSettings: appStoreSettings.text
-    property alias cfg_sleepSettings: sleepSettings.text
-    property alias cfg_restartSettings: restartSettings.text
-    property alias cfg_shutDownSettings: shutDownSettings.text
-    property alias cfg_lockScreenSettings: lockScreenSettings.text
-    property alias cfg_logOutSettings: logOutSettings.text
+    property alias cfg_shortcutLabelStyle: shortcutLabelStyle.currentIndex
+    property alias cfg_automaticWidth: automaticWidth.checked
+    property alias cfg_automaticHeight: automaticHeight.checked
+    property alias cfg_menuWidth: menuWidth.value
+    property alias cfg_buttonHeight: buttonHeight.value
 
 
     Kirigami.FormLayout {
@@ -118,142 +113,59 @@ KCM.SimpleKCM {
             End: code from plasma-desktop/applets/kickoff/contents/ui/ConfigGeneral.qml
         */
         
+        QQC2.ComboBox {
+            id: shortcutLabelStyle
+            Kirigami.FormData.label: i18n("Shortcut labels:")
+            model: [i18n("Apple symbols"), i18n("PC labels")]
+        }
+
+        // Width and item-height settings, including the 240/28 px manual defaults,
+        // are inspired by 51n7/kMenu's ConfigGeneral.qml and config/main.xml
+        // (GPL-2.0-or-later):
+        // https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/ui/config/ConfigGeneral.qml
+        // https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/config/main.xml
+        // kppleMenu adds separate automatic-sizing checkboxes for each dimension.
         QQC2.CheckBox {
-            id: showAdvancedMode
-            Kirigami.FormData.label: i18n("Advanced Settings:")
-            text: i18n("Show advanced mode")
-            checked: false
-            enabled:true
+            id: automaticWidth
+            objectName: "automaticWidthSetting"
+            text: i18n("Use automatic width")
+            checked: true
         }
 
-        Kirigami.ActionTextField {
-            id: aboutThisComputerSettings
-            Kirigami.FormData.label: i18n("About This Computer :")
-            placeholderText: i18n("kinfocenter")
-            enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: aboutThisComputerSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    aboutThisComputerSettings.clear()
-                    root.cfg_aboutThisComputerSettings = ""
-                }
-            }
+        QQC2.SpinBox {
+            id: menuWidth
+            objectName: "menuWidthSetting"
+            Kirigami.FormData.label: i18n("Menu width:")
+            enabled: !automaticWidth.checked
+            from: 1
+            to: 10000
+            value: 240
+            editable: true
         }
 
-        Kirigami.ActionTextField {
-            id: systemPreferencesSettings
-            Kirigami.FormData.label: i18n("System Preferences :")
-            placeholderText: i18n("systemsettings5")
-            enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: systemPreferencesSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    systemPreferencesSettings.clear()
-                    root.cfg_systemPreferencesSettings = ""
-                }
-            }
+        QQC2.CheckBox {
+            id: automaticHeight
+            objectName: "automaticHeightSetting"
+            text: i18n("Use automatic item height")
+            checked: true
         }
 
-        Kirigami.ActionTextField {
-            id: appStoreSettings
-            Kirigami.FormData.label: i18n ("App Store :")
-            placeholderText: i18n("plasma-discover")
-            enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: appStoreSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    appStoreSettings.clear()
-                    root.cfg_appStoreSettings = ""
-                }
-            }
+        QQC2.SpinBox {
+            id: buttonHeight
+            objectName: "menuItemHeightSetting"
+            Kirigami.FormData.label: i18n("Menu item height:")
+            enabled: !automaticHeight.checked
+            from: 1
+            to: 10000
+            value: 28
+            editable: true
         }
 
-        Kirigami.ActionTextField {
-            id: sleepSettings
-            Kirigami.FormData.label: i18n ("Sleep :")
-            placeholderText: i18n("systemctl suspend")
-            enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: sleepSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    sleepSettings.clear()
-                    root.cfg_sleepSettings = ""
-                }
-            }
+        QQC2.Label {
+            Layout.fillWidth: true
+            text: i18n("Sizes are in pixels.")
+            wrapMode: Text.WordWrap
         }
 
-        Kirigami.ActionTextField {
-            id: restartSettings
-            Kirigami.FormData.label: i18n ("Restart :")
-            placeholderText: i18n("/sbin/reboot")
-            enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: restartSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    restartSettings.clear()
-                    root.cfg_restartSettings = ""
-                }
-            }
-        }
-
-        Kirigami.ActionTextField {
-            id: shutDownSettings
-            Kirigami.FormData.label: i18n ("Shut Down :")
-            placeholderText: i18n("/sbin/shutdown now")
-            enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: shutDownSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    shutDownSettings.clear()
-                    root.cfg_shutDownSettings = ""
-                }
-            }
-        }
-
-        Kirigami.ActionTextField {
-            id: lockScreenSettings
-            Kirigami.FormData.label: i18n ("Lock Screen :")
-            placeholderText: i18n("qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock")
-            enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: lockScreenSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    lockScreenSettings.clear()
-                    root.cfg_lockScreenSettings = ""
-                }
-            }
-        }
-
-        Kirigami.ActionTextField {
-            id: logOutSettings
-            Kirigami.FormData.label: i18n ("Log Out :")
-            placeholderText: i18n("qdbus org.kde.ksmserver /KSMServer logout 0 0 0")
-            enabled: showAdvancedMode.checked
-            rightActions: QQC2.Action {
-                icon.name: "edit-clear"
-                enabled: logOutSettings.text !== ""
-                text: i18nc("@action:button", "Reset command")
-                onTriggered: {
-                    logOutSettings.clear()
-                    root.cfg_logOutSettings = ""
-                }
-            }
-        }
     }
 }
-
- 

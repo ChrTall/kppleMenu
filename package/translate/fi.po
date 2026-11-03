@@ -17,167 +17,232 @@ msgstr ""
 
 #: ../metadata.json
 msgid "Kpple Menu"
-msgstr ""
+msgstr "Kpple Menu"
 
 #: ../metadata.json
 msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
-msgstr ""
+msgstr "Kpple Menu on avattava valikko, joka sijaitsee tavallisesti valikkorivin vasemmassa reunassa."
 
 #: ../contents/config/config.qml
 msgid "General"
-msgstr "Yleisesti"
+msgstr "Yleiset"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Icon:"
-msgstr ""
+msgstr "Kuvake:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Change Kpple Menu's icon"
-msgstr ""
+msgstr "Vaihda Kpple Menun kuvake"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
-msgstr ""
+msgstr "Nykyinen kuvake on %1. Valitse toinen kuvake tai palauta oletuskuvake napsauttamalla."
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:tooltip"
 msgid "Icon name is \"%1\""
-msgstr ""
+msgstr "Kuvakkeen nimi: ”%1”"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Open icon chooser dialog"
 msgid "Choose…"
-msgstr ""
+msgstr "Valitse…"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Choose an icon for Application Launcher"
-msgstr ""
+msgstr "Valitse sovelluskäynnistimen kuvake"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Reset to default icon"
-msgstr ""
+msgstr "Palauta oletuskuvake"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:inmenu"
 msgid "Remove icon"
-msgstr ""
+msgstr "Poista kuvake"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr ""
+msgid "Shortcut labels:"
+msgstr "Pikanäppäinten merkinnät:"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "Näytä edistynyt tila"
+msgid "Apple symbols"
+msgstr "Apple-symbolit"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "Tietoja tästä tietokoneesta :"
+msgid "PC labels"
+msgstr "PC-merkinnät"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
-msgstr ""
+#: ../contents/ui/config/MenuEditor.qml
+msgctxt "@action:button"
+msgid "Clear command"
+msgstr "Tyhjennä komento"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "Järjestelmäasetukset :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings5"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "Sovelluskauppa :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "Keskeytä toiminta :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "Käynnistää uudelleen :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "Kytke pois päältä :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "Lukitusnäyttö :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "Kirjautua ulos :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
-msgstr ""
+msgstr "Palauta oletuskomento"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
-msgstr ""
+msgstr "Pikavalinnat sammuttamiseen, uudelleenkäynnistykseen, uloskirjautumiseen, asetuksiin ja muihin toimintoihin."
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "Tietoja tästä tietokoneesta"
 
-#: ../contents/ui/main.qml
-msgid "System Preferences..."
-msgstr "Järjestelmäasetukset..."
+#: ../contents/ui/MenuActions.qml
+msgid "System Settings…"
+msgstr "Järjestelmäasetukset…"
 
-#: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "Sovelluskauppa..."
+#: ../contents/ui/MenuActions.qml
+msgid "App Store…"
+msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
-msgstr "Keskeytä toiminta"
+msgstr "Mene nukkumaan"
 
-#: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "Käynnistää uudelleen..."
+#: ../contents/ui/MenuActions.qml
+msgid "Restart…"
+msgstr "Käynnistä uudelleen…"
 
-#: ../contents/ui/main.qml
-msgid "Shut Down..."
-msgstr "Kytke pois päältä..."
+#: ../contents/ui/MenuActions.qml
+msgid "Shut Down…"
+msgstr "Sammuta…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
-msgstr "Lukitusnäyttö"
+msgstr "Lukitse näyttö"
 
-#: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Kirjautua ulos"
+#: ../contents/ui/MenuActions.qml
+msgid "Log Out…"
+msgstr "Kirjaa ulos…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "Valikko"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "Sisäänrakennettu"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "Mukautettu"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "Erotin"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "Uusi kohta"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "Lisää mukautettu kohta"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "Lisää erotin"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "Siirrä ylemmäs"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "Siirrä alemmas"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "Poista kohta"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "Palauta oletusasettelu"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "Näytä %1"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "Nimi:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "Komento:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "Piilota kohteita valintaruuduilla. Sisäänrakennetut nimet näytetään työpöydän kielellä."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "Tallennettu valikkoasettelu on virheellinen. Näytetään oletusasettelu."
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "Ei näkyviä valikkokohtia."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "Järjestä kohdat uudelleen vetämällä kahvoista."
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "Järjestä vetämällä"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "Lisäasetukset:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "Näytä lisäasetustila"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "Tietoja tästä tietokoneesta:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "Järjestelmäasetukset:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "Mene nukkumaan:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "Käynnistä uudelleen:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "Sammuta:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "Lukitse näyttö:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "Kirjaa ulos:"
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "Sisäänrakennettuja komentoja voi muuttaa Yleiset-sivun lisäasetuksissa."
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Muuta linkkejä omiin komentoriviisi"
@@ -187,3 +252,23 @@ msgstr "Kirjautua ulos"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Pakota lopettaa :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Valikon leveys:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Valikkokohtien korkeus:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Määritä leveys automaattisesti"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Määritä valikkokohtien korkeus automaattisesti"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "Koot ovat pikseleinä."

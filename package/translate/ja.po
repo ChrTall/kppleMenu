@@ -17,167 +17,232 @@ msgstr ""
 
 #: ../metadata.json
 msgid "Kpple Menu"
-msgstr ""
+msgstr "Kpple Menu"
 
 #: ../metadata.json
 msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
-msgstr ""
+msgstr "Kpple Menu は、通常メニューバーの左側に配置するドロップダウンメニューです。"
 
 #: ../contents/config/config.qml
 msgid "General"
-msgstr "一般的に"
+msgstr "全般"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Icon:"
-msgstr ""
+msgstr "アイコン："
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Change Kpple Menu's icon"
-msgstr ""
+msgstr "Kpple Menu のアイコンを変更"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
-msgstr ""
+msgstr "現在のアイコンは %1 です。クリックすると、別のアイコンを選択するか、既定のアイコンに戻すことができます。"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:tooltip"
 msgid "Icon name is \"%1\""
-msgstr ""
+msgstr "アイコン名：「%1」"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Open icon chooser dialog"
 msgid "Choose…"
-msgstr ""
+msgstr "選択…"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Choose an icon for Application Launcher"
-msgstr ""
+msgstr "アプリケーションランチャーのアイコンを選択"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Reset to default icon"
-msgstr ""
+msgstr "既定のアイコンに戻す"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:inmenu"
 msgid "Remove icon"
-msgstr ""
+msgstr "アイコンを削除"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr ""
+msgid "Shortcut labels:"
+msgstr "キーボードショートカットの表示:"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "詳細設定を表示する"
+msgid "Apple symbols"
+msgstr "Appleの記号"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "このコンピュータについて :"
+msgid "PC labels"
+msgstr "PCの表記"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
-msgstr ""
+#: ../contents/ui/config/MenuEditor.qml
+msgctxt "@action:button"
+msgid "Clear command"
+msgstr "コマンドを消去"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "システム環境設定 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings5"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "スリープ :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "再起動 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "システム終了 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "画面をロック :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "ログアウト :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
-msgstr ""
+msgstr "既定のコマンドに戻す"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
-msgstr ""
+msgstr "シャットダウン、再起動、ログアウト、設定などへのショートカット"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
-msgstr "このコンピュータについて"
+msgstr "このコンピューターについて"
 
-#: ../contents/ui/main.qml
-msgid "System Preferences..."
-msgstr "システム環境設定..."
+#: ../contents/ui/MenuActions.qml
+msgid "System Settings…"
+msgstr "システム設定…"
 
-#: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "App Store..."
+#: ../contents/ui/MenuActions.qml
+msgid "App Store…"
+msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
 msgstr "スリープ"
 
-#: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "再起動..."
+#: ../contents/ui/MenuActions.qml
+msgid "Restart…"
+msgstr "再起動…"
 
-#: ../contents/ui/main.qml
-msgid "Shut Down..."
-msgstr "システム終了..."
+#: ../contents/ui/MenuActions.qml
+msgid "Shut Down…"
+msgstr "システム終了…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr "画面をロック"
 
-#: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "ログアウト"
+#: ../contents/ui/MenuActions.qml
+msgid "Log Out…"
+msgstr "ログアウト…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "メニュー"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "組み込み"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "カスタム"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "区切り線"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "新しい項目"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "カスタム項目を追加"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "区切り線を追加"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "上に移動"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "下に移動"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "項目を削除"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "標準の配置に戻す"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "%1を表示"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "名前:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "コマンド:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "チェックボックスで項目を非表示にできます。組み込み項目名はデスクトップの言語で表示されます。"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "保存されたメニューの配置が無効です。標準の配置を表示しています。"
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "表示するメニュー項目がありません。"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "ハンドルをドラッグして項目を並べ替えられます。"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "ドラッグして並べ替え"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "詳細設定："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "詳細モードを表示"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "このコンピューターについて："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "システム設定："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "スリープ："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "再起動："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "システム終了："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "画面をロック："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "ログアウト："
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "組み込みコマンドは「全般」の詳細設定で変更できます。"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "機能にコマンドラインを設定します"
@@ -187,3 +252,23 @@ msgstr "ログアウト"
 
 #~ msgid "Force Quit :"
 #~ msgstr "強制終了 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "メニューの幅:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "メニュー項目の高さ:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "幅を自動調整する"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "メニュー項目の高さを自動調整する"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "サイズの単位はピクセルです。"

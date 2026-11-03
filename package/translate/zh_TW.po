@@ -17,167 +17,232 @@ msgstr ""
 
 #: ../metadata.json
 msgid "Kpple Menu"
-msgstr ""
+msgstr "Kpple Menu"
 
 #: ../metadata.json
 msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
-msgstr ""
+msgstr "Kpple Menu 是一個下拉選單，通常放置在選單列左側。"
 
 #: ../contents/config/config.qml
 msgid "General"
-msgstr "一般的"
+msgstr "一般"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Icon:"
-msgstr ""
+msgstr "圖示："
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Change Kpple Menu's icon"
-msgstr ""
+msgstr "變更 Kpple Menu 的圖示"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
-msgstr ""
+msgstr "目前的圖示是 %1。點選可選擇其他圖示或還原預設圖示。"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:tooltip"
 msgid "Icon name is \"%1\""
-msgstr ""
+msgstr "圖示名稱：「%1」"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Open icon chooser dialog"
 msgid "Choose…"
-msgstr ""
+msgstr "選擇…"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Choose an icon for Application Launcher"
-msgstr ""
+msgstr "為應用程式啟動器選擇圖示"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Reset to default icon"
-msgstr ""
+msgstr "還原預設圖示"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:inmenu"
 msgid "Remove icon"
-msgstr ""
+msgstr "移除圖示"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr ""
+msgid "Shortcut labels:"
+msgstr "鍵盤快速鍵顯示："
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "顯示高級模式"
+msgid "Apple symbols"
+msgstr "Apple 符號"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "關於這台電腦 :"
+msgid "PC labels"
+msgstr "PC 標籤"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
-msgstr ""
+#: ../contents/ui/config/MenuEditor.qml
+msgctxt "@action:button"
+msgid "Clear command"
+msgstr "清空指令"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "系統偏好設定 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings5"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "應用商店 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "暫停活動 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "重新啟動 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "關掉 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "鎖屏 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "登出 :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
-msgstr ""
+msgstr "還原預設指令"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
-msgstr ""
+msgstr "用於關機、重新啟動、登出、開啟設定等操作的快捷選單。"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "關於這台電腦"
 
-#: ../contents/ui/main.qml
-msgid "System Preferences..."
-msgstr "系統偏好設定..."
+#: ../contents/ui/MenuActions.qml
+msgid "System Settings…"
+msgstr "系統設定⋯"
 
-#: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "應用商店..."
+#: ../contents/ui/MenuActions.qml
+msgid "App Store…"
+msgstr "App Store⋯"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
-msgstr "暫停活動"
+msgstr "睡眠"
 
-#: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "重新啟動..."
+#: ../contents/ui/MenuActions.qml
+msgid "Restart…"
+msgstr "重新開機⋯"
 
-#: ../contents/ui/main.qml
-msgid "Shut Down..."
-msgstr "關掉..."
+#: ../contents/ui/MenuActions.qml
+msgid "Shut Down…"
+msgstr "關機⋯"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
-msgstr "鎖屏"
+msgstr "鎖定螢幕"
 
-#: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "登出"
+#: ../contents/ui/MenuActions.qml
+msgid "Log Out…"
+msgstr "登出⋯"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "選單"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "內建"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "自訂"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "分隔線"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "新項目"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "新增自訂項目"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "新增分隔線"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "上移"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "下移"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "刪除項目"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "還原預設配置"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "顯示 %1"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "名稱："
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "指令："
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "使用核取方塊隱藏項目。內建名稱將以桌面語言顯示。"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "儲存的選單配置無效。目前顯示預設配置。"
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "沒有可見的選單項目。"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "拖曳把手以調整項目順序。"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "拖曳以調整順序"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "進階設定："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "顯示進階模式"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "關於這台電腦："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "系統設定："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "睡眠："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "重新開機："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "關機："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "鎖定螢幕："
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "登出："
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "可以在「一般」頁面的進階設定中變更內建指令。"
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "使用您自己的命令行修改鏈接"
@@ -187,3 +252,23 @@ msgstr "登出"
 
 #~ msgid "Force Quit :"
 #~ msgstr "強制退出 :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "選單寬度："
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "選單項目高度："
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "自動調整寬度"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "自動調整選單項目高度"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "尺寸單位為像素。"

@@ -18,17 +18,19 @@ Item {
 
     property Item highlight
     property alias text: label.text
+    property string shortcutText: ""
 
     Layout.fillWidth: true
-    height: row.height
+    implicitWidth: row.implicitWidth
+    implicitHeight: row.implicitHeight
     onFocusChanged: {
         if(focus){
             if (!highlight) {
                 return
             }
             highlight.parent = item
-            highlight.width = item.width
-            highlight.height = item.height
+            highlight.width = Qt.binding(() => item.width)
+            highlight.height = Qt.binding(() => item.height)
             highlight.visible = true
             highlight.active = true
             highlight.hovered = true
@@ -54,12 +56,15 @@ Item {
             if (!highlight || !area.containsMouse) {
                 return
             }
-            item.focus = true
+            item.forceActiveFocus(Qt.MouseFocusReason)
         }
     }
 
     RowLayout {
         id: row
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.verticalCenter: parent.verticalCenter
         // set space before the text item with a empty icon
         Item {
             id: emptySpace
@@ -67,12 +72,21 @@ Item {
             Layout.maximumWidth: 1 * Kirigami.Units.gridUnit
         }
 
-        Item {
-            height: 24
-            PlasmaComponents.Label {
-                id: label
-                anchors.verticalCenter: parent.verticalCenter
-            }
+        PlasmaComponents.Label {
+            id: label
+            Layout.fillWidth: true
+            Layout.minimumHeight: 24
+            verticalAlignment: Text.AlignVCenter
+            textFormat: Text.PlainText
+            elide: Text.ElideRight
+        }
+
+        PlasmaComponents.Label {
+            text: item.shortcutText
+            visible: text.length > 0
+            verticalAlignment: Text.AlignVCenter
+            Layout.leftMargin: Kirigami.Units.smallSpacing
+            Layout.rightMargin: Kirigami.Units.smallSpacing
         }
     }
 }

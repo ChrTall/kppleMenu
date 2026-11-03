@@ -17,167 +17,232 @@ msgstr ""
 
 #: ../metadata.json
 msgid "Kpple Menu"
-msgstr ""
+msgstr "Kpple Menu"
 
 #: ../metadata.json
 msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
-msgstr ""
+msgstr "Kpple Menu — спадне меню, яке зазвичай розташоване ліворуч на панелі меню."
 
 #: ../contents/config/config.qml
 msgid "General"
-msgstr "Розширений"
+msgstr "Загальні"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Icon:"
-msgstr ""
+msgstr "Піктограма:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Change Kpple Menu's icon"
-msgstr ""
+msgstr "Змінити піктограму Kpple Menu"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
-msgstr ""
+msgstr "Поточна піктограма: %1. Натисніть, щоб вибрати іншу піктограму або відновити типову."
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:tooltip"
 msgid "Icon name is \"%1\""
-msgstr ""
+msgstr "Назва піктограми: «%1»"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Open icon chooser dialog"
 msgid "Choose…"
-msgstr ""
+msgstr "Вибрати…"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Choose an icon for Application Launcher"
-msgstr ""
+msgstr "Вибрати піктограму для засобу запуску програм"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Reset to default icon"
-msgstr ""
+msgstr "Відновити типову піктограму"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:inmenu"
 msgid "Remove icon"
-msgstr ""
+msgstr "Прибрати піктограму"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr ""
+msgid "Shortcut labels:"
+msgstr "Позначення клавіатурних скорочень:"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "Показати розширений режим"
+msgid "Apple symbols"
+msgstr "Символи Apple"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "Про цей комп’ютер :"
+msgid "PC labels"
+msgstr "Позначення ПК"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
-msgstr ""
+#: ../contents/ui/config/MenuEditor.qml
+msgctxt "@action:button"
+msgid "Clear command"
+msgstr "Очистити команду"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "Налаштування системи :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings5"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "Пауза активність :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "Щоб перезапустити :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "Вимкнути :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "Екран блокування :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "Вийти :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
-msgstr ""
+msgstr "Відновити типову команду"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
-msgstr ""
+msgstr "Швидкий доступ до вимкнення, перезавантаження, виходу із системи, параметрів та інших дій."
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
 msgstr "Про цей комп’ютер"
 
-#: ../contents/ui/main.qml
-msgid "System Preferences..."
-msgstr "Налаштування системи..."
+#: ../contents/ui/MenuActions.qml
+msgid "System Settings…"
+msgstr "Системні параметри…"
 
-#: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "App Store..."
+#: ../contents/ui/MenuActions.qml
+msgid "App Store…"
+msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
-msgstr "Пауза активність"
+msgstr "Сон"
 
-#: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "Щоб перезапустити..."
+#: ../contents/ui/MenuActions.qml
+msgid "Restart…"
+msgstr "Перезапустити…"
 
-#: ../contents/ui/main.qml
-msgid "Shut Down..."
-msgstr "Вимкнути..."
+#: ../contents/ui/MenuActions.qml
+msgid "Shut Down…"
+msgstr "Вимкнути…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
-msgstr "Екран блокування"
+msgstr "Замкнути екран"
 
-#: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Вийти"
+#: ../contents/ui/MenuActions.qml
+msgid "Log Out…"
+msgstr "Вийти із системи…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "Меню"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "Вбудований"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "Власний"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "Роздільник"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "Новий пункт"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "Додати власний пункт"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "Додати роздільник"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "Пересунути вгору"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "Пересунути вниз"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "Вилучити пункт"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "Відновити типовий порядок"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "Показувати %1"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "Назва:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "Команда:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "Приховуйте пункти за допомогою прапорців. Вбудовані назви відображаються мовою стільниці."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "Збережена структура меню некоректна. Показано типову структуру."
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "Немає видимих пунктів меню."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "Перетягуйте пункти за ручки, щоб змінити їхній порядок."
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "Перетягніть, щоб змінити порядок"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "Додаткові параметри:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "Показати розширений режим"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "Про цей комп’ютер:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "Системні параметри:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "Сон:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "Перезапустити:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "Вимкнути:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "Замкнути екран:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "Вийти із системи:"
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "Вбудовані команди можна змінити в розширених параметрах на сторінці «Загальне»."
 
 #~ msgid "Adapt the links with your own command lines"
 #~ msgstr "Адаптуйте посилання за допомогою власних командних рядків"
@@ -187,3 +252,23 @@ msgstr "Вийти"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Сила кинути :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Ширина меню:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Висота пунктів меню:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Визначати ширину автоматично"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Визначати висоту пунктів автоматично"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "Розміри вказано в пікселях."

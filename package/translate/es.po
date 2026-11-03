@@ -17,167 +17,232 @@ msgstr ""
 
 #: ../metadata.json
 msgid "Kpple Menu"
-msgstr ""
+msgstr "Kpple Menu"
 
 #: ../metadata.json
 msgid "The Kpple menu is a drop-down menu that is usually found on the left side of the menu bar."
-msgstr ""
+msgstr "Kpple Menu es un menú desplegable que suele colocarse a la izquierda de la barra de menús."
 
 #: ../contents/config/config.qml
 msgid "General"
-msgstr "Generalmente"
+msgstr "General"
 
 #: ../contents/ui/config/configGeneral.qml
 msgid "Icon:"
-msgstr ""
+msgstr "Icono:"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:button"
 msgid "Change Kpple Menu's icon"
-msgstr ""
+msgstr "Cambiar el icono de Kpple Menu"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Current icon is %1. Click to open menu to change the current icon or reset to the default icon."
-msgstr ""
+msgstr "El icono actual es %1. Pulse para elegir otro icono o restaurar el icono predeterminado."
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:tooltip"
 msgid "Icon name is \"%1\""
-msgstr ""
+msgstr "Nombre del icono: «%1»"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Open icon chooser dialog"
 msgid "Choose…"
-msgstr ""
+msgstr "Elegir…"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@info:whatsthis"
 msgid "Choose an icon for Application Launcher"
-msgstr ""
+msgstr "Elegir un icono para el lanzador de aplicaciones"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@item:inmenu Reset icon to default"
 msgid "Reset to default icon"
-msgstr ""
+msgstr "Restaurar el icono predeterminado"
 
 #: ../contents/ui/config/configGeneral.qml
 msgctxt "@action:inmenu"
 msgid "Remove icon"
-msgstr ""
+msgstr "Eliminar icono"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "Advanced Settings:"
-msgstr ""
+msgid "Shortcut labels:"
+msgstr "Etiquetas de los atajos de teclado:"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "Show advanced mode"
-msgstr "Mostrar el modo avanzado"
+msgid "Apple symbols"
+msgstr "Símbolos de Apple"
 
 #: ../contents/ui/config/configGeneral.qml
-msgid "About This Computer :"
-msgstr "Acerca de esta computadora :"
+msgid "PC labels"
+msgstr "Etiquetas de PC"
 
-#: ../contents/ui/config/configGeneral.qml
-msgid "kinfocenter"
-msgstr ""
+#: ../contents/ui/config/MenuEditor.qml
+msgctxt "@action:button"
+msgid "Clear command"
+msgstr "Borrar comando"
 
-#: ../contents/ui/config/configGeneral.qml
+#: ../contents/ui/config/MenuEditor.qml
 msgctxt "@action:button"
 msgid "Reset command"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "System Preferences :"
-msgstr "Preferencias del sistema :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemsettings5"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "App Store :"
-msgstr "App Store :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "plasma-discover"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Sleep :"
-msgstr "Suspender la actividad :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "systemctl suspend"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Restart :"
-msgstr "Reinicie :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/reboot"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Shut Down :"
-msgstr "Apagar :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "/sbin/shutdown now"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Lock Screen :"
-msgstr "Bloquear pantalla :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock"
-msgstr ""
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "Log Out :"
-msgstr "Desconectarse :"
-
-#: ../contents/ui/config/configGeneral.qml
-msgid "qdbus org.kde.ksmserver /KSMServer logout 0 0 0"
-msgstr ""
+msgstr "Restaurar el comando predeterminado"
 
 #: ../contents/ui/main.qml
 msgid "Shortcuts for shutdown,reboot,logout, settings etc."
-msgstr ""
+msgstr "Accesos rápidos para apagar, reiniciar, cerrar la sesión, abrir las preferencias, etc."
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "About This Computer"
-msgstr "Acerca de esta computadora"
+msgstr "Acerca de este equipo"
 
-#: ../contents/ui/main.qml
-msgid "System Preferences..."
-msgstr "Preferencias del sistema..."
+#: ../contents/ui/MenuActions.qml
+msgid "System Settings…"
+msgstr "Ajustes del Sistema…"
 
-#: ../contents/ui/main.qml
-msgid "App Store..."
-msgstr "App Store..."
+#: ../contents/ui/MenuActions.qml
+msgid "App Store…"
+msgstr "App Store…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Sleep"
-msgstr "Suspender la actividad"
+msgstr "Reposo"
 
-#: ../contents/ui/main.qml
-msgid "Restart..."
-msgstr "Reinicie..."
+#: ../contents/ui/MenuActions.qml
+msgid "Restart…"
+msgstr "Reiniciar…"
 
-#: ../contents/ui/main.qml
-msgid "Shut Down..."
-msgstr "Apagar..."
+#: ../contents/ui/MenuActions.qml
+msgid "Shut Down…"
+msgstr "Apagar…"
 
-#: ../contents/ui/main.qml
+#: ../contents/ui/MenuActions.qml
 msgid "Lock Screen"
 msgstr "Bloquear pantalla"
 
-#: ../contents/ui/main.qml
-msgid "Log Out"
-msgstr "Desconectarse"
+#: ../contents/ui/MenuActions.qml
+msgid "Log Out…"
+msgstr "Cerrar sesión…"
+
+#: ../contents/config/config.qml
+msgid "Menu"
+msgstr "Menú"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Built-in"
+msgstr "Integrado"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Custom"
+msgstr "Personalizado"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Separator"
+msgstr "Separador"
+
+#: ../contents/ui/MenuContent.qml ../contents/ui/config/MenuEditor.qml
+msgid "New entry"
+msgstr "Nueva entrada"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add custom entry"
+msgstr "Añadir entrada personalizada"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Add separator"
+msgstr "Añadir separador"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move up"
+msgstr "Subir"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Move down"
+msgstr "Bajar"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Delete entry"
+msgstr "Eliminar entrada"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Restore default layout"
+msgstr "Restaurar la disposición predeterminada"
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Show %1"
+msgstr "Mostrar %1"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Name:"
+msgstr "Nombre:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Command:"
+msgstr "Orden:"
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Hide entries with the checkboxes. Built-in names follow your desktop language."
+msgstr "Oculte las entradas con las casillas. Los nombres integrados siguen el idioma del escritorio."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "The saved menu layout is invalid. The default layout is shown."
+msgstr "La disposición guardada del menú no es válida. Se muestra la disposición predeterminada."
+
+#: ../contents/ui/MenuContent.qml
+msgid "No visible menu entries."
+msgstr "No hay entradas de menú visibles."
+
+#: ../contents/ui/config/MenuEditor.qml
+msgid "Drag the handles to reorder entries."
+msgstr "Arrastre los tiradores para reordenar las entradas."
+
+#: ../contents/ui/config/MenuTreeDelegate.qml
+msgid "Drag to reorder"
+msgstr "Arrastrar para reordenar"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Advanced Settings:"
+#~ msgstr "Opciones avanzadas:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Show advanced mode"
+#~ msgstr "Mostrar el modo avanzado"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "About This Computer :"
+#~ msgstr "Acerca de este equipo:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "System Settings :"
+#~ msgstr "Ajustes del Sistema:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "App Store :"
+#~ msgstr "App Store:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Sleep :"
+#~ msgstr "Reposo:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Restart :"
+#~ msgstr "Reiniciar:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Shut Down :"
+#~ msgstr "Apagar:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Lock Screen :"
+#~ msgstr "Bloquear pantalla:"
+
+#: ../contents/ui/config/configGeneral.qml
+#~ msgid "Log Out :"
+#~ msgstr "Cerrar sesión:"
+
+#: ../contents/ui/config/MenuEditor.qml
+#~ msgid "Built-in commands can be changed in General under Advanced Settings."
+#~ msgstr "Las órdenes integradas se pueden cambiar en General, en los ajustes avanzados."
 
 #~ msgid "Adapt the links with your own command line"
 #~ msgstr "Adapte los enlaces con sus propias líneas de comando"
@@ -187,3 +252,23 @@ msgstr "Desconectarse"
 
 #~ msgid "Force Quit :"
 #~ msgstr "Forzando a salir :"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu width:"
+msgstr "Anchura del menú:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Menu item height:"
+msgstr "Altura de los elementos del menú:"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic width"
+msgstr "Usar anchura automática"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Use automatic item height"
+msgstr "Usar altura automática para los elementos"
+
+#: ../contents/ui/config/configGeneral.qml
+msgid "Sizes are in pixels."
+msgstr "Los tamaños se indican en píxeles."

@@ -10,40 +10,154 @@ The original maintainer does not seem actively maintaining the project anymore. 
 
 ## Usage
 
-Menu entries can be configured via the settings, if you tick the advanced settings checkbox.
-Simply click on the entries to check if the configured command is working.
+Open the widget settings and select **Menu** to customize the menu. A tree-style
+list on the left shows the menu order and separator lines. Selecting an entry
+opens its properties on the right; the divider can be dragged to resize the panes.
+On narrow windows, the properties pane moves below the list.
+
+- Show or hide any entry with its checkbox, including built-in actions.
+- Drag the handle beside an entry to reorder it, or use **Move up** and **Move down**.
+- Add custom entries with your own names and commands, or add separators.
+- Edit any action's command in the properties pane; custom names can be edited there too.
+  Built-in commands have separate **Clear** and **Reset** controls. Custom entries and separators
+  can be deleted; built-in actions can always be shown again.
+- The **Built-in** and **Custom** labels distinguish entries in settings only.
+  Built-in names stay translated and their shortcuts follow the actions when moved.
+
+**Restore default layout** restores the original menu arrangement. It preserves
+built-in command overrides and keeps custom entries hidden so their commands
+are not lost. Re-enable those entries with their checkboxes if needed.
+
+All menu commands are configured on the **Menu** page. **General** contains the
+panel icon, shortcut labels, menu width, and menu item height settings.
+**Use automatic width** and **Use automatic item height** are enabled by default.
+Uncheck either option to set that dimension independently in pixels, starting at
+a width of **240** and an item height of **28**. Each checkbox disables only its
+corresponding dimension field. Turning either option back on preserves your
+manual value for later use.
+Item heights never shrink below the text height, and separators keep their normal spacing.
+Long menus scroll when they exceed the popup's height limit.
+Existing command settings are preserved when upgrading. The menu arrangement
+is stored internally; there is no raw JSON editor. Invalid saved layout data
+falls back to the default arrangement. Submenus are not supported in this version.
+
 The commands should work on all Distributions with KDE Plasma 6, but might have to be adjusted manually.
+For example, some distributions like Fedora Kinoite provide Qt6 `qdbus` as `qdbus-qt6` instead of `qdbus6`.
+If menu actions do not work out of the box, select the affected action on the
+**Menu** settings page and change `qdbus6` to `qdbus-qt6` in its command.
 
 ### Keyboard Navigation
 
 A global shortcut to expand the applet can be configured under settings -> Keyboard Shortcuts.
 You can navigate through the menu with either tab and back-tab or arrow keys.
 Selected Entries can be executed by pressing the return, enter or space key.
-If the menu is expanded you can quickly:
-- Lock the Screen, by pressing ctrl + alt + q
-- Log out, by pressing shift + alt + q
+While the menu is open and focused, you can:
 
-## Missing Translations
+- Lock the screen with **Ctrl+Alt+Q** or **Ctrl+Meta+Q**.
+- Log out with **Shift+Alt+Q** or **Shift+Meta+Q**.
 
-If you are using a language, other than English or German some entries do not have a translation yet.
-Feel free to create a PR after editing the corresponding `.po` file for your language under `package/translate`.
+Meta is usually the Windows/Super key on a PC keyboard or Command on an Apple
+keyboard, depending on the keyboard mapping. These actions are local to the
+open menu; they do not register global shortcuts.
+Hidden entries cannot be activated through the menu shortcuts. Entries with
+empty commands are disabled, and navigation skips them and separators.
 
-## How to install Kpple menu on KDE Plasma ?
+Under **General → Shortcut labels**, choose **Apple symbols** (the default) or
+**PC labels**. This changes the displayed hints; both shortcut variants work
+with either style.
+
+## Translations
+
+Translations for all current interface strings are provided in 17 languages.
+To improve a translation or add a language, edit the corresponding `.po` file
+under `package/translate` and open a pull request. See the translation guide in
+`package/translate/ReadMe.md` for details.
+
+## Installation
 
 The recommended installation method is via the [KDE store](https://store.kde.org/p/2164679).
 
 
-#### You can also use another install method ( by git ) :1
+### Install from Git with CMake
 
-Open a terminal and follow the steps below.
-There is no guarantee that i18n works, when using this method.
+Install Git, Bash, Python 3, gettext (`msgfmt`), CMake, a C/C++ toolchain,
+and the development packages for Extra CMake Modules, Qt 6, KDE Frameworks 6,
+Kirigami Addons, and Plasma 6. Package names depend on your distribution.
+
+Clone the repository, build the translations, and install for your user:
 
 ```bash
 git clone https://github.com/chrtall/kppleMenu.git
-kpackagetool6 --type "Plasma/Applet" -i  kppleMenu/package
+cd kppleMenu
+./create-translations.sh
+cmake -S . -B build -DCMAKE_INSTALL_PREFIX="$HOME/.local"
+cmake --build build
+cmake --install build
 ```
+
+This installs the widget into
+`~/.local/share/plasma/plasmoids/com.github.chrtall.kppleMenu/` without `sudo`.
+If you already have a checkout, run the commands starting with
+`./create-translations.sh` to install that checkout's version or update an
+existing installation.
+
+Log out and back in after updating so Plasma loads the new QML. For a first
+installation, add **Kpple Menu** through Plasma's **Add Widgets** panel.
+
+Run `./create-translations.sh` again after changing translations and before
+installing. CMake copies the compiled catalogs but does not regenerate them.
+The generated `.mo` files, `package/contents/locale/`, and `build/` are ignored
+by Git; the `.po` files remain the translation sources.
+
+### Install with KPackageTool
+
+For this QML widget, you can also install without CMake or development packages.
+You need Bash, Python 3, gettext (`msgfmt`), and `kpackagetool6` on a Plasma 6
+desktop. From the repository root:
+
+```bash
+./create-translations.sh
+kpackagetool6 --type "Plasma/Applet" --install package
+```
+
+To update an existing installation, use `--upgrade package` instead of
+`--install package`. Log out and back in after updating.
+
+## Local preview
+
+Run `./test-plasmoid.sh` to preview the widget in your current desktop language.
+Pass a language code to preview a translation:
+
+```bash
+./test-plasmoid.sh de     # German
+./test-plasmoid.sh fr     # French
+./test-plasmoid.sh zh_TW  # Traditional Chinese
+./test-plasmoid.sh en     # English
+```
+
+The script calls `create-translations.sh` to rebuild the translation catalogs
+before launching `plasmoidviewer`.
+It adds the package's local translations to the viewer's search path, so the
+widget itself can use them without being installed.
+It requires `msgfmt` (gettext), Python 3, and `plasmoidviewer` (Plasma SDK).
+Run `./test-plasmoid.sh --help` to list the available language codes.
+Untranslated strings fall back to English when a language is selected explicitly.
+The script prefers an installed UTF-8 locale for the selected language, and falls
+back to another installed UTF-8 locale if needed. At least one locale other than
+`C.UTF-8` must be installed for translation previews.
+
+## Development checks
+
+The QML tests use mock commands; they do not execute desktop actions. With
+Qt 6 Quick Test and `qtpaths6` installed, run them from the repository root:
+
+```bash
+QT_QPA_PLATFORM=offscreen QT_QUICK_CONTROLS_STYLE=Basic \
+    "$(qtpaths6 --query QT_HOST_BINS)/qmltestrunner" -input tests
+```
+
+Use the Qt 6 runner; an unversioned `qmltestrunner` may belong to Qt 5.
 
 ## License
 
 GNU GPL v2.0
-

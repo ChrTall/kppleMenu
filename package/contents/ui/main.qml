@@ -7,13 +7,9 @@
 
 import QtQuick
 import QtQuick.Layouts
-import QtQuick.Controls
 
 import org.kde.plasma.plasmoid
-import org.kde.plasma.components as PlasmaComponents
-import org.kde.plasma.extras as PlasmaExtras
 import org.kde.plasma.plasma5support as Plasma5Support
-import org.kde.kirigami as Kirigami
 
 PlasmoidItem {
     id: root
@@ -50,221 +46,28 @@ PlasmoidItem {
         signal exited(string sourceName, string stdout)
     }
 
-    //define highlight
-    PlasmaExtras.Highlight {
-        id: delegateHighlight
-        visible: false
-    }
-
-    onExpandedChanged : (expanded) => {
-        if(expanded){
-            // Always focus fullRep, when applet is expanded to enable keyboard navigation.
-            root.fullRepHasFocus = true
-        }else {
-            // Deactivate Highlight and focus, when applet is minimized/hidden, else navigation state would persist.
-            if (delegateHighlight.parent) {
-                delegateHighlight.parent.focus = false
-                delegateHighlight.parent = null
-            }
-            root.fullRepHasFocus = false
+    onExpandedChanged: {
+        root.fullRepHasFocus = expanded;
+        if (!expanded && root.fullRepresentationItem) {
+            root.fullRepresentationItem.clearSelection();
         }
     }
 
-    fullRepresentation: Item {
-        id: fullRep
-        
-        readonly property double iwSize: Kirigami.Units.gridUnit * 12.6 // item width
-        readonly property double shSize: 1.1 // separator height
-        
-        // config var
-        readonly property string aboutThisComputerCMD: plasmoid.configuration.aboutThisComputerSettings
-        readonly property string systemPreferencesCMD: plasmoid.configuration.systemPreferencesSettings
-        readonly property string appStoreCMD: plasmoid.configuration.appStoreSettings
-        readonly property string forceQuitCMD: plasmoid.configuration.forceQuitSettings
-        readonly property string sleepCMD: plasmoid.configuration.sleepSettings
-        readonly property string restartCMD: plasmoid.configuration.restartSettings
-        readonly property string shutDownCMD: plasmoid.configuration.shutDownSettings
-        readonly property string lockScreenCMD: plasmoid.configuration.lockScreenSettings
-        readonly property string logOutCMD: plasmoid.configuration.logOutSettings
-        
-        Layout.preferredWidth: iwSize
-        Layout.preferredHeight: aboutThisComputerItem.height * 12
-
+    fullRepresentation: MenuContent {
+        layoutJson: Plasmoid.configuration.menuLayout
+        configuration: Plasmoid.configuration
+        shortcutLabelStyle: Plasmoid.configuration.shortcutLabelStyle
+        automaticWidth: Plasmoid.configuration.automaticWidth
+        automaticHeight: Plasmoid.configuration.automaticHeight
+        menuWidth: Plasmoid.configuration.menuWidth
+        buttonHeight: Plasmoid.configuration.buttonHeight
         focus: root.fullRepHasFocus
-        Keys.onPressed: (event) => {
-            switch (event.key) {
-                // Enable Keyboard Navigation with Arrow Keys. Start at the bottom of list.
-                case Qt.Key_Up:
-                    logOutItem.forceActiveFocus()
-                    break;
-                // Enable Keyboard Navigation with Arrow Keys. Start at the top of list.
-                case Qt.Key_Down:
-                    aboutThisComputerItem.forceActiveFocus()
-                    break;
-
-            }
-            // Use Lock Screen Shortcut displayed in UI. ⌘ is treated as Alt Key.
-            if (event.key === Qt.Key_Q && (event.modifiers & Qt.ControlModifier) && (event.modifiers & Qt.AltModifier)){
-                lockScreenItem.clicked()
-            }
-            // Use Log Out Shortcut display in UI. ⌘ is treated as Alt Key.
-            if (event.key === Qt.Key_Q && (event.modifiers & Qt.ShiftModifier) && (event.modifiers & Qt.AltModifier)){
-                logOutItem.clicked()
-            }
-        }
-
-        ColumnLayout {
-            id: columm
-            anchors.fill: parent
-            spacing: 2 // no spacing
-            
-            ListDelegate {
-                id: aboutThisComputerItem
-                highlight: delegateHighlight
-                text: i18n("About This Computer")
-                onClicked: {
-                    executable.exec(aboutThisComputerCMD); // cmd exec
-                }
-                activeFocusOnTab: true
-                KeyNavigation.up: logOutItem
-                KeyNavigation.down: systemPreferencesItem
-            }
-
-            MenuSeparator {
-                id: s1
-                padding: 0
-                topPadding: 5
-                bottomPadding: 5
-                contentItem: Rectangle {
-                    implicitWidth: iwSize
-                    implicitHeight: shSize
-                    color: "#1E000000"
-                }
-            }
-
-            ListDelegate {
-                id: systemPreferencesItem
-                highlight: delegateHighlight
-                width: parent
-                text: i18n("System Preferences...")
-                onClicked: {
-                    executable.exec(systemPreferencesCMD); // cmd exec
-                }
-                activeFocusOnTab: true
-                KeyNavigation.up: aboutThisComputerItem
-                KeyNavigation.down: appStoreItem
-            }
-
-            ListDelegate {
-                id: appStoreItem
-                highlight: delegateHighlight
-                text: i18n("App Store...")
-                onClicked: {
-                    executable.exec(appStoreCMD); // cmd exec
-                }
-                activeFocusOnTab: true
-                KeyNavigation.up: systemPreferencesItem
-                KeyNavigation.down: sleepItem
-            }
-            
-            MenuSeparator {
-                id: s3
-                padding: 0
-                topPadding: 5
-                bottomPadding: 5
-                contentItem: Rectangle {
-                    implicitWidth: iwSize
-                    implicitHeight: shSize
-                    color: "#1E000000"
-                }
-            }
-
-            ListDelegate {
-                id: sleepItem
-                highlight: delegateHighlight
-                text: i18n("Sleep")
-                onClicked: {
-                    executable.exec(sleepCMD); // cmd exec
-                }
-                activeFocusOnTab: true
-                KeyNavigation.up: appStoreItem
-                KeyNavigation.down: restartItem
-            }
-
-            ListDelegate {
-                id: restartItem
-                highlight: delegateHighlight
-                text: i18n("Restart...")
-                onClicked: {
-                    executable.exec(restartCMD); // cmd exec
-                }
-                activeFocusOnTab: true
-                KeyNavigation.up: sleepItem
-                KeyNavigation.down: shutDownItem
-            }
-
-            ListDelegate {
-                id: shutDownItem
-                highlight: delegateHighlight
-                text: i18n("Shut Down...")
-                onClicked: {
-                    executable.exec(shutDownCMD); // cmd exec
-                }
-                activeFocusOnTab: true
-                KeyNavigation.up: restartItem
-                KeyNavigation.down: lockScreenItem
-            }
-
-            MenuSeparator {
-                id: s4
-                padding: 0
-                topPadding: 5
-                bottomPadding: 5
-                contentItem: Rectangle {
-                    implicitWidth: iwSize
-                    implicitHeight: shSize
-                    color: "#1E000000"
-                }
-            }
-
-            ListDelegate {
-                id: lockScreenItem
-                highlight: delegateHighlight
-                text: i18n("Lock Screen")
-                // right shortcut item
-                PlasmaComponents.Label {
-                    text: "⌃⌘Q "
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
-                onClicked: {
-                    executable.exec(lockScreenCMD); // cmd exec
-                }
-                activeFocusOnTab: true
-                KeyNavigation.up: shutDownItem
-                KeyNavigation.down: logOutItem
-            }
-
-            ListDelegate {
-                id: logOutItem
-                highlight: delegateHighlight
-                text: i18n("Log Out")
-                // right shortcut item
-                PlasmaComponents.Label {
-                    text: "⇧⌘Q "
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
-                onClicked: {
-                    executable.exec(logOutCMD); // cmd exec
-                }
-                activeFocusOnTab: true
-                KeyNavigation.up: lockScreenItem
-                KeyNavigation.down: aboutThisComputerItem
-            }
-        }
+        Layout.preferredWidth: implicitWidth
+        Layout.preferredHeight: implicitHeight
+        Layout.minimumWidth: implicitWidth
+        Layout.maximumWidth: implicitWidth
+        Layout.minimumHeight: implicitHeight
+        Layout.maximumHeight: implicitHeight
+        onCommandRequested: command => executable.exec(command)
     }
-
-} // end item
-
-
+}

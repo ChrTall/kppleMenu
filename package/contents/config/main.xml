@@ -19,6 +19,36 @@ SPDX-License-Identifier: GPL-2.0-or-later
     <entry name="showAdvancedMode" type="Bool">
       <default>false</default>
     </entry>
+    <entry name="shortcutLabelStyle" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="menuLayout" type="String">
+      <default></default>
+    </entry>
+    <!--
+      Width and item-height settings and their 240/28 px manual defaults are
+      inspired by 51n7/kMenu's configuration (GPL-2.0-or-later):
+      https://github.com/51n7/kMenu/blob/915bfc9d809fe30a6502dc9fd7f4f4d7f140d8d4/package/contents/config/main.xml
+      kppleMenu adds independent automatic-sizing flags.
+    -->
+    <entry name="automaticWidth" type="Bool">
+      <label>Automatically size the menu width to fit its contents.</label>
+      <default>true</default>
+    </entry>
+    <entry name="automaticHeight" type="Bool">
+      <label>Automatically size menu item heights to fit their contents.</label>
+      <default>true</default>
+    </entry>
+    <entry name="menuWidth" type="Int">
+      <label>Menu width in pixels when automatic width is disabled.</label>
+      <default>240</default>
+      <min>1</min>
+    </entry>
+    <entry name="buttonHeight" type="Int">
+      <label>Menu item height in pixels when automatic item height is disabled.</label>
+      <default>28</default>
+      <min>1</min>
+    </entry>
     <entry name="aboutThisComputerSettings" type="String">
       <default>kinfocenter</default>
     </entry>
@@ -35,16 +65,16 @@ SPDX-License-Identifier: GPL-2.0-or-later
       <default>systemctl suspend</default>
     </entry>
     <entry name="restartSettings" type="String">
-      <default>/sbin/reboot</default>
+      <default>qdbus6 org.kde.LogoutPrompt /LogoutPrompt promptReboot</default>
     </entry>
     <entry name="shutDownSettings" type="String">
-      <default>/sbin/shutdown now</default>
+      <default>qdbus6 org.kde.LogoutPrompt /LogoutPrompt promptShutDown</default>
     </entry>
     <entry name="lockScreenSettings" type="String">
       <default>qdbus6 org.freedesktop.ScreenSaver /ScreenSaver Lock</default>
     </entry>
     <entry name="logOutSettings" type="String">
-      <default>qdbus6 org.kde.Shutdown /Shutdown logout</default>
+      <default>qdbus6 org.kde.LogoutPrompt /LogoutPrompt promptLogout</default>
     </entry>
   </group>
   
